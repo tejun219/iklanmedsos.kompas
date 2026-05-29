@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Outline Iklan Media Sosial Harian Kompas & Kompas.id</title>
+  <meta name="description" content="Dashboard interaktif, modern, dan informatif untuk memantau, merencanakan, dan menganalisis jadwal iklan media sosial Harian Kompas dan Kompas.id.">
+  
+  <!-- Modern Style Sheet -->
+  <link rel="stylesheet" href="style.css?v=6">
+  
+  <!-- FontAwesome Icons for modern dashboard elements -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js CDN for modern interactive graphics -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Top Header Navigation -->
+    <header>
+      <div class="logo-section">
+        <div class="logo-icon" id="brand-logo">K</div>
+        <div class="logo-text">
+          <h1 id="main-heading">Outline Iklan Media Sosial</h1>
+          <span>Harian Kompas & Kompas.id</span>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Month and Year Dropdown Selector -->
+    <div style="display: flex; justify-content: flex-end; padding: 15px 20px; background-color: var(--bg-primary); gap: 12px;">
+      <select id="year-select" class="select-filter" style="font-size: 15px; padding: 10px 20px; border-radius: 8px; border: 1px solid var(--glass-border); background-color: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; min-width: 120px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" aria-label="Pilih Tahun">
+      </select>
+      <select id="month-select" class="select-filter" style="font-size: 15px; padding: 10px 20px; border-radius: 8px; border: 1px solid var(--glass-border); background-color: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; min-width: 160px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" aria-label="Pilih Bulan">
+      </select>
+    </div>
+    
+    <!-- KPI Summary Grid -->
+    <section class="kpi-grid" aria-label="Ringkasan Kinerja">
+      <!-- KPI Total Volume -->
+      <div class="kpi-card volume">
+        <div class="kpi-info">
+          <span class="kpi-title">Total Volume Iklan</span>
+          <div class="kpi-value" id="kpi-total-volume">0</div>
+          <span class="kpi-subtext" id="kpi-total-ads-count">0 Penempatan Terdaftar</span>
+        </div>
+        <div class="kpi-icon">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+      </div>
+      
+      <!-- KPI Active Platforms -->
+      <div class="kpi-card channels">
+        <div class="kpi-info">
+          <span class="kpi-title">Saluran Media Sosial</span>
+          <div class="kpi-value" id="kpi-active-channels">0</div>
+          <span class="kpi-subtext" id="kpi-channel-highlight">Platform Teraktif: -</span>
+        </div>
+        <div class="kpi-icon">
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      
+      <!-- KPI Active AEs -->
+      <div class="kpi-card ae">
+        <div class="kpi-info">
+          <span class="kpi-title">AE / CP Terlibat</span>
+          <div class="kpi-value" id="kpi-active-aes">0</div>
+          <span class="kpi-subtext" id="kpi-ae-highlight">Tim Penjualan Aktif</span>
+        </div>
+        <div class="kpi-icon">
+          <i class="fa-solid fa-users"></i>
+        </div>
+      </div>
+      
+      <!-- KPI Peak Day -->
+      <div class="kpi-card peak">
+        <div class="kpi-info">
+          <span class="kpi-title">Hari Terpadat</span>
+          <div class="kpi-value" id="kpi-peak-day">-</div>
+          <span class="kpi-subtext" id="kpi-peak-day-sub">Kapasitas Maksimum</span>
+        </div>
+        <div class="kpi-icon">
+          <i class="fa-solid fa-calendar-day"></i>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Charts Insights Analytics Hub -->
+    <section class="analytics-section" aria-label="Hub Analisis Data">
+      <!-- Chart A: Platform Share -->
+      <div class="chart-card">
+        <div class="chart-header" style="flex-direction: column; align-items: flex-start; gap: 10px;">
+          <div class="chart-tabs" style="display: flex; gap: 10px; width: 100%; border-bottom: 1px solid var(--glass-border); padding-bottom: 8px;">
+            <button class="tab-btn active" id="tab-distribusi" style="background: none; border: none; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 700; color: var(--primary-light); cursor: pointer; padding: 5px 10px; border-bottom: 2px solid var(--primary-light);">Distribusi Saluran Media Sosial</button>
+            <button class="tab-btn" id="tab-omset" style="background: none; border: none; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 600; color: var(--text-secondary); cursor: pointer; padding: 5px 10px; border-bottom: 2px solid transparent;">Bukti Tayang Iklan</button>
+          </div>
+        </div>
+        <div class="chart-container" id="container-distribusi">
+          <canvas id="platform-chart"></canvas>
+        </div>
+        <div class="chart-container" id="container-omset" style="display: none; height: auto; min-height: 420px; overflow: visible;">
+          <div class="ads-gallery-grid" id="ads-gallery-grid">
+            <!-- Dynamic ad cards will be loaded here -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Chart B: Account Executive Distribution -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <span class="chart-title"><i class="fa-solid fa-chart-simple"></i> Account Executive (AE)</span>
+        </div>
+        <div class="chart-container">
+          <canvas id="ae-chart"></canvas>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Interactive Calendar Planner -->
+    <section class="calendar-planner-section" aria-label="Kalender Perencanaan">
+      <!-- Main Visual Calendar Grid -->
+      <div class="calendar-card">
+        <div class="calendar-header">
+          <span class="chart-title"><i class="fa-solid fa-calendar-days"></i> Kalender Jadwal Publikasi</span>
+          <span class="kpi-subtext" id="calendar-month-indicator">Mei 2026</span>
+        </div>
+        
+        <div class="calendar-grid-header">
+          <div>Min</div>
+          <div>Sen</div>
+          <div>Sel</div>
+          <div>Rab</div>
+          <div>Kam</div>
+          <div>Jum</div>
+          <div>Sab</div>
+        </div>
+        
+        <div class="calendar-grid-days" id="calendar-days-grid">
+          <!-- Calendar days cells will be rendered dynamically by app.js -->
+        </div>
+      </div>
+      
+      <!-- Sidebar Day Detail Detail Panel Drawer -->
+      <div class="detail-drawer-card" id="day-detail-drawer">
+        <div class="drawer-header">
+          <h3 id="drawer-date-heading">Pilih Tanggal</h3>
+          <p id="drawer-date-subheading">Silakan klik tanggal pada kalender untuk melihat detail iklan</p>
+        </div>
+        
+        <div class="ad-list-container" id="drawer-ad-list">
+          <div class="empty-ad-state">
+            <div class="empty-ad-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <p>Pilih tanggal pada kalender untuk memantau jadwal penempatan secara rinci</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Smart Data Grid and Tables -->
+    <section class="data-grid-section" aria-label="Tabel Jadwal Lengkap">
+      <!-- Data Table Filtering & Tools Toolbar -->
+      <div class="table-toolbar">
+        <div class="search-filter-group">
+          <!-- Search input -->
+          <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="table-search" class="search-input" placeholder="Cari Judul, No. SO, AE..." aria-label="Cari iklan">
+          </div>
+          
+          <!-- Filter Platform -->
+          <select id="filter-platform" class="select-filter" aria-label="Filter berdasarkan Platform">
+            <option value="">Semua Platform</option>
+            <option value="IG Story">Instagram Story</option>
+            <option value="IG Post">Instagram Post</option>
+            <option value="IG Reels">Instagram Reels</option>
+            <option value="X">X (Twitter)</option>
+            <option value="Youtube">Youtube</option>
+          </select>
+          
+          <!-- Filter AE -->
+          <select id="filter-ae" class="select-filter" aria-label="Filter berdasarkan Account Executive">
+            <option value="">Semua AE</option>
+            <!-- Generated dynamically by app.js -->
+          </select>
+        </div>
+        
+        <div class="toolbar-actions" style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <span style="font-size: 12px; font-weight: 700; color: var(--text-secondary); margin-right: 2px;">Rentang Omset:</span>
+          <select id="omset-start-period" class="select-filter" style="font-size: 13px; padding: 6px 12px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid var(--glass-border); background-color: var(--bg-secondary); color: var(--text-primary); cursor: pointer;" aria-label="Periode Mulai"></select>
+          
+          <span style="font-size: 12px; font-weight: 700; color: var(--text-secondary); margin: 0 2px;">s/d</span>
+          
+          <select id="omset-end-period" class="select-filter" style="font-size: 13px; padding: 6px 12px; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid var(--glass-border); background-color: var(--bg-secondary); color: var(--text-primary); cursor: pointer;" aria-label="Periode Selesai"></select>
+          <!-- Export Data Grid to CSV -->
+          <button id="download-omset-btn" class="primary-btn">
+            <i class="fa-solid fa-file-invoice-dollar"></i> Download Omset AE
+          </button>
+        </div>
+      </div>
+      
+      <!-- Visual Scrolling Data Table Wrapper -->
+      <div class="table-wrapper">
+        <table class="ad-table" id="ad-data-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th class="sortable" id="sort-judul">Judul Iklan <i class="fa-solid fa-sort"></i></th>
+              <th class="sortable" id="sort-posisi">Posisi / Saluran <i class="fa-solid fa-sort"></i></th>
+              <th>Total</th>
+              <th class="sortable" id="sort-tgl">Tgl Terbit <i class="fa-solid fa-sort"></i></th>
+              <th class="sortable" id="sort-ae">AE/CP <i class="fa-solid fa-sort"></i></th>
+              <th>Keterangan Order</th>
+              <th>Keterangan Tambahan</th>
+              <th class="sortable" id="sort-so">Sales Order (SO) <i class="fa-solid fa-sort"></i></th>
+              <th>Download Memo</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Dynamic rows will be rendered by app.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Table Pagination Controls -->
+      <div id="table-pagination" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; padding: 14px 20px 6px;"></div>
+
+    </section>
+    
+    <!-- Floating Bottom Controls -->
+    <div class="bottom-controls">
+      <!-- Admin Status Lock Button -->
+      <button class="theme-btn admin-locked" id="admin-lock-btn" title="Login Admin untuk Mengubah Data" aria-label="Admin Login">
+        <i class="fa-solid fa-lock" id="admin-lock-icon"></i>
+      </button>
+      
+      <!-- Theme Toggle Button -->
+      <button class="theme-btn" id="theme-toggle" title="Ubah Tema Warna" aria-label="Toggle Theme">
+        <i class="fa-solid fa-sun" id="theme-icon"></i>
+      </button>
+      
+      <!-- Visitor Guide Button -->
+      <button class="theme-btn" id="open-guide-btn" title="Panduan Pengguna / Visitor Guide" style="color: var(--accent-gold);">
+        <i class="fa-solid fa-circle-question"></i>
+      </button>
+      
+      <!-- Visitor Log Button -->
+      <button class="theme-btn" id="open-visitor-btn" style="display: none;" title="Pantauan Pengunjung Web">
+        <i class="fa-solid fa-users-viewfinder"></i> Log
+      </button>
+      
+      <!-- Sync G-Drive Button -->
+      <button class="theme-btn" id="sync-gdrive-btn" style="display: none; color: var(--success);" title="Sinkronisasi data dari Google Drive">
+        <i class="fa-solid fa-cloud-arrow-down"></i> Sync
+      </button>
+      
+      <!-- Add Ad Action Button -->
+      <button class="primary-btn" id="open-planner-btn" style="opacity: 0.6; cursor: not-allowed;" title="Harap masuk sebagai Admin terlebih dahulu">
+        <i class="fa-solid fa-lock"></i> Tambah Outline Iklan
+      </button>
+    </div>
+    
+  </div>
+
+  <!-- Info Footer -->
+  <footer class="info-footer">
+    <div class="info-container">
+      <!-- Card 1: Batas Akhir Pekan -->
+      <div class="info-card">
+        <div class="info-icon">
+          <i class="fa-solid fa-calendar-days"></i>
+        </div>
+        <div class="info-text">
+          <strong>Batas Materi Akhir Pekan</strong>
+          <p>Penayangan Sabtu, Minggu dan Senin materinya di terima team medsos paling lambat hari Jumat pukul 16.00 WIB</p>
+        </div>
+      </div>
+      <!-- Card 2: Hari Libur -->
+      <div class="info-card">
+        <div class="info-icon">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+        <div class="info-text">
+          <strong>Libur Nasional & Tanggal Merah</strong>
+          <p>Penerimaan materi sebelum tanggal merah / libur Nasional paling lambat H-1 pukul 14.00 WIB</p>
+        </div>
+      </div>
+      <!-- Card 3: Email Pengiriman -->
+      <div class="info-card">
+        <div class="info-icon">
+          <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+        <div class="info-text">
+          <strong>Email Pengiriman Iklan</strong>
+          <p>Pengiriman materi iklan wajib di cc ke email <a href="mailto:timmedsos@kompas.id">timmedsos@kompas.id</a> dan <a href="mailto:medsos.bisnis@kompas.id">medsos.bisnis@kompas.id</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dialog Modal: Admin Login Prompter -->
+  <div class="modal-overlay" id="admin-login-modal">
+    <div class="modal-container" style="max-width: 400px;">
+      <div class="modal-header" style="background: var(--bg-tertiary);">
+        <h3><i class="fa-solid fa-shield-halved"></i> Otorisasi Admin</h3>
+        <button class="close-modal-btn" id="close-login-btn" aria-label="Close login dialog">&times;</button>
+      </div>
+      
+      <form id="admin-login-form" onsubmit="return false;">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 16px;">
+          <p style="font-size: 13px; color: var(--text-secondary); text-align: center; line-height: 1.5;">
+            Masukkan Password Admin untuk mengaktifkan fitur penambahan dan perubahan data iklan.
+          </p>
+          <div class="form-group">
+            <label for="login-password" class="form-label">Password Admin *</label>
+            <input type="password" id="login-password" class="form-input" placeholder="Masukkan password admin" style="text-align: center; font-size: 16px; letter-spacing: 2px;" required>
+          </div>
+          <div id="login-error-alert" style="display: none; background: var(--danger-glow); color: var(--danger); border: 1px solid var(--danger); padding: 8px 12px; border-radius: 8px; font-size: 12px; font-weight: 600; text-align: center;">
+            wrong password
+          </div>
+        </div>
+        
+        <div class="modal-footer" style="background: var(--bg-tertiary); display: flex; justify-content: flex-end;">
+          <button type="submit" class="primary-btn" id="submit-login-btn">
+            <i class="fa-solid fa-key"></i> Unlock Admin
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Dialog Modal: Add New Ad Outline Planner -->
+  <div class="modal-overlay" id="ad-planner-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-calendar-plus"></i> Tambah Rencana Iklan Baru</h3>
+        <button class="close-modal-btn" id="close-modal-btn" aria-label="Close dialog">&times;</button>
+      </div>
+      
+      <form id="ad-planner-form" onsubmit="return false;">
+        <div class="modal-body">
+          <div class="form-grid">
+            <!-- Ad Title (full-width) -->
+            <div class="form-group full-width">
+              <label for="form-judul" class="form-label">Judul Iklan *</label>
+              <input type="text" id="form-judul" class="form-input" placeholder="Masukkan judul iklan / nama brand" required>
+            </div>
+            
+            <!-- Posisi / Platform -->
+            <div class="form-group">
+              <label for="form-posisi" class="form-label">Posisi / Saluran Media *</label>
+              <select id="form-posisi" class="form-input" required>
+                <option value="">Pilih Saluran...</option>
+                <option value="IG Story Link Harian Kompas">IG Story Link Harian Kompas</option>
+                <option value="IG Post Carousell Harian Kompas">IG Post Carousell Harian Kompas</option>
+                <option value="IG Post harian Kompas">IG Post harian Kompas</option>
+                <option value="IG Reels Harian Kompas">IG Reels Harian Kompas</option>
+                <option value="IG Storylink Kompas Muda">IG Storylink Kompas Muda</option>
+                <option value="IG Post Carousell Kompas Muda">IG Post Carousell Kompas Muda</option>
+                <option value="IG Post Kompas Muda">IG Post Kompas Muda</option>
+                <option value="X Harian Kompas">X Harian Kompas</option>
+                <option value="Youtube Harian Kompas">Youtube Harian Kompas</option>
+                <option value="Kompas.id Web Banner">Kompas.id Web Banner</option>
+              </select>
+            </div>
+            
+            <!-- Total Ad -->
+            <div class="form-group">
+              <label for="form-total" class="form-label">Total Ad *</label>
+              <input type="number" id="form-total" class="form-input" min="1" value="1" required>
+            </div>
+            
+            <!-- Publish Date -->
+            <div class="form-group">
+              <label for="form-date" class="form-label">Tanggal Terbit *</label>
+              <input type="date" id="form-date" class="form-input" required>
+            </div>
+            
+            <!-- Account Executive AE -->
+            <div class="form-group">
+              <label for="form-ae" class="form-label">Account Executive (AE/CP) *</label>
+              <input type="text" id="form-ae" class="form-input" list="ae-suggestions" placeholder="Pilih atau ketik AE" required>
+              <datalist id="ae-suggestions">
+                <option value="Debby">
+                <option value="Rifai">
+                <option value="Vicky">
+                <option value="Aldo">
+                <option value="Dika">
+                <option value="Kimmy">
+              </datalist>
+            </div>
+            
+            <!-- Memo / Keterangan Order -->
+            <div class="form-group full-width">
+              <label for="form-order" class="form-label">Keterangan Order (No. Memo)</label>
+              <input type="text" id="form-order" class="form-input" placeholder="Memo No.XXX/MQ/PRODUK/...">
+            </div>
+            
+            <!-- Notes -->
+            <div class="form-group full-width">
+              <label for="form-notes" class="form-label">Keterangan Tambahan</label>
+              <input type="text" id="form-notes" class="form-input" placeholder="Catatan tambahan / Tautan">
+            </div>
+            
+            <!-- Sales Order SO -->
+            <div class="form-group">
+              <label for="form-so" class="form-label" style="display: flex; justify-content: space-between; align-items: center;">
+                <span>Sales Order (SO) ID *</span>
+                <a href="https://fastkom.kompas.com/Order" target="_blank" style="color: var(--primary-light); text-transform: none; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; text-decoration: none;" title="Buka FastKom untuk membuat Sales Order">
+                  FastKom <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 9px;"></i>
+                </a>
+              </label>
+              <input type="text" id="form-so" class="form-input" placeholder="SO0123456" required>
+            </div>
+            
+            <!-- Harga Iklan (Negotiated Net Price) -->
+            <div class="form-group">
+              <label for="form-price" class="form-label">Harga Iklan / Net (Opsional)</label>
+              <input type="number" id="form-price" class="form-input" placeholder="Kosongkan jika sesuai Rate Card">
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="cancel-btn" id="close-modal-cancel">Batal</button>
+          <button type="submit" class="primary-btn" id="save-ad-btn">
+            <i class="fa-solid fa-floppy-disk"></i> Simpan Outline
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Dialog Modal: Account Executive (AE) Performance & Revenue Analysis -->
+  <div class="modal-overlay" id="ae-performance-modal">
+    <div class="modal-container" style="max-width: 800px;">
+      <div class="modal-header">
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <h3><i class="fa-solid fa-chart-line"></i> Analisis Kinerja AE: <span id="perf-ae-name">Debby</span></h3>
+          <p id="perf-ae-period" style="font-size: 13px; color: var(--text-secondary); margin: 0; font-weight: 600;"></p>
+        </div>
+        <button class="close-modal-btn" id="close-perf-modal-btn" aria-label="Close performance modal">&times;</button>
+      </div>
+      
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 24px;">
+        <!-- Performance KPI Grid -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+          <!-- Count -->
+          <div class="kpi-card" style="padding: 16px; min-height: unset; box-shadow: none; border-color: var(--glass-border); background: var(--bg-primary);">
+            <div class="kpi-info" style="gap: 2px;">
+              <span class="kpi-title" style="font-size: 10px;">Total Baris Iklan</span>
+              <div class="kpi-value" id="perf-total-count" style="font-size: 24px;">0</div>
+              <span class="kpi-subtext">Kampanye Ditutup</span>
+            </div>
+          </div>
+          <!-- Volume -->
+          <div class="kpi-card" style="padding: 16px; min-height: unset; box-shadow: none; border-color: var(--glass-border); background: var(--bg-primary);">
+            <div class="kpi-info" style="gap: 2px;">
+              <span class="kpi-title" style="font-size: 10px;">Total Unit Iklan</span>
+              <div class="kpi-value" id="perf-total-volume" style="font-size: 24px;">0</div>
+              <span class="kpi-subtext">Penempatan Terbit</span>
+            </div>
+          </div>
+          <!-- Revenue -->
+          <div class="kpi-card" style="padding: 16px; min-height: unset; box-shadow: none; border-color: var(--glass-border); background: var(--bg-primary);">
+            <div class="kpi-info" style="gap: 2px;">
+              <span class="kpi-title" style="font-size: 10px;">Estimasi Pendapatan</span>
+              <div class="kpi-value" id="perf-total-revenue" style="font-size: 20px; color: var(--success); font-weight: 800; margin-top: 4px;">Rp 0</div>
+              <span class="kpi-subtext">Berdasarkan Harga Nego</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inventory Progress Bars -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <h4 style="font-size: 13px; font-weight: 700; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.5px; border-left: 3px solid var(--primary-light); padding-left: 8px;">
+            Distribusi Inventori & Penjualan
+          </h4>
+          <div id="perf-inventory-list" style="display: flex; flex-direction: column; gap: 10px; background: var(--bg-primary); border: 1px solid var(--glass-border); padding: 16px; border-radius: 12px;">
+            <!-- Progress bars loaded dynamically -->
+          </div>
+        </div>
+
+        <!-- Scrollable Sales Campaign Log -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <h4 style="font-size: 13px; font-weight: 700; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.5px; border-left: 3px solid var(--primary-light); padding-left: 8px;">
+            Log Detail Kampanye & Sales Order (SO)
+          </h4>
+          <div class="table-wrapper" style="max-height: 240px; overflow-y: auto;">
+            <table class="ad-table" style="font-size: 12px;">
+              <thead style="position: sticky; top: 0; z-index: 10; background: var(--bg-secondary);">
+                <tr>
+                  <th>Tanggal</th>
+                  <th>Judul Iklan</th>
+                  <th>Posisi / Saluran</th>
+                  <th>Qty</th>
+                  <th>Est. Pendapatan</th>
+                  <th>Sales Order (SO)</th>
+                </tr>
+              </thead>
+              <tbody id="perf-campaign-body">
+                <!-- Loaded dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="cancel-btn" id="close-perf-modal-cancel">Tutup Analisis</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dialog Modal: Visitor Log (Admin Only) -->
+  <div class="modal-overlay" id="visitor-log-modal">
+    <div class="modal-container" style="max-width: 800px;">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-users-viewfinder"></i> Pantauan Pengunjung Web</h3>
+        <button class="close-modal-btn" id="close-visitor-modal-btn" aria-label="Close visitor log modal">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="table-wrapper" style="max-height: 400px; overflow-y: auto;">
+          <table class="ad-table" style="font-size: 13px;">
+            <thead style="position: sticky; top: 0; z-index: 10; background: var(--bg-secondary);">
+              <tr>
+                <th>No</th>
+                <th>Waktu Akses</th>
+                <th>IP Address</th>
+                <th>Browser / Perangkat (User-Agent)</th>
+              </tr>
+            </thead>
+            <tbody id="visitor-log-body">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dialog Modal: Visitor Guide (Panduan Pengguna) -->
+  <div class="modal-overlay" id="visitor-guide-modal">
+    <div class="modal-container" style="max-width: 650px;">
+      <div class="modal-header" style="background: var(--bg-tertiary); display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700; margin: 0; color: var(--text-primary);">
+          <i class="fa-solid fa-circle-question" style="color: var(--accent-gold);"></i> Panduan Pengguna Dashboard
+        </h3>
+        <button class="close-modal-btn" id="close-guide-modal-btn" aria-label="Close guide modal">&times;</button>
+      </div>
+      
+      <div class="modal-body" style="padding: 24px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+        <!-- Dynamic Guide Slides Container -->
+        <div id="guide-slides-container" style="flex-grow: 1;">
+          <!-- Slides will be rendered dynamically by app.js -->
+        </div>
+        
+        <!-- Guide Navigation & Footer -->
+        <div class="guide-footer" style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--glass-border);">
+          <button class="action-btn" id="guide-prev-btn" style="padding: 8px 16px; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600;">
+            <i class="fa-solid fa-chevron-left"></i> Kembali
+          </button>
+          
+          <div class="guide-dots-indicator" id="guide-dots" style="display: flex; gap: 8px; justify-content: center; align-items: center;">
+            <!-- Dots generated dynamically -->
+          </div>
+          
+          <button class="primary-btn" id="guide-next-btn" style="padding: 8px 16px; display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600;">
+            Lanjut <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dialog Modal: Ad Preview Spotlight (Responsive Modal) -->
+  <div class="modal-overlay" id="ad-preview-modal">
+    <div class="modal-container preview-modal-container" style="max-width: 850px;">
+      <div class="modal-header" style="background: var(--bg-tertiary);">
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <h3><i class="fa-solid fa-photo-film"></i> Bukti Tayang Iklan</h3>
+          <p id="preview-ad-badge-container" style="margin: 0;"></p>
+        </div>
+        <button class="close-modal-btn" id="close-preview-modal-btn" aria-label="Close preview modal">&times;</button>
+      </div>
+      
+      <div class="modal-body preview-modal-body" style="padding: 0; display: flex; flex-direction: row; min-height: 480px;">
+        <!-- Left Area: Media Viewer -->
+        <div class="preview-media-section" id="preview-modal-media" style="flex: 0 0 55%; background: #0a0f18; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 320px;">
+          <!-- Loaded dynamically (image, video, iframe, or placeholder) -->
+        </div>
+        
+        <!-- Right Area: Details & Actions -->
+        <div class="preview-details-section" style="flex: 1; display: flex; flex-direction: column; padding: 24px; gap: 20px; background: var(--bg-secondary); overflow-y: auto;">
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <h4 id="preview-modal-title" style="font-size: 20px; font-weight: 800; line-height: 1.4; color: var(--text-primary); margin: 0; word-break: break-word;"></h4>
+            <span id="preview-modal-status" class="ad-badge" style="width: fit-content; margin-top: 4px;"></span>
+          </div>
+          
+          <div class="preview-meta-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 13px; color: var(--text-secondary); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); padding: 16px 0;">
+            <div class="preview-meta-item" style="display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-calendar-day" style="color: var(--primary-light); width: 16px;"></i>
+              <span id="preview-modal-date"></span>
+            </div>
+            <div class="preview-meta-item" style="display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-user-tie" style="color: var(--primary-light); width: 16px;"></i>
+              <span id="preview-modal-ae"></span>
+            </div>
+            <div class="preview-meta-item" style="display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-receipt" style="color: var(--primary-light); width: 16px;"></i>
+              <span id="preview-modal-so"></span>
+            </div>
+            <div class="preview-meta-item" style="display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-layer-group" style="color: var(--primary-light); width: 16px;"></i>
+              <span id="preview-modal-qty"></span>
+            </div>
+            <div class="preview-meta-item" style="grid-column: span 2; display: flex; align-items: flex-start; gap: 8px; margin-top: 4px;">
+              <i class="fa-solid fa-info-circle" style="color: var(--primary-light); width: 16px; margin-top: 2px;"></i>
+              <span id="preview-modal-notes" style="line-height: 1.4; word-break: break-all;"></span>
+            </div>
+          </div>
+          
+          <div class="preview-modal-actions" id="preview-modal-actions" style="margin-top: auto; display: flex; gap: 10px;">
+            <!-- Loaded dynamically (Buka Tautan, Edit, dll.) -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer: Carousel navigation inside modal -->
+      <div class="modal-footer" style="background: var(--bg-tertiary); display: flex; justify-content: space-between; align-items: center; padding: 12px 24px;">
+        <button class="action-btn" id="preview-modal-prev-btn" style="padding: 6px 12px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+          <i class="fa-solid fa-chevron-left"></i> Sebelumnya
+        </button>
+        
+        <span id="preview-modal-counter" style="font-size: 13px; font-weight: 700; color: var(--text-secondary);">1 / 1</span>
+        
+        <button class="action-btn" id="preview-modal-next-btn" style="padding: 6px 12px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+          Berikutnya <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Realtime Toast Notifications Container -->
+  <div class="toast-container" id="toast-box">
+    <!-- Toasts are dynamically added and removed here -->
+  </div>
+
+  <!-- Pagination CSS -->
+  <style>
+    #table-pagination {
+      min-height: 44px;
+    }
+    .pagination-info {
+      font-size: 13px;
+      color: var(--text-secondary);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .pagination-info strong {
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+    .pagination-controls {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+    .pagination-btn {
+      min-width: 34px;
+      height: 34px;
+      padding: 0 10px;
+      border-radius: 8px;
+      border: 1.5px solid var(--glass-border);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      font-size: 13px;
+      font-weight: 600;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+    .pagination-btn:hover:not(.active):not(.disabled) {
+      background: var(--primary-light);
+      color: #fff;
+      border-color: var(--primary-light);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(59,130,246,0.30);
+    }
+    .pagination-btn.active {
+      background: linear-gradient(135deg, var(--primary-light) 0%, #7c3aed 100%);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 14px rgba(59,130,246,0.40);
+      cursor: default;
+      transform: none;
+    }
+    .pagination-btn.disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+    .pagination-dots {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-muted);
+      padding: 0 4px;
+      line-height: 34px;
+    }
+    @media (max-width: 640px) {
+      #table-pagination {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+
+  <!-- Loaded Initial SpreadSheet Data -->
+  <script src="data.js?v=7"></script>
+  
+  <!-- Interactive Frontend Script Controller -->
+  <script src="app.js?v=13"></script>
+</body>
+</html>
