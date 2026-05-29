@@ -2750,6 +2750,7 @@ function updateAdminUI() {
   const openPlannerBtn = document.getElementById("open-planner-btn");
   const openVisitorBtn = document.getElementById("open-visitor-btn");
   const syncBtn = document.getElementById("sync-gdrive-btn");
+  const analyticsBtn = document.getElementById("google-analytics-btn");
   
   if (isAdminLoggedIn) {
     lockBtn.className = "theme-btn admin-unlocked";
@@ -2763,6 +2764,7 @@ function updateAdminUI() {
     
     if (openVisitorBtn) openVisitorBtn.style.display = "inline-flex";
     if (syncBtn) syncBtn.style.display = "inline-flex";
+    if (analyticsBtn) analyticsBtn.style.display = "inline-flex";
   } else {
     lockBtn.className = "theme-btn admin-locked";
     lockBtn.title = "Login Admin untuk Mengubah Data";
@@ -2775,6 +2777,7 @@ function updateAdminUI() {
     
     if (openVisitorBtn) openVisitorBtn.style.display = "none";
     if (syncBtn) syncBtn.style.display = "none";
+    if (analyticsBtn) analyticsBtn.style.display = "none";
   }
   
   // Re-render components to update pointer style, tooltips, and badges
