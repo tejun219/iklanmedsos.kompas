@@ -2757,10 +2757,13 @@ function updateAdminUI() {
     lockBtn.title = "Admin Mode Aktif. Klik untuk Logout.";
     lockIcon.className = "fa-solid fa-lock-open";
     
-    openPlannerBtn.style.opacity = "1";
-    openPlannerBtn.style.cursor = "pointer";
-    openPlannerBtn.title = "Tambah rencana iklan baru";
-    openPlannerBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Tambah Outline Iklan';
+    if (openPlannerBtn) {
+      openPlannerBtn.style.display = "flex";
+      openPlannerBtn.style.opacity = "1";
+      openPlannerBtn.style.cursor = "pointer";
+      openPlannerBtn.title = "Tambah rencana iklan baru";
+      openPlannerBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Tambah Outline Iklan';
+    }
     
     if (openVisitorBtn) openVisitorBtn.style.display = "inline-flex";
     if (syncBtn) syncBtn.style.display = "inline-flex";
@@ -2770,10 +2773,9 @@ function updateAdminUI() {
     lockBtn.title = "Login Admin untuk Mengubah Data";
     lockIcon.className = "fa-solid fa-lock";
     
-    openPlannerBtn.style.opacity = "0.6";
-    openPlannerBtn.style.cursor = "not-allowed";
-    openPlannerBtn.title = "Harap masuk sebagai Admin terlebih dahulu";
-    openPlannerBtn.innerHTML = '<i class="fa-solid fa-lock"></i> Tambah Outline Iklan';
+    if (openPlannerBtn) {
+      openPlannerBtn.style.display = "none";
+    }
     
     if (openVisitorBtn) openVisitorBtn.style.display = "none";
     if (syncBtn) syncBtn.style.display = "none";
