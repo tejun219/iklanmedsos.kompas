@@ -5226,7 +5226,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 1,
+      "keterangan": 1.0,
       "so": "SO0117657",
       "row_idx": 41
     },
@@ -5262,7 +5262,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 2,
+      "keterangan": 2.0,
       "so": "SO0117658",
       "row_idx": 44
     },
@@ -5274,7 +5274,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 3,
+      "keterangan": 3.0,
       "so": "SO0117659",
       "row_idx": 45
     },
@@ -5310,7 +5310,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 4,
+      "keterangan": 4.0,
       "so": "SO0117660",
       "row_idx": 48
     },
@@ -5322,7 +5322,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 5,
+      "keterangan": 5.0,
       "so": "SO0117661",
       "row_idx": 49
     },
@@ -7046,7 +7046,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-04-25",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://www.instagram.com/reel/DXjIEitSZDR/",
+      "keterangan": "",
       "so": "SO0120354",
       "row_idx": 21
     },
@@ -7132,9 +7132,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-02",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://www.instagram.com/reel/DX1JmwYyU0p/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "",
       "so": "SO0120520",
-      "pendapatan": 200000,
       "row_idx": 3
     },
     {
@@ -7147,7 +7146,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120521",
-      "pendapatan": 40000,
       "row_idx": 4
     },
     {
@@ -7160,7 +7158,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120522",
-      "pendapatan": 394615,
       "row_idx": 5
     },
     {
@@ -7173,7 +7170,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120519",
-      "pendapatan": "",
       "row_idx": 6
     },
     {
@@ -7186,7 +7182,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.Nomor : 302/Event/V/2026",
       "keterangan": "",
       "so": "SO0120680",
-      "pendapatan": "",
       "row_idx": 7
     },
     {
@@ -7199,7 +7194,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120673",
-      "pendapatan": 200000,
       "row_idx": 8
     },
     {
@@ -7212,7 +7206,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120674",
-      "pendapatan": 40000,
       "row_idx": 9
     },
     {
@@ -7225,7 +7218,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120676",
-      "pendapatan": 394615,
       "row_idx": 10
     },
     {
@@ -7238,7 +7230,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120677",
-      "pendapatan": "",
       "row_idx": 11
     },
     {
@@ -7251,7 +7242,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.: 302/Event/V/2026",
       "keterangan": "",
       "so": "SO0120681",
-      "pendapatan": "",
       "row_idx": 12
     },
     {
@@ -7264,7 +7254,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.: 302/Event/V/2026",
       "keterangan": "",
       "so": "SO0120683",
-      "pendapatan": "",
       "row_idx": 13
     },
     {
@@ -7277,7 +7266,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 170/MO/PRODUK/III/2026",
       "keterangan": "",
       "so": "SO0120745",
-      "pendapatan": 2900000,
       "row_idx": 14
     },
     {
@@ -7288,9 +7276,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-13",
       "ae": "Rifai",
       "keterangan_order": "Memo No. 272/Event/V/2026",
-      "keterangan": "https://www.instagram.com/reel/DYRxhbIvA-J/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "",
       "so": "SO0120684",
-      "pendapatan": "",
       "row_idx": 15
     },
     {
@@ -7303,7 +7290,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
       "keterangan": "",
       "so": "SO0120817",
-      "pendapatan": 6136493,
       "row_idx": 16
     },
     {
@@ -7314,9 +7300,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-13",
       "ae": "Debby",
       "keterangan_order": "Memo No.274/MO/PRODUK/V/2026",
-      "keterangan": "https://www.instagram.com/p/DYRcBr6DzmW/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      "keterangan": "",
       "so": "SO0120796",
-      "pendapatan": "",
       "row_idx": 17
     },
     {
@@ -7327,9 +7312,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-15",
       "ae": "Debby",
       "keterangan_order": "Memo No.284/MO/PRODUK/V/2026",
-      "keterangan": "https://www.instagram.com/p/DYjqMNaDUM_/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      "keterangan": "",
       "so": "SO0120849",
-      "pendapatan": 56000000,
       "row_idx": 18
     },
     {
@@ -7342,7 +7326,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 272/Event/V/2026",
       "keterangan": "Summary Event No. 202/EVENT/IV/2026",
       "so": "SO0120647",
-      "pendapatan": "",
       "row_idx": 19
     },
     {
@@ -7353,9 +7336,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-15",
       "ae": "Rifai",
       "keterangan_order": "Memo No. 272/Event/V/2026",
-      "keterangan": "https://www.instagram.com/reel/DYgdVOgT9fe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "Summary Event No. 202/EVENT/IV/2026",
       "so": "SO0120648",
-      "pendapatan": "",
       "row_idx": 20
     },
     {
@@ -7368,7 +7350,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 284/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0120849",
-      "pendapatan": "",
       "row_idx": 21
     },
     {
@@ -7381,7 +7362,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120839",
-      "pendapatan": 200000,
       "row_idx": 22
     },
     {
@@ -7394,7 +7374,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120840",
-      "pendapatan": 40000,
       "row_idx": 23
     },
     {
@@ -7407,7 +7386,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120843",
-      "pendapatan": 394615,
       "row_idx": 24
     },
     {
@@ -7418,9 +7396,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-16",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://x.com/hariankompas/status/2055485101493137904",
+      "keterangan": "",
       "so": "SO0120844",
-      "pendapatan": "",
       "row_idx": 25
     },
     {
@@ -7431,9 +7408,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-18",
       "ae": "Dika",
       "keterangan_order": "Memo No.242/MO/PRODUK/IV/2026",
-      "keterangan": "https://www.instagram.com/reel/DYeLS0vzVg4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "",
       "so": "SO0120866",
-      "pendapatan": 10000000,
       "row_idx": 26
     },
     {
@@ -7446,7 +7422,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. NO : 019/MO/PRODUK-GW/V/2026",
       "keterangan": "",
       "so": "SO0120845",
-      "pendapatan": "",
       "row_idx": 27
     },
     {
@@ -7459,7 +7434,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 975/Event/X/2024",
       "keterangan": "",
       "so": "SO0120941",
-      "pendapatan": "",
       "row_idx": 28
     },
     {
@@ -7470,9 +7444,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-22",
       "ae": "Kimmy",
       "keterangan_order": "Memo No.303/MO/PRODUK/V/2026",
-      "keterangan": "https://www.instagram.com/p/DYuHu6ClBBP/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      "keterangan": "",
       "so": "SO0120990",
-      "pendapatan": 400000,
       "row_idx": 29
     },
     {
@@ -7485,7 +7458,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.303/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0120991",
-      "pendapatan": "",
       "row_idx": 30
     },
     {
@@ -7496,9 +7468,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-22",
       "ae": "Kimmy",
       "keterangan_order": "Memo No.272/MO/PRODUK/V/2026",
-      "keterangan": "https://www.instagram.com/p/DYobu32lJ3K/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      "keterangan": "",
       "so": "SO0120740",
-      "pendapatan": 2000000,
       "row_idx": 31
     },
     {
@@ -7511,7 +7482,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.272/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121019",
-      "pendapatan": 500000,
       "row_idx": 32
     },
     {
@@ -7522,9 +7492,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-22",
       "ae": "Debby",
       "keterangan_order": "Memo No.284/MO/PRODUK/V/2026",
-      "keterangan": "https://www.instagram.com/p/DYo20bpE81t/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      "keterangan": "",
       "so": "SO0121018",
-      "pendapatan": "",
       "row_idx": 33
     },
     {
@@ -7537,7 +7506,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.285/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121024",
-      "pendapatan": 2500000,
       "row_idx": 34
     },
     {
@@ -7548,9 +7516,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-23",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://www.instagram.com/reel/DYrRuEVyRRh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "",
       "so": "SO0120943",
-      "pendapatan": 200000,
       "row_idx": 35
     },
     {
@@ -7561,9 +7528,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-05-23",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://www.instagram.com/p/DYqns2JE6Yx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "",
       "so": "SO0120945",
-      "pendapatan": 40000,
       "row_idx": 36
     },
     {
@@ -7576,7 +7542,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120944",
-      "pendapatan": 394615,
       "row_idx": 37
     },
     {
@@ -7589,7 +7554,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0120942",
-      "pendapatan": "",
       "row_idx": 38
     },
     {
@@ -7602,7 +7566,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.303/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0120989",
-      "pendapatan": 4000000,
       "row_idx": 39
     },
     {
@@ -7615,7 +7578,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 272/Event/V/2026",
       "keterangan": "Summary Event No. 202/EVENT/IV/2026",
       "so": "SO0120649",
-      "pendapatan": "",
       "row_idx": 40
     },
     {
@@ -7628,7 +7590,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 272/Event/V/2026",
       "keterangan": "Twitter Live",
       "so": "SO0120651",
-      "pendapatan": "",
       "row_idx": 41
     },
     {
@@ -7641,7 +7602,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121093",
-      "pendapatan": 200000,
       "row_idx": 42
     },
     {
@@ -7654,7 +7614,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121094",
-      "pendapatan": 40000,
       "row_idx": 43
     },
     {
@@ -7667,7 +7626,6 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121095",
-      "pendapatan": 394615,
       "row_idx": 44
     },
     {
@@ -7680,11 +7638,59 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121096",
-      "pendapatan": "",
       "row_idx": 45
     }
   ],
-  "Juni 2026": [],
+  "Juni 2026": [
+    {
+      "no": "",
+      "judul": "Experd",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-06",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 3
+    },
+    {
+      "no": "",
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-06",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 4
+    },
+    {
+      "no": "",
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-06",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 5
+    },
+    {
+      "no": "",
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-06",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 6
+    }
+  ],
   "Juli 2026": [],
   "Agustus 2026": [],
   "September 2026": [],

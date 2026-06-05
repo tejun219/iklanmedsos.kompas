@@ -427,10 +427,17 @@ function initUIDisplay() {
   
   if (availableMonths.includes(currentMonthStr)) {
     currentMonth = currentMonthStr;
-  } else if (availableMonths.includes("Mei 2026")) {
-    currentMonth = "Mei 2026";
   } else {
-    currentMonth = availableMonths[availableMonths.length - 1];
+    // Fallback: gunakan bulan terakhir yang tersedia dan memiliki data
+    // (bukan bulan kosong seperti Juli, Agustus, dst)
+    let lastMonthWithData = null;
+    for (let i = availableMonths.length - 1; i >= 0; i--) {
+      if (WORKING_DATA[availableMonths[i]] && WORKING_DATA[availableMonths[i]].length > 0) {
+        lastMonthWithData = availableMonths[i];
+        break;
+      }
+    }
+    currentMonth = lastMonthWithData || availableMonths[availableMonths.length - 1];
   }
   
   // Set selected date to today's date on initial load/refresh
