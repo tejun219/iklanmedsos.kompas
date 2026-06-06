@@ -1,9 +1,13 @@
 /* Frontend Application Controller for Kompas Social Media Ad Outline Board */
 
 // Initialize working state by deep cloning INITIAL_DATA
+// Support both direct variable access and window.KOMPAS_DATA (for dynamic script loading)
 let WORKING_DATA = {};
 try {
-  WORKING_DATA = JSON.parse(JSON.stringify(INITIAL_DATA));
+  const sourceData = (typeof INITIAL_DATA !== 'undefined' && INITIAL_DATA)
+    || (typeof window !== 'undefined' && window.KOMPAS_DATA)
+    || {};
+  WORKING_DATA = JSON.parse(JSON.stringify(sourceData));
 } catch (e) {
   console.error("Failed to parse initial data", e);
   WORKING_DATA = {};

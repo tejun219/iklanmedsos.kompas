@@ -1,4 +1,4 @@
-const INITIAL_DATA = {
+var INITIAL_DATA = {
   "Januari 2025": [
     {
       "no": "",
@@ -7722,7 +7722,7 @@ const INITIAL_DATA = {
   "November 2026": [],
   "Desember 2026": []
 };
-const MEMO_MAP = {
+var MEMO_MAP = {
   "001": "001 - KEMENPAR.pdf",
   "1": "001 - KEMENPAR.pdf",
   "003": "003 - Design tarif.pdf",
@@ -7866,8 +7866,9 @@ const MEMO_MAP = {
   "867": "867 - Kemenag update 24 des'25.pdf"
 };
 
-// Make available via window object just in case
+// Make available via window object for dynamic script loading compatibility
 if (typeof window !== 'undefined') {
+  window.INITIAL_DATA = INITIAL_DATA;
   window.KOMPAS_DATA = INITIAL_DATA;
   window.MEMO_MAP = MEMO_MAP;
 }
