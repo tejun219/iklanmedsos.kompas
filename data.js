@@ -5226,7 +5226,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 1,
+      "keterangan": 1.0,
       "so": "SO0117657",
       "row_idx": 41
     },
@@ -5262,7 +5262,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 2,
+      "keterangan": 2.0,
       "so": "SO0117658",
       "row_idx": 44
     },
@@ -5274,7 +5274,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 3,
+      "keterangan": 3.0,
       "so": "SO0117659",
       "row_idx": 45
     },
@@ -5310,7 +5310,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 4,
+      "keterangan": 4.0,
       "so": "SO0117660",
       "row_idx": 48
     },
@@ -5322,7 +5322,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 5,
+      "keterangan": 5.0,
       "so": "SO0117661",
       "row_idx": 49
     },
@@ -7644,18 +7644,30 @@ const INITIAL_DATA = {
   "Juni 2026": [
     {
       "no": 1,
+      "judul": "LAKREATIF (BANK SYARIAH INDONESIA)",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-05",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.284/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 3
+    },
+    {
+      "no": 2,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-06",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://www.instagram.com/reel/DZPRej7S3c_/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
+      "keterangan": "",
       "so": "SO0121307",
-      "row_idx": 3
+      "row_idx": 4
     },
     {
-      "no": 2,
+      "no": 3,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -7664,22 +7676,22 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121306",
-      "row_idx": 4
+      "row_idx": 5
     },
     {
-      "no": 3,
+      "no": 4,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-06",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://www.instagram.com/p/DZOoMYaE00U/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "",
       "so": "SO0121305",
-      "row_idx": 5
+      "row_idx": 6
     },
     {
-      "no": 4,
+      "no": 5,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -7688,10 +7700,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121304",
-      "row_idx": 6
+      "row_idx": 7
     },
     {
-      "no": 5,
+      "no": 6,
       "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -7700,19 +7712,19 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121358",
-      "row_idx": 7
+      "row_idx": 8
     },
     {
-      "no": 6,
+      "no": 7,
       "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-06",
       "ae": "Vicky",
       "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
-      "keterangan": "https://www.instagram.com/p/DZO4Rc6k_zt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "Focus Slide",
       "so": "",
-      "row_idx": 8
+      "row_idx": 9
     }
   ],
   "Juli 2026": [],
