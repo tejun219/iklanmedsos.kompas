@@ -7698,8 +7698,8 @@ var INITIAL_DATA = {
       "tgl_terbit": "2026-06-06",
       "ae": "Vicky",
       "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
-      "keterangan": "Memo belum update tanggal",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0121358",
       "row_idx": 7
     },
     {
