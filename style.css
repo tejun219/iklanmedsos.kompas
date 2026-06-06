@@ -1214,7 +1214,7 @@ span.ae-badge:hover {
 }
 
 /* Published state for Download Memo Button */
-.download-memo-btn.published {
+.download-memo-btn.published:not(:disabled):not(.no-memo) {
   background: var(--success-glow);
   color: var(--success);
   border-color: var(--success);

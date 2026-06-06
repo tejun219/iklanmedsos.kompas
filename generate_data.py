@@ -191,7 +191,11 @@ def main(sync=False):
     memo_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "memo")
     memo_map = {}
     if os.path.exists(memo_dir):
-        for f in os.listdir(memo_dir):
+        files = os.listdir(memo_dir)
+        # Sort files by modification time (oldest to newest)
+        # so that the newest file overwrites the older ones in the dictionary
+        files.sort(key=lambda x: os.path.getmtime(os.path.join(memo_dir, x)))
+        for f in files:
             m = re.search(r'\b(\d+)\b', f)
             if not m:
                 m = re.search(r'(\d+)', f)
