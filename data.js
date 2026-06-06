@@ -1,4 +1,4 @@
-var INITIAL_DATA = {
+const INITIAL_DATA = {
   "Januari 2025": [
     {
       "no": "",
@@ -7650,7 +7650,7 @@ var INITIAL_DATA = {
       "tgl_terbit": "2026-06-06",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
+      "keterangan": "https://www.instagram.com/reel/DZPRej7S3c_/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
       "so": "SO0121307",
       "row_idx": 3
     },
@@ -7722,7 +7722,7 @@ var INITIAL_DATA = {
   "November 2026": [],
   "Desember 2026": []
 };
-var MEMO_MAP = {
+const MEMO_MAP = {
   "003": "003 - Design tarif.pdf",
   "3": "003 - Design tarif.pdf",
   "002": "Barter 002 -  Double Tree Cikini update 29 jan'26.pdf",
