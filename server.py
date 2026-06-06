@@ -5,12 +5,268 @@ import os
 import openpyxl
 import re
 import generate_data
+import subprocess
+import threading
+import datetime
+import glob
 
 PORT = 8000
 ADMIN_PASSWORD = "suroto2A"  # Secure admin password. Change as needed.
 GOOGLE_SCRIPT_URL = ""  # Paste your deployed Google Apps Script Web App URL here to connect live to Google Sheets
 
 MEMO_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "memo")
+
+def auto_git_push():
+    """Runs git commit and push in a background thread to automatically update the visitor dashboard on GitHub Pages."""
+    # Find git executable
+    git_exe = "git"
+    username = os.environ.get("USERNAME", "")
+    paths_to_check = [
+        r"C:\Program Files\Git\bin\git.exe",
+        r"C:\Program Files\Git\cmd\git.exe",
+    ]
+    if username:
+        paths_to_check.append(rf"C:\Users\{username}\AppData\Local\GitHubDesktop\app-3.5.11\resources\app\git\cmd\git.exe")
+        # Wildcard to find dynamic GitHub Desktop versions
+        try:
+            pattern = rf"C:\Users\{username}\AppData\Local\GitHubDesktop\app-*\resources\app\git\cmd\git.exe"
+            matched = glob.glob(pattern)
+            if matched:
+                paths_to_check.extend(matched)
+        except Exception as glob_err:
+            print(f"[auto-git] Wildcard glob error: {glob_err}")
+
+    for p in paths_to_check:
+        if os.path.exists(p):
+            git_exe = p
+            break
+
+    print(f"[auto-git] Menggunakan Git executable: {git_exe}")
+    
+    try:
+        working_dir = os.path.dirname(os.path.abspath(__file__))
+        
+        # Git add
+        add_cmd = [git_exe, "add", "data.js", "Iklan Media Sosial Harian Kompas.xlsx", "index.html"]
+        subprocess.run(add_cmd, cwd=working_dir, check=True, capture_output=True, text=True)
+        
+        # Git commit
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        commit_msg = f"Auto-update outline data: {timestamp}"
+        commit_cmd = [git_exe, "commit", "-m", commit_msg]
+        subprocess.run(commit_cmd, cwd=working_dir, capture_output=True, text=True)
+        
+        # Determine branch to push
+        branch_proc = subprocess.run([git_exe, "branch", "--show-current"], cwd=working_dir, capture_output=True, text=True)
+        current_branch = branch_proc.stdout.strip() if branch_proc.returncode == 0 else "master"
+        if not current_branch:
+            current_branch = "master"
+            
+        push_ref = f"{current_branch}:main" if current_branch != "main" else "main"
+        
+        print(f"[auto-git] Memulai push {push_ref} ke origin...")
+        push_cmd = [git_exe, "push", "origin", push_ref]
+        push_res = subprocess.run(push_cmd, cwd=working_dir, check=True, capture_output=True, text=True)
+        
+        print(f"[auto-git] SUCCESS: Berhasil push update terbaru ke GitHub Pages!")
+    except subprocess.CalledProcessError as e:
+        print(f"[auto-git] ERROR: Perintah Git gagal dengan exit code {e.returncode}")
+        print(f"Stdout: {e.stdout}")
+        print(f"Stderr: {e.stderr}")
+    except Exception as e:
+        print(f"[auto-git] EXCEPTION: Gagal melakukan sinkronisasi otomatis ke GitHub: {e}")
+
+def trigger_auto_git_push():
+    """Triggers the background thread for Git push to keep UI responsive."""
+    t = threading.Thread(target=auto_git_push)
+    t.daemon = True
+    t.start()
+
+
+# Google Sheets Live Content Mirroring
+# Spreadsheet publik berisi data Live Performance (Impressions, Reach, Engagement, Status, Link)
+LIVE_CONTENT_SHEET_ID = "1rNc6Jb5lDE7PFdokZsHNUwqR8jitvb7dIiEWBPlW3lg"
+
+# Mapping nama sheet (Bahasa Indonesia) ke GID di Google Sheets
+# Tambahkan GID sesuai sheet yang ada di Google Sheets
+LIVE_SHEET_GID_MAP = {
+    "Januari 2026": None,
+    "Februari 2026": None,
+    "Maret 2026": None,
+    "April 2026": None,
+    "Mei 2026": None,
+    "Juni 2026": "412501877",   # sheet aktif yang diketahui
+    "Juli 2026": None,
+}
+
+def parse_google_sheets_url(url):
+    if not url:
+        return None, None, None
+    id_match = re.search(r'/d/([a-zA-Z0-9_-]+)', url)
+    gid_match = re.search(r'[#?&]gid=(\d+)', url)
+    sheet_match = re.search(r'[?&]sheet=([^&]+)', url)
+    
+    spreadsheet_id = id_match.group(1) if id_match else None
+    gid = gid_match.group(1) if gid_match else None
+    sheet_name = urllib.parse.unquote(sheet_match.group(1)) if sheet_match else None
+    
+    return spreadsheet_id, gid, sheet_name
+
+def fetch_live_content_csv(sheet_name):
+    """Fetch CSV dari Google Sheets untuk sheet bulan tertentu. Return list of dicts."""
+    import urllib.request
+    import urllib.parse
+    import csv
+    import io
+    
+    # Ambil bagian bulan saja (misal "Juni 2026" -> "Juni")
+    sheet_name_clean = sheet_name.split(" ")[0]
+    
+    # Check if there are dynamic KCM links configured
+    target_sheet_id = LIVE_CONTENT_SHEET_ID
+    target_gid = LIVE_SHEET_GID_MAP.get(sheet_name)
+    target_sheet_name = sheet_name_clean
+    
+    if os.path.exists('kcm_links.json'):
+        try:
+            with open('kcm_links.json', 'r', encoding='utf-8') as f:
+                links_map = json.load(f)
+            month_link = links_map.get(sheet_name)
+            if month_link:
+                s_id, gid, s_name = parse_google_sheets_url(month_link)
+                if s_id:
+                    target_sheet_id = s_id
+                if gid:
+                    target_gid = gid
+                if s_name:
+                    target_sheet_name = s_name
+        except Exception as e:
+            print(f"[live-content] Gagal membaca kcm_links.json: {e}")
+            
+    # Try fetching by sheet name clean via Google Visualization API
+    url_gviz = f"https://docs.google.com/spreadsheets/d/{target_sheet_id}/gviz/tq?tqx=out:csv&sheet={urllib.parse.quote(target_sheet_name)}"
+    
+    raw = None
+    try:
+        print(f"[live-content] Mencoba fetch sheet '{target_sheet_name}' dari ID '{target_sheet_id}' via gviz API: {url_gviz}")
+        req = urllib.request.Request(url_gviz, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as response:
+            raw = response.read().decode("utf-8")
+    except Exception as e:
+        print(f"[live-content] Gagal fetch via gviz API: {e}")
+        # Try fallback via GID if target_gid is available
+        if target_gid:
+            url_gid = f"https://docs.google.com/spreadsheets/d/{target_sheet_id}/export?format=csv&gid={target_gid}"
+            print(f"[live-content] Mencoba fallback ke GID '{target_gid}': {url_gid}")
+            try:
+                req = urllib.request.Request(url_gid, headers={"User-Agent": "Mozilla/5.0"})
+                with urllib.request.urlopen(req, timeout=10) as response:
+                    raw = response.read().decode("utf-8-sig")
+            except Exception as e2:
+                print(f"[live-content] Gagal fetch via GID fallback: {e2}")
+                return []
+        else:
+            return []
+
+    if not raw:
+        return []
+        
+    try:
+        # Detect headers dynamically
+        reader = csv.reader(io.StringIO(raw))
+        rows_raw = list(reader)
+        if not rows_raw:
+            return []
+            
+        headers = [h.strip().lower() for h in rows_raw[0]]
+        
+        def get_index(names):
+            for name in names:
+                if name.lower() in headers:
+                    return headers.index(name.lower())
+            return -1
+            
+        no_idx = get_index(["no"])
+        client_idx = get_index(["client"])
+        tgl_idx = get_index(["tanggal post", "tanggal"])
+        format_idx = get_index(["format"])
+        platform_idx = get_index(["platform"])
+        akun_idx = get_index(["akun"])
+        status_idx = get_index(["status"])
+        imp_idx = get_index(["impressions/views", "impressions", "impr"])
+        reach_idx = get_index(["reach"])
+        eng_idx = get_index(["engagement", "engage"])
+        ctr_idx = get_index(["ctr (per impressions)", "ctr"])
+        link_idx = get_index(["link konten", "link"])
+
+        rows = []
+        for r_cells in rows_raw[1:]:
+            if not r_cells:
+                continue
+            
+            client = r_cells[client_idx].strip() if client_idx != -1 and client_idx < len(r_cells) else ""
+            tanggal = r_cells[tgl_idx].strip() if tgl_idx != -1 and tgl_idx < len(r_cells) else ""
+            if not client and not tanggal:
+                continue
+            
+            # Parse tanggal "4-Jun-26" → "2026-06-04"
+            tgl_iso = ""
+            if tanggal:
+                try:
+                    p = tanggal.split("-")
+                    if len(p) == 3:
+                        d_str = p[0].zfill(2)
+                        m_str = p[1].lower()[:3]
+                        y_str = p[2]
+                        if len(y_str) == 2:
+                            y_str = "20" + y_str
+                        
+                        month_map = {
+                            "jan": "01", "feb": "02", "mar": "03", "apr": "04",
+                            "may": "05", "mei": "05", "jun": "06", "jul": "07",
+                            "aug": "08", "agu": "08", "sep": "09", "oct": "10",
+                            "okt": "10", "nov": "11", "dec": "12", "des": "12"
+                        }
+                        mm = month_map.get(m_str, "01")
+                        tgl_iso = f"{y_str}-{mm}-{d_str}"
+                except:
+                    tgl_iso = tanggal
+            
+            rows.append({
+                "no":          r_cells[no_idx].strip() if no_idx != -1 and no_idx < len(r_cells) else "",
+                "client":      client,
+                "tgl_post":    tgl_iso,
+                "format":      r_cells[format_idx].strip() if format_idx != -1 and format_idx < len(r_cells) else "",
+                "platform":    r_cells[platform_idx].strip() if platform_idx != -1 and platform_idx < len(r_cells) else "",
+                "akun":        r_cells[akun_idx].strip() if akun_idx != -1 and akun_idx < len(r_cells) else "",
+                "status":      r_cells[status_idx].strip() if status_idx != -1 and status_idx < len(r_cells) else "",
+                "impressions": r_cells[imp_idx].strip() if imp_idx != -1 and imp_idx < len(r_cells) else "",
+                "reach":       r_cells[reach_idx].strip() if reach_idx != -1 and reach_idx < len(r_cells) else "",
+                "engagement":  r_cells[eng_idx].strip() if eng_idx != -1 and eng_idx < len(r_cells) else "",
+                "ctr":         r_cells[ctr_idx].strip() if ctr_idx != -1 and ctr_idx < len(r_cells) else "",
+                "link":        r_cells[link_idx].strip() if link_idx != -1 and link_idx < len(r_cells) else "",
+            })
+        return rows
+    except Exception as e:
+        print(f"[live-content] Gagal memproses data CSV: {e}")
+        return []
+
+
+def fetch_all_live_sheet_gids():
+    """Coba fetch daftar sheet dari Google Sheets (untuk auto-discover GID)."""
+    import urllib.request
+    import re as _re
+    url = f"https://docs.google.com/spreadsheets/d/{LIVE_CONTENT_SHEET_ID}/edit"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+        # Cari pola name + gid dari HTML
+        found = _re.findall(r'"name":"([^"]+)","index":\d+,"sheetId":(\d+)', html)
+        return {name: str(gid) for name, gid in found}
+    except Exception as e:
+        print(f"[live-content] Gagal auto-discover sheet GIDs: {e}")
+        return {}
 
 def extract_memo_prefix(keterangan_order):
     if not keterangan_order:
@@ -129,6 +385,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
             try:
                 # Force sync and rebuild data.js
                 generate_data.main(sync=True)
+                trigger_auto_git_push()
                 self.send_response(200)
                 self.send_header('Content-Type', 'application/json')
                 self.end_headers()
@@ -138,6 +395,34 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header('Content-Type', 'application/json')
                 self.end_headers()
                 self.wfile.write(json.dumps({"status": "error", "message": f"Server Error: {str(e)}"}).encode('utf-8'))
+                
+        # 1.6 API: Save Google Sheets KCM links dynamically
+        elif path_clean == '/api/save-kcm-links':
+            auth_header = self.headers.get('X-Admin-Password')
+            if auth_header != ADMIN_PASSWORD:
+                self.send_response(401)
+                self.send_header('Content-Type', 'application/json')
+                self.end_headers()
+                self.wfile.write(json.dumps({"status": "error", "message": "Akses Ditolak! Anda bukan Admin."}).encode('utf-8'))
+                return
+                
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            try:
+                data = json.loads(post_data.decode('utf-8'))
+                with open('kcm_links.json', 'w', encoding='utf-8') as f:
+                    json.dump(data, f, ensure_ascii=False, indent=2)
+                
+                self.send_response(200)
+                self.send_header('Content-Type', 'application/json')
+                self.end_headers()
+                self.wfile.write(json.dumps({"status": "success", "message": "Berhasil menyimpan link Google Sheets Medsos Mirroring"}).encode('utf-8'))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header('Content-Type', 'application/json')
+                self.end_headers()
+                self.wfile.write(json.dumps({"status": "error", "message": f"Server Error: {str(e)}"}).encode('utf-8'))
+
                 
         # 2. API: Add new Ad Outline to Master Excel
         elif path_clean == '/api/add-ad':
@@ -202,6 +487,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                                     output_js += "\n// Make available via window object just in case\nif (typeof window !== 'undefined') {\n  window.KOMPAS_DATA = INITIAL_DATA;\n}\n"
                                     with open('data.js', 'w', encoding='utf-8') as f:
                                         f.write(output_js)
+                                    trigger_auto_git_push()
                             except Exception as cache_err:
                                 print(f"Cache rebuild failed: {str(cache_err)}")
                             
@@ -218,6 +504,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 if success:
                     # Automatically trigger parsing compilation to rebuild data.js
                     generate_data.main()
+                    trigger_auto_git_push()
                     self.send_response(200)
                     self.send_header('Content-Type', 'application/json')
                     self.end_headers()
@@ -292,6 +579,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                                     output_js += "\n// Make available via window object just in case\nif (typeof window !== 'undefined') {\n  window.KOMPAS_DATA = INITIAL_DATA;\n}\n"
                                     with open('data.js', 'w', encoding='utf-8') as f:
                                         f.write(output_js)
+                                    trigger_auto_git_push()
                             except Exception as cache_err:
                                 print(f"Cache rebuild failed: {str(cache_err)}")
                                 
@@ -308,6 +596,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 
                 if success:
                     generate_data.main()
+                    trigger_auto_git_push()
                     self.send_response(200)
                     self.send_header('Content-Type', 'application/json')
                     self.end_headers()
@@ -380,6 +669,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                                     output_js += "\n// Make available via window object just in case\nif (typeof window !== 'undefined') {\n  window.KOMPAS_DATA = INITIAL_DATA;\n}\n"
                                     with open('data.js', 'w', encoding='utf-8') as f:
                                         f.write(output_js)
+                                    trigger_auto_git_push()
                             except Exception as cache_err:
                                 print(f"Cache rebuild failed: {str(cache_err)}")
                                 
@@ -396,6 +686,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 
                 if success:
                     generate_data.main()
+                    trigger_auto_git_push()
                     self.send_response(200)
                     self.send_header('Content-Type', 'application/json')
                     self.end_headers()
@@ -442,6 +733,7 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 
                 if success:
                     generate_data.main()
+                    trigger_auto_git_push()
                     self.send_response(200)
                     self.send_header('Content-Type', 'application/json')
                     self.end_headers()
@@ -545,6 +837,53 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header('Content-Type', 'application/json')
                 self.end_headers()
                 self.wfile.write(json.dumps({"status": "error", "message": f"Gagal membaca file memo: {str(e)}"}).encode('utf-8'))
+            return
+
+        # API: Live Content - ambil data performa dari Google Sheets
+        if path_clean == '/api/live-content':
+            from urllib.parse import urlparse, parse_qs
+            query = parse_qs(urlparse(self.path).query)
+            sheet_name = query.get('sheet', [''])[0]
+            if not sheet_name:
+                # Coba auto-detect bulan berjalan
+                import datetime
+                months_id = ['Januari','Februari','Maret','April','Mei','Juni',
+                             'Juli','Agustus','September','Oktober','November','Desember']
+                now = datetime.datetime.now()
+                sheet_name = f"{months_id[now.month - 1]} {now.year}"
+            
+            try:
+                rows = fetch_live_content_csv(sheet_name)
+                self.send_response(200)
+                self.send_header('Content-Type', 'application/json')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                self.wfile.write(json.dumps({
+                    "sheet": sheet_name,
+                    "rows": rows,
+                    "count": len(rows)
+                }, ensure_ascii=False).encode('utf-8'))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header('Content-Type', 'application/json')
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
+            return
+
+        # API: Auto-discover sheet GIDs dari Google Sheets
+        if path_clean == '/api/live-sheet-gids':
+            try:
+                gids = fetch_all_live_sheet_gids()
+                self.send_response(200)
+                self.send_header('Content-Type', 'application/json')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                self.wfile.write(json.dumps(gids, ensure_ascii=False).encode('utf-8'))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header('Content-Type', 'application/json')
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
             return
 
         # API: Get visitor logs

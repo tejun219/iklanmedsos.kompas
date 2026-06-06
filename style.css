@@ -1827,6 +1827,289 @@ span.ae-badge:hover {
 }
 
 
+/* ==========================================================================
+   Live Performance Tab — Google Sheets Mirror
+   ========================================================================== */
 
+/* Animated green dot next to "Live Performance" tab label */
+.live-dot-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--success);
+  flex-shrink: 0;
+  animation: livePulse 1.6s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+  0%   { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
+  70%  { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* ==========================================================================
+   Main Mode Tabs — Outline Iklan Medsos ↔ KCM Mirroring
+   ========================================================================== */
+
+.main-mode-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.main-mode-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  letter-spacing: 0.1px;
+}
+
+.main-mode-tab:hover:not(.active) {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.main-mode-tab.active {
+  background: linear-gradient(135deg, var(--primary-light) 0%, #7c3aed 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35);
+}
+
+/* KCM tab — override active state with green tint */
+#tab-mode-kcm.active {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+
+/* Responsive: stack vertically on very small screens */
+@media (max-width: 640px) {
+  #mode-selector-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .main-mode-tabs {
+    width: 100%;
+  }
+  .main-mode-tab {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* KPI summary bar inside Live Performance container */
+.live-kpi-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 12px 18px;
+  margin-bottom: 4px;
+}
+
+.live-kpi-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 0 14px;
+  border-right: 1px solid var(--glass-border);
+}
+
+.live-kpi-item:last-of-type {
+  border-right: none;
+}
+
+.live-kpi-val {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.live-kpi-item.success .live-kpi-val { color: var(--success); }
+.live-kpi-item.warn    .live-kpi-val { color: var(--warning); }
+.live-kpi-item.info    .live-kpi-val { color: var(--primary-light); }
+
+.live-kpi-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Refresh button */
+.live-refresh-btn {
+  margin-left: auto;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.live-refresh-btn:hover {
+  background: var(--primary-light);
+  color: white;
+  border-color: var(--primary-light);
+}
+
+.live-refresh-btn i {
+  transition: transform 0.5s ease;
+}
+
+.live-refresh-btn:hover i {
+  transform: rotate(180deg);
+}
+
+/* Live status badges */
+.live-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.live-status-tayang {
+  background: var(--success-glow);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.live-status-jadwal {
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--warning);
+  border: 1px solid var(--warning);
+}
+
+.live-status-other {
+  background: var(--bg-tertiary);
+  color: var(--text-muted);
+  border: 1px solid var(--glass-border);
+}
+
+/* Format badge (Feed, Story, etc.) */
+.live-format-badge {
+  background: var(--primary-glow);
+  color: var(--primary-light);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 10.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Link button in table */
+.live-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--primary-glow);
+  color: var(--primary-light);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: all 0.2s ease;
+  border: 1px solid var(--glass-border);
+}
+
+.live-link-btn:hover {
+  background: var(--primary-light);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px var(--primary-glow);
+}
+
+/* Table specific overrides for live data */
+.live-table thead tr th {
+  font-size: 10.5px;
+}
+
+.live-row:hover {
+  background: var(--primary-glow) !important;
+}
+
+/* Loading spinner */
+.live-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--glass-border);
+  border-top-color: var(--primary-light);
+  border-radius: 50%;
+  animation: liveSpin 0.8s linear infinite;
+}
+
+@keyframes liveSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* Empty / error state */
+.live-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+  color: var(--text-secondary);
+  gap: 10px;
+  padding: 30px;
+}
+
+.live-empty i {
+  font-size: 40px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.live-empty p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.live-empty small {
+  font-size: 12px;
+  color: var(--text-muted);
+  max-width: 360px;
+}
 
 
