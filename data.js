@@ -7698,7 +7698,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-06",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
+      "keterangan": "https://x.com/hariankompas/status/2063101973109547228?s=20",
       "so": "SO0121304",
       "row_idx": 7
     },
