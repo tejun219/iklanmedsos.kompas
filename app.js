@@ -3037,7 +3037,14 @@ function handleAddAdForm(e) {
 }
 
 // Initialise App once DOM resources are completed loading
-window.addEventListener("DOMContentLoaded", initApp);
+// When script is loaded dynamically, DOMContentLoaded may already have fired.
+// Check readyState first and call initApp directly if DOM is already ready.
+if (document.readyState === 'loading') {
+  window.addEventListener("DOMContentLoaded", initApp);
+} else {
+  // DOM is already ready — script was loaded dynamically after page load
+  initApp();
+}
 
 // Open Account Executive Performance Modal Drawer
 function openAePerformanceModal(aeName) {
