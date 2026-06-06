@@ -7643,7 +7643,7 @@ const INITIAL_DATA = {
   ],
   "Juni 2026": [
     {
-      "no": "",
+      "no": 1,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -7651,11 +7651,11 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121307",
       "row_idx": 3
     },
     {
-      "no": "",
+      "no": 2,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -7663,11 +7663,11 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121306",
       "row_idx": 4
     },
     {
-      "no": "",
+      "no": 3,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -7675,11 +7675,11 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121305",
       "row_idx": 5
     },
     {
-      "no": "",
+      "no": 4,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -7687,8 +7687,32 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121304",
       "row_idx": 6
+    },
+    {
+      "no": 5,
+      "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-06",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
+      "keterangan": "Memo belum update tanggal",
+      "so": "",
+      "row_idx": 7
+    },
+    {
+      "no": 6,
+      "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-06",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
+      "keterangan": "Focus Slide",
+      "so": "",
+      "row_idx": 8
     }
   ],
   "Juli 2026": [],

@@ -34,6 +34,17 @@ let currentPage = 1;
 // Admin Mode State Management
 let isAdminLoggedIn = sessionStorage.getItem("isAdminLoggedIn") === "true";
 let adminPassword = sessionStorage.getItem("adminPassword") || "";
+
+// Dynamic Google Sheets KCM links configuration
+let KCM_LINKS = {};
+try {
+  const localLinks = localStorage.getItem("kcm_links_local");
+  if (localLinks) {
+    KCM_LINKS = JSON.parse(localLinks);
+  }
+} catch (e) {
+  console.warn("Failed to load local kcm links", e);
+}
 const isServerEnv = window.location.protocol.startsWith('http') && !window.location.hostname.endsWith('github.io');
 let activeAeName = "";
 let AVAILABLE_MEMOS = [];
@@ -182,47 +193,108 @@ function showToast(message, type = "success") {
 function initApp() {
   setupTheme();
   
+  // Load dynamic KCM links configuration from server
+  fetch('./kcm_links.json')
+    .then(r => {
+      if (r.ok) return r.json();
+      throw new Error("Not found");
+    })
+    .then(json => {
+      KCM_LINKS = json || {};
+    })
+    .catch(err => {
+      console.log("No server KCM links configured or not found. Using defaults/localStorage.", err);
+    });
+  
   // Register basic event listeners
   document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
-  
-  // Tab Event Listeners
+
+  // ═══════════════════════════════════════════════════════════════
+  // MODE TAB UTAMA: Outline Iklan Medsos ↔ KCM Mirroring
+  // ═══════════════════════════════════════════════════════════════
+  const tabModeOutline = document.getElementById("tab-mode-outline");
+  const tabModeKcm    = document.getElementById("tab-mode-kcm");
+  const kcmSection    = document.getElementById("kcm-mirror-section");
+  const monthYearSel  = document.getElementById("month-year-selectors");
+
+  // Semua section yang hanya tampil saat mode Outline
+  const outlineSections = [
+    document.querySelector(".kpi-grid"),
+    document.querySelector(".analytics-section"),
+    document.querySelector(".calendar-planner-section"),
+    document.querySelector(".data-grid-section"),
+  ];
+
+  function switchToOutlineMode() {
+    // Tab state
+    tabModeOutline.classList.add("active");
+    tabModeKcm.classList.remove("active");
+    tabModeOutline.setAttribute("aria-selected", "true");
+    tabModeKcm.setAttribute("aria-selected", "false");
+    // Show/hide sections
+    outlineSections.forEach(s => { if (s) s.style.display = ""; });
+    if (kcmSection)   kcmSection.style.display  = "none";
+    if (monthYearSel) monthYearSel.style.display = "flex";
+  }
+
+  function switchToKcmMode() {
+    // Tab state
+    tabModeKcm.classList.add("active");
+    tabModeOutline.classList.remove("active");
+    tabModeKcm.setAttribute("aria-selected", "true");
+    tabModeOutline.setAttribute("aria-selected", "false");
+    // Show/hide sections
+    outlineSections.forEach(s => { if (s) s.style.display = "none"; });
+    if (kcmSection)   kcmSection.style.display  = "block";
+    if (monthYearSel) monthYearSel.style.display = "flex";
+    // Auto-load live data
+    if (typeof renderLivePerformance === "function") {
+      renderLivePerformance(currentMonth);
+    }
+  }
+
+  if (tabModeOutline) tabModeOutline.addEventListener("click", switchToOutlineMode);
+  if (tabModeKcm)     tabModeKcm.addEventListener("click", switchToKcmMode);
+
+  // ═══════════════════════════════════════════════════════════════
+  // Tab Event Listeners (dalam chart card: Distribusi ↔ Bukti Tayang)
+  // ═══════════════════════════════════════════════════════════════
   const tabDistribusi = document.getElementById("tab-distribusi");
   const tabOmset = document.getElementById("tab-omset");
   const containerDistribusi = document.getElementById("container-distribusi");
   const containerOmset = document.getElementById("container-omset");
   
   if (tabDistribusi && tabOmset) {
+    function setActiveTab(active) {
+      // Reset
+      [tabDistribusi, tabOmset].forEach(t => {
+        if (!t) return;
+        t.classList.remove("active");
+        t.style.borderBottom = "2px solid transparent";
+        t.style.color = "var(--text-secondary)";
+        t.style.fontWeight = "600";
+      });
+      [containerDistribusi, containerOmset].forEach(c => {
+        if (c) c.style.display = "none";
+      });
+      // Set active
+      if (active) {
+        active.tab.classList.add("active");
+        active.tab.style.borderBottom = "2px solid var(--primary-light)";
+        active.tab.style.color = "var(--primary-light)";
+        active.tab.style.fontWeight = "700";
+        active.container.style.display = active.displayMode || "block";
+        if (active.onActivate) active.onActivate();
+      }
+    }
+
     tabDistribusi.addEventListener("click", () => {
-      tabDistribusi.classList.add("active");
-      tabDistribusi.style.borderBottom = "2px solid var(--primary-light)";
-      tabDistribusi.style.color = "var(--primary-light)";
-      tabDistribusi.style.fontWeight = "700";
-      
-      tabOmset.classList.remove("active");
-      tabOmset.style.borderBottom = "2px solid transparent";
-      tabOmset.style.color = "var(--text-secondary)";
-      tabOmset.style.fontWeight = "600";
-      
-      containerDistribusi.style.display = "block";
-      containerOmset.style.display = "none";
+      setActiveTab({ tab: tabDistribusi, container: containerDistribusi });
     });
-    
+
     tabOmset.addEventListener("click", () => {
-      tabOmset.classList.add("active");
-      tabOmset.style.borderBottom = "2px solid var(--primary-light)";
-      tabOmset.style.color = "var(--primary-light)";
-      tabOmset.style.fontWeight = "700";
-      
-      tabDistribusi.classList.remove("active");
-      tabDistribusi.style.borderBottom = "2px solid transparent";
-      tabDistribusi.style.color = "var(--text-secondary)";
-      tabDistribusi.style.fontWeight = "600";
-      
-      containerDistribusi.style.display = "none";
-      containerOmset.style.display = "block";
-      
-      // Render the social media ads gallery
-      renderMedsosGallery();
+      setActiveTab({ tab: tabOmset, container: containerOmset, displayMode: "block",
+        onActivate: renderMedsosGallery });
     });
   }
   
@@ -336,6 +408,82 @@ function initApp() {
   
   // Admin Mode Status Controls & Close Handlers
   updateAdminUI();
+  
+  // KCM Links Modal Handlers
+  const kcmLinksModal = document.getElementById("admin-kcm-links-modal");
+  const openKcmLinksBtn = document.getElementById("admin-kcm-links-btn");
+  
+  if (openKcmLinksBtn && kcmLinksModal) {
+    openKcmLinksBtn.addEventListener("click", () => {
+      // Pre-fill links from global KCM_LINKS map
+      document.getElementById("link-jan-2026").value = KCM_LINKS["Januari 2026"] || "";
+      document.getElementById("link-feb-2026").value = KCM_LINKS["Februari 2026"] || "";
+      document.getElementById("link-mar-2026").value = KCM_LINKS["Maret 2026"] || "";
+      document.getElementById("link-apr-2026").value = KCM_LINKS["April 2026"] || "";
+      document.getElementById("link-mei-2026").value = KCM_LINKS["Mei 2026"] || "";
+      document.getElementById("link-jun-2026").value = KCM_LINKS["Juni 2026"] || "";
+      
+      kcmLinksModal.classList.add("active");
+    });
+    
+    const closeKcmLinksModal = () => kcmLinksModal.classList.remove("active");
+    document.getElementById("close-kcm-links-modal-btn").addEventListener("click", closeKcmLinksModal);
+    document.getElementById("cancel-kcm-links-btn").addEventListener("click", closeKcmLinksModal);
+    
+    document.getElementById("admin-kcm-links-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      
+      const newLinks = {
+        "Januari 2026": document.getElementById("link-jan-2026").value.trim(),
+        "Februari 2026": document.getElementById("link-feb-2026").value.trim(),
+        "Maret 2026": document.getElementById("link-mar-2026").value.trim(),
+        "April 2026": document.getElementById("link-apr-2026").value.trim(),
+        "Mei 2026": document.getElementById("link-mei-2026").value.trim(),
+        "Juni 2026": document.getElementById("link-jun-2026").value.trim(),
+      };
+      
+      if (isServerEnv) {
+        // Save to backend
+        fetch('/api/save-kcm-links', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Admin-Password': adminPassword || ""
+          },
+          body: JSON.stringify(newLinks)
+        })
+        .then(res => res.json())
+        .then(data => {
+          if (data.status === 'success') {
+            KCM_LINKS = newLinks;
+            showToast("Berhasil menyimpan link Google Sheets Medsos Mirroring!", "success");
+            closeKcmLinksModal();
+            // Refresh live performance if currently showing in KCM mode
+            const tabModeKcm = document.getElementById("tab-mode-kcm");
+            if (tabModeKcm && tabModeKcm.classList.contains("active")) {
+              renderLivePerformance(currentMonth);
+            }
+          } else {
+            showToast(data.message || "Gagal menyimpan link", "error");
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          showToast("Error menyimpan link Medsos Mirroring ke server", "error");
+        });
+      } else {
+        // Fallback for static (save in memory/localStorage only for display purpose)
+        KCM_LINKS = newLinks;
+        localStorage.setItem("kcm_links_local", JSON.stringify(newLinks));
+        showToast("Link disimpan secara lokal di browser (Visitor Mode). Untuk permanen, jalankan Server lokal.", "success");
+        closeKcmLinksModal();
+        const tabModeKcm = document.getElementById("tab-mode-kcm");
+        if (tabModeKcm && tabModeKcm.classList.contains("active")) {
+          renderLivePerformance(currentMonth);
+        }
+      }
+    });
+  }
   
   const closeLogin = () => {
     loginModal.classList.remove("active");
@@ -596,7 +744,16 @@ function renderMonthTabs() {
     // Reset range mode when month/year changes manually
     omsetRangeMode = false;
     omsetRangeSheets = [];
-    loadMonthData();
+    
+    // Check if KCM mode is active
+    const tabModeKcm = document.getElementById("tab-mode-kcm");
+    if (tabModeKcm && tabModeKcm.classList.contains("active")) {
+      if (typeof renderLivePerformance === "function") {
+        renderLivePerformance(currentMonth);
+      }
+    } else {
+      loadMonthData();
+    }
     showToast(`Memuat data ${currentMonth}`, "success");
   };
   
@@ -607,7 +764,16 @@ function renderMonthTabs() {
     // Reset range mode when month/year changes manually
     omsetRangeMode = false;
     omsetRangeSheets = [];
-    loadMonthData();
+    
+    // Check if KCM mode is active
+    const tabModeKcm = document.getElementById("tab-mode-kcm");
+    if (tabModeKcm && tabModeKcm.classList.contains("active")) {
+      if (typeof renderLivePerformance === "function") {
+        renderLivePerformance(currentMonth);
+      }
+    } else {
+      loadMonthData();
+    }
     showToast(`Memuat data ${currentMonth}`, "success");
   };
 }
@@ -1072,7 +1238,337 @@ function renderMedsosGallery() {
 }
 window.renderMedsosGallery = renderMedsosGallery;
 
-// Clear date filter and show all ads for the month
+// ══════════════════════════════════════════════════════════════════
+// LIVE PERFORMANCE — Mirror data dari Google Sheets
+// ══════════════════════════════════════════════════════════════════
+
+// Cache hasil fetch agar tidak double request saat tab dibuka berkali-kali
+const livePerformanceCache = {};
+
+function renderLivePerformance(sheetName) {
+  const container = document.getElementById("container-live");
+  if (!container) return;
+
+  // Tampilkan loading state
+  container.innerHTML = `
+    <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:260px; gap:14px;">
+      <div class="live-spinner"></div>
+      <p style="font-size:13px; color:var(--text-secondary); font-weight:600;">
+        Mengambil data terbaru dari Google Sheets…
+      </p>
+    </div>`;
+
+  // Gunakan cache jika tersedia (< 2 menit)
+  const cacheKey = sheetName;
+  const cached = livePerformanceCache[cacheKey];
+  if (cached && (Date.now() - cached.ts) < 120000) {
+    _renderLiveTable(container, cached.data, sheetName);
+    return;
+  }
+
+  if (isServerEnv) {
+    // Server mode: fetch dari /api/live-content (proxy ke Google Sheets)
+    fetch(`/api/live-content?sheet=${encodeURIComponent(sheetName)}`)
+      .then(r => r.json())
+      .then(json => {
+        const rows = json.rows || [];
+        livePerformanceCache[cacheKey] = { data: rows, ts: Date.now() };
+        _renderLiveTable(container, rows, json.sheet || sheetName);
+      })
+      .catch(err => {
+        _renderLiveError(container, err.message, sheetName);
+      });
+  } else {
+    // Static/GitHub Pages mode: fetch langsung ke Google Sheets (CORS fallback)
+    const DEFAULT_SHEET_ID = "1rNc6Jb5lDE7PFdokZsHNUwqR8jitvb7dIiEWBPlW3lg";
+    
+    // Helper to parse Google Sheets URL
+    function parseSheetsUrl(url) {
+      if (!url) return null;
+      const idMatch = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+      const gidMatch = url.match(/[#?&]gid=(\d+)/);
+      const sheetNameMatch = url.match(/[?&]sheet=([^&]+)/);
+      return {
+        spreadsheetId: idMatch ? idMatch[1] : null,
+        gid: gidMatch ? gidMatch[1] : null,
+        sheetName: sheetNameMatch ? decodeURIComponent(sheetNameMatch[1]) : null
+      };
+    }
+
+    const sheetNameClean = sheetName.split(" ")[0]; // "Juni 2026" -> "Juni"
+    let targetSheetId = DEFAULT_SHEET_ID;
+    let targetGid = null;
+    let targetSheetName = sheetNameClean;
+
+    // Use configured KCM Link if exists
+    const configuredLink = KCM_LINKS[sheetName];
+    if (configuredLink) {
+      const parsed = parseSheetsUrl(configuredLink);
+      if (parsed) {
+        if (parsed.spreadsheetId) targetSheetId = parsed.spreadsheetId;
+        if (parsed.gid) targetGid = parsed.gid;
+        if (parsed.sheetName) targetSheetName = parsed.sheetName;
+      }
+    } else {
+      // Hardcoded fallback for Juni 2026 default GID
+      const GID_MAP = {
+        "Juni 2026": "412501877",
+        "Januari 2026": "0"
+      };
+      targetGid = GID_MAP[sheetName] || null;
+    }
+
+    // Try fetching via gviz API (sheet name clean)
+    const csvUrl = `https://docs.google.com/spreadsheets/d/${targetSheetId}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(targetSheetName)}`;
+    
+    console.log("[static-live] Fetching from gviz URL:", csvUrl);
+    fetch(csvUrl)
+      .then(r => {
+        if (r.ok) return r.text();
+        throw new Error("Gviz API request failed");
+      })
+      .then(csv => {
+        const rows = parseLiveCSV(csv);
+        livePerformanceCache[cacheKey] = { data: rows, ts: Date.now() };
+        _renderLiveTable(container, rows, sheetName);
+      })
+      .catch(err => {
+        console.warn("[static-live] Gviz query failed, falling back to GID export:", err);
+        // Fallback to GID export if targetGid is available
+        if (targetGid) {
+          const fallbackUrl = `https://docs.google.com/spreadsheets/d/${targetSheetId}/export?format=csv&gid=${targetGid}`;
+          console.log("[static-live] Fetching from fallback GID URL:", fallbackUrl);
+          fetch(fallbackUrl)
+            .then(r => {
+              if (r.ok) return r.text();
+              throw new Error("GID export request failed");
+            })
+            .then(csv => {
+              const rows = parseLiveCSV(csv);
+              livePerformanceCache[cacheKey] = { data: rows, ts: Date.now() };
+              _renderLiveTable(container, rows, sheetName);
+            })
+            .catch(err2 => {
+              _renderLiveError(container, "Tidak dapat mengakses Google Sheets secara langsung dari browser (CORS). Hubungi Admin.", sheetName);
+            });
+        } else {
+          _renderLiveError(container, "Tautan Google Sheets belum dikonfigurasi oleh Admin untuk bulan ini.", sheetName);
+        }
+      });
+  }
+}
+
+function parseLiveCSV(csvText) {
+  const lines = csvText.split(/\r?\n/);
+  if (lines.length < 2) return [];
+
+  // Helper to parse CSV row correctly, handling quotes and commas
+  function parseCSVLine(line) {
+    const result = [];
+    let current = '';
+    let inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+      const char = line[i];
+      if (char === '"') {
+        inQuotes = !inQuotes;
+      } else if (char === ',' && !inQuotes) {
+        result.push(current.trim());
+        current = '';
+      } else {
+        current += char;
+      }
+    }
+    result.push(current.trim());
+    return result;
+  }
+
+  const headers = parseCSVLine(lines[0]);
+  const rows = [];
+  
+  // Dynamic header indexing to be safe
+  const getIndex = (nameArray) => {
+    for (let name of nameArray) {
+      const idx = headers.findIndex(h => h.toLowerCase() === name.toLowerCase());
+      if (idx !== -1) return idx;
+    }
+    return -1;
+  };
+  
+  const noIdx = getIndex(["no"]);
+  const clientIdx = getIndex(["client"]);
+  const tglIdx = getIndex(["tanggal post", "tanggal"]);
+  const formatIdx = getIndex(["format"]);
+  const platformIdx = getIndex(["platform"]);
+  const akunIdx = getIndex(["akun"]);
+  const statusIdx = getIndex(["status"]);
+  const impIdx = getIndex(["impressions/views", "impressions", "impr"]);
+  const reachIdx = getIndex(["reach"]);
+  const engIdx = getIndex(["engagement", "engage"]);
+  const ctrIdx = getIndex(["ctr (per impressions)", "ctr"]);
+  const linkIdx = getIndex(["link konten", "link"]);
+
+  for (let i = 1; i < lines.length; i++) {
+    if (!lines[i].trim()) continue;
+    const cells = parseCSVLine(lines[i]);
+    const client = clientIdx !== -1 ? (cells[clientIdx] || "").trim() : "";
+    const tanggal = tglIdx !== -1 ? (cells[tglIdx] || "").trim() : "";
+    if (!client && !tanggal) continue;
+
+    // Parse tanggal "4-Jun-26" → "2026-06-04"
+    let tglISO = tanggal;
+    const monthMap = { jan:"01",feb:"02",mar:"03",apr:"04",may:"05",jun:"06",
+                       jul:"07",aug:"08",sep:"09",oct:"10",nov:"11",dec:"12",
+                       mei:"05",agu:"08",okt:"10",des:"12",ber:"12" };
+    const m = tanggal.match(/^(\d+)-([a-zA-Z]+)-(\d{2,4})$/);
+    if (m) {
+      const d = m[1].padStart(2,"0");
+      const mon = monthMap[m[2].toLowerCase().slice(0,3)] || "01";
+      const y = m[3].length === 2 ? "20" + m[3] : m[3];
+      tglISO = `${y}-${mon}-${d}`;
+    }
+
+    rows.push({
+      no:          noIdx !== -1 ? (cells[noIdx] || "").trim() : "",
+      client:      client,
+      tgl_post:    tglISO,
+      format:      formatIdx !== -1 ? (cells[formatIdx] || "").trim() : "",
+      platform:    platformIdx !== -1 ? (cells[platformIdx] || "").trim() : "",
+      akun:        akunIdx !== -1 ? (cells[akunIdx] || "").trim() : "",
+      status:      statusIdx !== -1 ? (cells[statusIdx] || "").trim() : "",
+      impressions: impIdx !== -1 ? (cells[impIdx] || "").trim() : "",
+      reach:       reachIdx !== -1 ? (cells[reachIdx] || "").trim() : "",
+      engagement:  engIdx !== -1 ? (cells[engIdx] || "").trim() : "",
+      ctr:         ctrIdx !== -1 ? (cells[ctrIdx] || "").trim() : "",
+      link:        linkIdx !== -1 ? (cells[linkIdx] || "").trim() : "",
+    });
+  }
+  return rows;
+}
+
+function _renderLiveTable(container, rows, sheetName) {
+  const now = new Date();
+  const todayStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+
+  const tayang  = rows.filter(r => r.status.toLowerCase().includes("tayang"));
+  const jadwal  = rows.filter(r => r.status.toLowerCase().includes("jadwal") || r.status.toLowerCase().includes("scheduled"));
+  const total   = rows.length;
+
+  // KPI bar
+  const kpiBar = `
+    <div class="live-kpi-bar">
+      <div class="live-kpi-item">
+        <span class="live-kpi-val">${total}</span>
+        <span class="live-kpi-label">Total Konten</span>
+      </div>
+      <div class="live-kpi-item success">
+        <span class="live-kpi-val">${tayang.length}</span>
+        <span class="live-kpi-label">Sudah Tayang</span>
+      </div>
+      <div class="live-kpi-item warn">
+        <span class="live-kpi-val">${jadwal.length}</span>
+        <span class="live-kpi-label">Dijadwalkan</span>
+      </div>
+      <div class="live-kpi-item info">
+        <span class="live-kpi-val" style="font-size:11px;">${sheetName}</span>
+        <span class="live-kpi-label">Periode</span>
+      </div>
+      <button class="live-refresh-btn" onclick="livePerformanceCache['${sheetName}'] = null; renderLivePerformance('${sheetName}')" title="Refresh data">
+        <i class="fa-solid fa-rotate-right"></i> Perbarui
+      </button>
+    </div>`;
+
+  if (rows.length === 0) {
+    container.innerHTML = kpiBar + `
+      <div class="live-empty">
+        <i class="fa-solid fa-satellite-dish"></i>
+        <p>Belum ada data performa untuk bulan <strong>${sheetName}</strong> di Google Sheets.</p>
+        <small>Silakan isi data di spreadsheet atau pilih bulan lain.</small>
+      </div>`;
+    return;
+  }
+
+  const tbodyHtml = rows.map((r, idx) => {
+    const statusClass = r.status.toLowerCase().includes("tayang") ? "live-status-tayang"
+                      : r.status.toLowerCase().includes("jadwal") ? "live-status-jadwal"
+                      : "live-status-other";
+    const tglDisplay = r.tgl_post ? (() => {
+      const p = r.tgl_post.split("-");
+      return p.length === 3 ? `${p[2]}/${p[1]}` : r.tgl_post;
+    })() : "-";
+
+    const linkCell = r.link
+      ? `<a href="${r.link}" target="_blank" class="live-link-btn" title="${r.link}">
+           <i class="fa-solid fa-arrow-up-right-from-square"></i>
+         </a>`
+      : `<span style="color:var(--text-muted);font-size:11px;">—</span>`;
+
+    const impCell  = r.impressions || `<span style="color:var(--text-muted)">—</span>`;
+    const reachCell = r.reach      || `<span style="color:var(--text-muted)">—</span>`;
+    const engCell  = r.engagement  || `<span style="color:var(--text-muted)">—</span>`;
+    const ctrCell  = r.ctr         ? (r.ctr.endsWith("%") ? r.ctr : `${r.ctr}%`) : `<span style="color:var(--text-muted)">—</span>`;
+
+    return `<tr class="live-row">
+      <td style="color:var(--text-muted);font-size:11px;">${r.no || idx+1}</td>
+      <td><strong>${r.client || '-'}</strong></td>
+      <td>${tglDisplay}</td>
+      <td><span class="live-format-badge">${r.format || '-'}</span></td>
+      <td style="font-size:11px; color:var(--text-secondary);">${r.akun || r.platform || '-'}</td>
+      <td><span class="live-status-badge ${statusClass}">${r.status || '-'}</span></td>
+      <td style="font-size:12px; text-align:right;">${impCell}</td>
+      <td style="font-size:12px; text-align:right;">${reachCell}</td>
+      <td style="font-size:12px; text-align:right;">${engCell}</td>
+      <td style="font-size:12px; text-align:right;">${ctrCell}</td>
+      <td style="text-align:center;">${linkCell}</td>
+    </tr>`;
+  }).join("");
+
+  container.innerHTML = kpiBar + `
+    <div class="table-wrapper" style="margin-top:12px; border-radius:12px; overflow:hidden;">
+      <table class="ad-table live-table">
+        <thead>
+          <tr>
+            <th style="width:36px;">No</th>
+            <th>Client</th>
+            <th>Tgl Post</th>
+            <th>Format</th>
+            <th>Akun</th>
+            <th>Status</th>
+            <th style="text-align:right;">Impr.</th>
+            <th style="text-align:right;">Reach</th>
+            <th style="text-align:right;">Engage.</th>
+            <th style="text-align:right;">CTR</th>
+            <th style="text-align:center; width:48px;">Link</th>
+          </tr>
+        </thead>
+        <tbody>${tbodyHtml}</tbody>
+      </table>
+    </div>`;
+}
+
+function _renderLiveError(container, msg, sheetName) {
+  container.innerHTML = `
+    <div class="live-empty" style="color:var(--danger);">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <p>Gagal memuat data dari Google Sheets.</p>
+      <small>${msg}</small>
+      <button class="primary-btn" style="margin-top:12px;" onclick="renderLivePerformance('${sheetName}')">
+        <i class="fa-solid fa-rotate-right"></i> Coba Lagi
+      </button>
+    </div>`;
+}
+
+function _renderLiveNoData(container, sheetName) {
+  container.innerHTML = `
+    <div class="live-empty">
+      <i class="fa-solid fa-satellite-dish"></i>
+      <p>Data Google Sheets untuk bulan <strong>${sheetName}</strong> belum tersedia.</p>
+      <small>Hanya sheet dengan GID yang terdaftar yang dapat ditampilkan dari GitHub Pages.</small>
+    </div>`;
+}
+
+window.renderLivePerformance = renderLivePerformance;
+
+
 function medsosSpotlightClearFilter() {
   selectedDayNum = null;
   document.querySelectorAll(".calendar-day-cell").forEach(c => c.classList.remove("active-day"));
@@ -2758,6 +3254,7 @@ function updateAdminUI() {
   const openVisitorBtn = document.getElementById("open-visitor-btn");
   const syncBtn = document.getElementById("sync-gdrive-btn");
   const analyticsBtn = document.getElementById("google-analytics-btn");
+  const kcmLinksBtn = document.getElementById("admin-kcm-links-btn");
   
   if (isAdminLoggedIn) {
     lockBtn.className = "theme-btn admin-unlocked";
@@ -2775,6 +3272,7 @@ function updateAdminUI() {
     if (openVisitorBtn) openVisitorBtn.style.display = "inline-flex";
     if (syncBtn) syncBtn.style.display = "inline-flex";
     if (analyticsBtn) analyticsBtn.style.display = "inline-flex";
+    if (kcmLinksBtn) kcmLinksBtn.style.display = "inline-flex";
   } else {
     lockBtn.className = "theme-btn admin-locked";
     lockBtn.title = "Login Admin untuk Mengubah Data";
@@ -2787,6 +3285,7 @@ function updateAdminUI() {
     if (openVisitorBtn) openVisitorBtn.style.display = "none";
     if (syncBtn) syncBtn.style.display = "none";
     if (analyticsBtn) analyticsBtn.style.display = "none";
+    if (kcmLinksBtn) kcmLinksBtn.style.display = "none";
   }
   
   // Re-render components to update pointer style, tooltips, and badges

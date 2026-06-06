@@ -40,12 +40,46 @@
       </div>
     </header>
     
-    <!-- Month and Year Dropdown Selector -->
-    <div style="display: flex; justify-content: flex-end; padding: 15px 20px; background-color: var(--bg-primary); gap: 12px;">
-      <select id="year-select" class="select-filter" style="font-size: 15px; padding: 10px 20px; border-radius: 8px; border: 1px solid var(--glass-border); background-color: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; min-width: 120px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" aria-label="Pilih Tahun">
-      </select>
-      <select id="month-select" class="select-filter" style="font-size: 15px; padding: 10px 20px; border-radius: 8px; border: 1px solid var(--glass-border); background-color: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; min-width: 160px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" aria-label="Pilih Bulan">
-      </select>
+    <!-- Mode Selector Bar: Outline Iklan (kiri) | Dropdown Bulan/Tahun (kanan) -->
+    <div id="mode-selector-bar" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background-color: var(--bg-primary); border-bottom: 1px solid var(--glass-border); gap: 12px; flex-wrap: wrap;">
+
+      <!-- Kiri: Tab Pilihan Mode -->
+      <div class="main-mode-tabs" role="tablist" aria-label="Pilih Mode Dashboard">
+        <button class="main-mode-tab active" id="tab-mode-outline" role="tab" aria-selected="true">
+          <i class="fa-solid fa-table-list"></i>
+          <span>Outline Iklan Medsos</span>
+        </button>
+        <button class="main-mode-tab" id="tab-mode-kcm" role="tab" aria-selected="false">
+          <span class="live-dot-pulse"></span>
+          <span>Medsos Mirroring</span>
+        </button>
+      </div>
+
+      <!-- Kanan: Dropdown Tahun & Bulan (hanya relevan untuk mode Outline) -->
+      <div id="month-year-selectors" style="display: flex; gap: 12px; align-items: center;">
+        <select id="year-select" class="select-filter" style="font-size: 15px; padding: 10px 20px; border-radius: 8px; border: 1px solid var(--glass-border); background-color: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; min-width: 120px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" aria-label="Pilih Tahun">
+        </select>
+        <select id="month-select" class="select-filter" style="font-size: 15px; padding: 10px 20px; border-radius: 8px; border: 1px solid var(--glass-border); background-color: var(--bg-secondary); color: var(--text-primary); cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; min-width: 160px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" aria-label="Pilih Bulan">
+        </select>
+      </div>
+    </div>
+
+    <!-- KCM Mirroring Full-Page View (disembunyikan saat mode Outline aktif) -->
+    <div id="kcm-mirror-section" style="display: none; padding: 20px;">
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+        <div style="background: rgba(16,185,129,0.15); border: 1px solid var(--success); border-radius: 10px; padding: 10px 16px; display: flex; align-items: center; gap: 8px;">
+          <span class="live-dot-pulse"></span>
+          <span style="font-size: 13px; font-weight: 700; color: var(--success);">Live Data dari Google Sheets</span>
+        </div>
+        <span style="font-size: 12px; color: var(--text-muted);">Data diperbarui setiap kali halaman ini dibuka</span>
+      </div>
+      <div id="container-live" style="height: auto; min-height: 300px; overflow: visible;">
+        <!-- Live Performance data akan dimuat otomatis saat tab KCM aktif -->
+        <div class="live-empty" style="padding: 40px 0;">
+          <i class="fa-solid fa-satellite-dish" style="font-size:36px; color:var(--text-muted); display:block; margin-bottom:12px;"></i>
+          <p>Memuat data dari Google Sheets…</p>
+        </div>
+      </div>
     </div>
     
     <!-- KPI Summary Grid -->
@@ -265,6 +299,11 @@
       <!-- Sync G-Drive Button -->
       <button class="theme-btn" id="sync-gdrive-btn" style="display: none; color: var(--success);" title="Sinkronisasi data dari Google Drive">
         <i class="fa-solid fa-cloud-arrow-down"></i>
+      </button>
+
+      <!-- Admin KCM Links Button -->
+      <button class="theme-btn" id="admin-kcm-links-btn" style="display: none; color: var(--primary-light);" title="Atur Link Google Sheets Medsos Mirroring">
+        <i class="fa-solid fa-link"></i>
       </button>
       
       <!-- Google Analytics Button -->
@@ -657,6 +696,56 @@
           Berikutnya <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- Dialog Modal: Configure Medsos Mirroring Google Sheets Links (Admin Only) -->
+  <div class="modal-overlay" id="admin-kcm-links-modal">
+    <div class="modal-container" style="max-width: 600px;">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-link"></i> Atur Link Google Sheets Medsos Mirroring</h3>
+        <button class="close-modal-btn" id="close-kcm-links-modal-btn" aria-label="Close dialog">&times;</button>
+      </div>
+      <form id="admin-kcm-links-form" onsubmit="return false;">
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px;">
+          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 8px;">
+            Masukkan tautan (link) Google Sheets lengkap untuk setiap bulan performa Medsos Mirroring. Sistem akan mendeteksi Spreadsheet ID dan GID secara otomatis.
+          </p>
+          
+          <div class="form-grid" style="display: grid; grid-template-columns: 1fr; gap: 14px;">
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 6px;">
+              <label class="form-label" style="font-weight: 700; font-size: 12px; color: var(--text-primary);">Januari 2026</label>
+              <input type="url" id="link-jan-2026" class="form-input" placeholder="https://docs.google.com/spreadsheets/d/.../edit#gid=0" style="padding: 10px; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--bg-secondary); color: var(--text-primary); font-size: 13px;">
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 6px;">
+              <label class="form-label" style="font-weight: 700; font-size: 12px; color: var(--text-primary);">Februari 2026</label>
+              <input type="url" id="link-feb-2026" class="form-input" placeholder="https://docs.google.com/spreadsheets/d/.../edit#gid=..." style="padding: 10px; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--bg-secondary); color: var(--text-primary); font-size: 13px;">
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 6px;">
+              <label class="form-label" style="font-weight: 700; font-size: 12px; color: var(--text-primary);">Maret 2026</label>
+              <input type="url" id="link-mar-2026" class="form-input" placeholder="https://docs.google.com/spreadsheets/d/.../edit#gid=..." style="padding: 10px; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--bg-secondary); color: var(--text-primary); font-size: 13px;">
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 6px;">
+              <label class="form-label" style="font-weight: 700; font-size: 12px; color: var(--text-primary);">April 2026</label>
+              <input type="url" id="link-apr-2026" class="form-input" placeholder="https://docs.google.com/spreadsheets/d/.../edit#gid=..." style="padding: 10px; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--bg-secondary); color: var(--text-primary); font-size: 13px;">
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 6px;">
+              <label class="form-label" style="font-weight: 700; font-size: 12px; color: var(--text-primary);">Mei 2026</label>
+              <input type="url" id="link-mei-2026" class="form-input" placeholder="https://docs.google.com/spreadsheets/d/.../edit#gid=..." style="padding: 10px; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--bg-secondary); color: var(--text-primary); font-size: 13px;">
+            </div>
+            <div class="form-group" style="display: flex; flex-direction: column; gap: 6px;">
+              <label class="form-label" style="font-weight: 700; font-size: 12px; color: var(--text-primary);">Juni 2026</label>
+              <input type="url" id="link-jun-2026" class="form-input" placeholder="https://docs.google.com/spreadsheets/d/.../edit#gid=412501877" style="padding: 10px; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--bg-secondary); color: var(--text-primary); font-size: 13px;">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="display: flex; justify-content: flex-end; gap: 10px; padding: 14px 20px;">
+          <button type="button" class="action-btn" id="cancel-kcm-links-btn" style="padding: 8px 16px; font-weight: 600; font-size: 13px;">Batal</button>
+          <button type="submit" class="primary-btn" style="padding: 8px 16px; font-weight: 600; font-size: 13px;">
+            <i class="fa-solid fa-floppy-disk"></i> Simpan
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 
