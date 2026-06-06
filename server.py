@@ -317,6 +317,17 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Expires', '0')
         super().end_headers()
 
+    def handle_error(self, request, client_address):
+        """Suppress benign connection errors (browser closing connection mid-transfer)."""
+        pass
+
+    def log_error(self, format, *args):
+        """Suppress error log for connection aborted errors (WinError 10053/10054) — these are normal."""
+        msg = format % args
+        if '10053' in msg or '10054' in msg or 'ConnectionAbortedError' in msg or 'ConnectionResetError' in msg:
+            return  # Ignore — browser closed the connection, not a real error
+        super().log_error(format, *args)
+
     def log_visitor(self):
         import datetime
         ip = self.client_address[0]
@@ -1188,11 +1199,26 @@ if __name__ == "__main__":
     handler = CustomHandler
     # Enable socket reuse
     socketserver.TCPServer.allow_reuse_address = True
+
+    # Subclass TCPServer to suppress benign connection errors from browser
+    class QuietTCPServer(socketserver.TCPServer):
+        def handle_error(self, request, client_address):
+            import traceback, sys
+            exc = sys.exc_info()[1]
+            # Suppress WinError 10053/10054 (browser closed connection) — these are harmless
+            if isinstance(exc, (ConnectionAbortedError, ConnectionResetError, BrokenPipeError)):
+                return
+            if hasattr(exc, 'winerror') and exc.winerror in (10053, 10054):
+                return
+            # Log other real errors normally
+            print(f"[server-error] Exception dari {client_address}:")
+            traceback.print_exc()
     
-    with socketserver.TCPServer(("", PORT), handler) as httpd:
+    with QuietTCPServer(("", PORT), handler) as httpd:
         print(f"Backend Server master berjalan di http://localhost:{PORT}")
         print("Buka browser dan buka tautan di atas untuk menggunakan dashboard.")
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
             print("\nServer dihentikan.")
+
