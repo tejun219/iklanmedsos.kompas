@@ -7710,7 +7710,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-06",
       "ae": "Vicky",
       "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
-      "keterangan": "Focus Slide",
+      "keterangan": "https://www.instagram.com/p/DZO4Rc6k_zt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       "so": "",
       "row_idx": 8
     }
