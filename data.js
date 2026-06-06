@@ -7674,7 +7674,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-06",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
+      "keterangan": "https://www.instagram.com/reel/DZPRej7S3c_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       "so": "SO0121306",
       "row_idx": 5
     },
