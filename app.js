@@ -3477,6 +3477,7 @@ window.editRowPrice = editRowPrice;
 // Function to dynamically compile and download a memo outline receipt
 function downloadMemo(event, memoNo, judul, so, posisi, total, tgl, ae) {
   if (event) {
+    event.preventDefault();
     event.stopPropagation();
   }
   
@@ -3521,13 +3522,21 @@ function downloadMemo(event, memoNo, judul, so, posisi, total, tgl, ae) {
     showToast("Mengunduh berkas memo asli dari server...", "success");
     const downloadUrl = `/api/download-memo?memo=${encodeURIComponent(memoNo)}&so=${encodeURIComponent(so || '')}`;
     
-    const link = document.createElement("a");
-    link.href = downloadUrl;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Open in a new tab to prevent silent failure if headers don't force download
+    const win = window.open(downloadUrl, '_blank');
+    if (!win) {
+      // Fallback if popup blocked
+      const link = document.createElement("a");
+      link.href = downloadUrl;
+      link.setAttribute("download", `Memo_${memoNo}.pdf`);
+      link.target = "_blank";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
     return;
   }
+
   
   // Offline mode handling using MEMO_MAP
   let fullFileName = null;
