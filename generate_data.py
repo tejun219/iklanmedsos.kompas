@@ -192,7 +192,9 @@ def main(sync=False):
     memo_map = {}
     if os.path.exists(memo_dir):
         for f in os.listdir(memo_dir):
-            m = re.match(r'^(\d+)', f)
+            m = re.search(r'\b(\d+)\b', f)
+            if not m:
+                m = re.search(r'(\d+)', f)
             if m:
                 prefix = m.group(1)
                 memo_map[prefix] = f

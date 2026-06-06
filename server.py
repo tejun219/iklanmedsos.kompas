@@ -294,12 +294,12 @@ def match_memo_file(prefix):
     matching_files = []
     
     for f in files:
-        m = re.match(r'^(\d+)', f)
-        if m:
-            file_num = int(m.group(1))
+        file_prefix = extract_memo_prefix(f)
+        if file_prefix:
+            file_num = int(file_prefix) if file_prefix.isdigit() else None
             if prefix_num is not None and file_num == prefix_num:
                 matching_files.append(f)
-            elif m.group(1) == prefix:
+            elif file_prefix == prefix:
                 matching_files.append(f)
                 
     if not matching_files:
@@ -776,7 +776,9 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 if os.path.exists(MEMO_DIR):
                     files = os.listdir(MEMO_DIR)
                     for f in files:
-                        m = re.match(r'^(\d+)', f)
+                        m = re.search(r'\b(\d+)\b', f)
+                        if not m:
+                            m = re.search(r'(\d+)', f)
                         if m:
                             prefixes.append(m.group(1))
                             prefixes.append(str(int(m.group(1))))
