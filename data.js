@@ -5226,7 +5226,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 1,
+      "keterangan": 1.0,
       "so": "SO0117657",
       "row_idx": 41
     },
@@ -5262,7 +5262,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 2,
+      "keterangan": 2.0,
       "so": "SO0117658",
       "row_idx": 44
     },
@@ -5274,7 +5274,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 3,
+      "keterangan": 3.0,
       "so": "SO0117659",
       "row_idx": 45
     },
@@ -5310,7 +5310,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 4,
+      "keterangan": 4.0,
       "so": "SO0117660",
       "row_idx": 48
     },
@@ -5322,7 +5322,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 5,
+      "keterangan": 5.0,
       "so": "SO0117661",
       "row_idx": 49
     },
@@ -7650,8 +7650,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-05",
       "ae": "Debby",
       "keterangan_order": "Memo No.284/MO/PRODUK/V/2026",
-      "keterangan": "https://www.instagram.com/p/DZNDqPhkys7/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0121368",
       "row_idx": 3
     },
     {
@@ -7674,7 +7674,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-06",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://www.instagram.com/reel/DZPRej7S3c_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "",
       "so": "SO0121306",
       "row_idx": 5
     },
@@ -7686,7 +7686,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-06",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://www.instagram.com/p/DZOoMYaE00U/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "",
       "so": "SO0121305",
       "row_idx": 6
     },
@@ -7698,33 +7698,21 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-06",
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "https://x.com/hariankompas/status/2063101973109547228?s=20",
+      "keterangan": "",
       "so": "SO0121304",
       "row_idx": 7
     },
     {
       "no": 6,
       "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
-      "posisi": "IG Reels Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-06-06",
-      "ae": "Vicky",
-      "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
-      "keterangan": "",
-      "so": "SO0121358",
-      "row_idx": 8
-    },
-    {
-      "no": 7,
-      "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-06",
       "ae": "Vicky",
       "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
-      "keterangan": "https://www.instagram.com/p/DZO4Rc6k_zt/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "keterangan": "",
       "so": "",
-      "row_idx": 9
+      "row_idx": 8
     }
   ],
   "Juli 2026": [],
@@ -7928,7 +7916,7 @@ const MEMO_MAP = {
   "0178": "MO 0178 - [Kompas.id] Liputan Investigasi “Pembajakan Buku” - 18 s.d 22 Mei'26.pdf",
   "178": "MO 0178 - [Kompas.id] Liputan Investigasi “Pembajakan Buku” - 18 s.d 22 Mei'26.pdf",
   "285": "285 - Timur Raya.pdf",
-  "292": "292 - Bulu tangkis indonesia open.pdf"
+  "292": "292 - Bulu tangkis indonesia open update 8 juni'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
