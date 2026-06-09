@@ -7723,7 +7723,7 @@ const INITIAL_DATA = {
       "ae": "Reza",
       "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121441",
       "row_idx": 9
     },
     {
