@@ -7711,8 +7711,32 @@ const INITIAL_DATA = {
       "ae": "Vicky",
       "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121438",
       "row_idx": 8
+    },
+    {
+      "no": 7,
+      "judul": "KOKO - EKSPEDISI MASYARAKAT ADAT NUSANTARA",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-10",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 9
+    },
+    {
+      "no": 8,
+      "judul": "KOKO - EKSPEDISI MASYARAKAT ADAT NUSANTARA",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-10",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 10
     }
   ],
   "Juli 2026": [],
