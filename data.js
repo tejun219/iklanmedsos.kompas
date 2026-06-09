@@ -7735,7 +7735,7 @@ const INITIAL_DATA = {
       "ae": "Reza",
       "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121440",
       "row_idx": 10
     }
   ],
@@ -7932,7 +7932,7 @@ const MEMO_MAP = {
   "235": "235 - UKSW update 27 apr'26.pdf",
   "221": "221 - LPDP Kemenkeu update 21 apr'26.pdf",
   "242": "242 - Garasi Bloko update 18 mei'26 (revisi).pdf",
-  "157": "157 - KOKO Global Strategic Communications Council update 13 mei'26.pdf",
+  "157": "157 - KOKO Global Strategic Communications Council update 9 juni'26.pdf",
   "272": "272 - PT Infiniti update 22 mei'26_update.pdf",
   "284": "284 - BSI update 22 mei'26.pdf",
   "0177": "MO 0177 - [TAJA] Promo MAPAN oleh CIPS - Harian Kompas - 16 Mei 2026 - Revisi MO.pdf",
