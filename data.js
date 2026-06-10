@@ -7715,6 +7715,18 @@ const INITIAL_DATA = {
       "row_idx": 8
     },
     {
+      "no": 9,
+      "judul": "CFX",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-09",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 9
+    },
+    {
       "no": 7,
       "judul": "KOKO - EKSPEDISI MASYARAKAT ADAT NUSANTARA",
       "posisi": "IG Post Carousell Harian Kompas",
@@ -7724,7 +7736,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
       "keterangan": "",
       "so": "SO0121441",
-      "row_idx": 9
+      "row_idx": 10
     },
     {
       "no": 8,
@@ -7736,7 +7748,19 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
       "keterangan": "",
       "so": "SO0121440",
-      "row_idx": 10
+      "row_idx": 11
+    },
+    {
+      "no": 10,
+      "judul": "CFX",
+      "posisi": "Tiktok",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-10",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 12
     }
   ],
   "Juli 2026": [],
@@ -7940,7 +7964,8 @@ const MEMO_MAP = {
   "0178": "MO 0178 - [Kompas.id] Liputan Investigasi “Pembajakan Buku” - 18 s.d 22 Mei'26.pdf",
   "178": "MO 0178 - [Kompas.id] Liputan Investigasi “Pembajakan Buku” - 18 s.d 22 Mei'26.pdf",
   "285": "285 - Timur Raya.pdf",
-  "292": "292 - Bulu tangkis indonesia open update 8 juni'26.pdf"
+  "292": "292 - Bulu tangkis indonesia open update 8 juni'26.pdf",
+  "342": "342 - CFX (Transito).pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
