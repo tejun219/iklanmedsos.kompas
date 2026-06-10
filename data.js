@@ -7722,7 +7722,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-09",
       "ae": "Imel",
       "keterangan_order": "Memo No.342/MO/PRODUK/VI/2026",
-      "keterangan": "https://www.instagram.com/stories/hariankompas/3915710149889858725/",
+      "keterangan": "https://www.instagram.com/stories/hariankompas/3915710149889858725?utm_source=ig_story_item_share&igsh=MjdpZDE2cXpzM2l1",
       "so": "SO0121447",
       "row_idx": 9
     },
