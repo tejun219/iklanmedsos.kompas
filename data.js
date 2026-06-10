@@ -7721,7 +7721,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-06-09",
       "ae": "Imel",
-      "keterangan_order": "Memo No.",
+      "keterangan_order": "Memo No.342/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 9
@@ -7757,7 +7757,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-06-10",
       "ae": "Imel",
-      "keterangan_order": "Memo No.",
+      "keterangan_order": "Memo No.342/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 12
