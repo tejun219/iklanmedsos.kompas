@@ -7770,7 +7770,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-11",
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
-      "keterangan": "",
+      "keterangan": "belum update memo",
       "so": "",
       "row_idx": 13
     },
@@ -7782,7 +7782,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-12",
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
-      "keterangan": "",
+      "keterangan": "belum update memo",
       "so": "",
       "row_idx": 14
     },
@@ -7794,7 +7794,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-13",
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
-      "keterangan": "",
+      "keterangan": "belum update memo",
       "so": "",
       "row_idx": 15
     }
@@ -8002,7 +8002,7 @@ const MEMO_MAP = {
   "285": "285 - Timur Raya.pdf",
   "292": "292 - Bulu tangkis indonesia open update 8 juni'26.pdf",
   "342": "342 - CFX (Transito).pdf",
-  "295": "295 - Edu Pack Plus.pdf"
+  "295": "295 - Edu Pack Plus update 11 juni'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
