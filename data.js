@@ -5226,7 +5226,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 1,
+      "keterangan": 1.0,
       "so": "SO0117657",
       "row_idx": 41
     },
@@ -5262,7 +5262,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 2,
+      "keterangan": 2.0,
       "so": "SO0117658",
       "row_idx": 44
     },
@@ -5274,7 +5274,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 3,
+      "keterangan": 3.0,
       "so": "SO0117659",
       "row_idx": 45
     },
@@ -5310,7 +5310,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 4,
+      "keterangan": 4.0,
       "so": "SO0117660",
       "row_idx": 48
     },
@@ -5322,7 +5322,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 5,
+      "keterangan": 5.0,
       "so": "SO0117661",
       "row_idx": 49
     },
@@ -7722,7 +7722,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-09",
       "ae": "Imel",
       "keterangan_order": "Memo No.342/MO/PRODUK/VI/2026",
-      "keterangan": "https://www.instagram.com/stories/hariankompas/3915710149889858725?utm_source=ig_story_item_share&igsh=MjdpZDE2cXpzM2l1",
+      "keterangan": "",
       "so": "SO0121447",
       "row_idx": 9
     },
@@ -7761,6 +7761,42 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0121448",
       "row_idx": 12
+    },
+    {
+      "no": 11,
+      "judul": "Cikal - EDU PACK PLUS",
+      "posisi": "IG Storylink Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-11",
+      "ae": "Nina",
+      "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 13
+    },
+    {
+      "no": 12,
+      "judul": "Cikal - EDU PACK PLUS",
+      "posisi": "IG Storylink Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-12",
+      "ae": "Nina",
+      "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 14
+    },
+    {
+      "no": 13,
+      "judul": "Cikal - EDU PACK PLUS",
+      "posisi": "IG Storylink Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-13",
+      "ae": "Nina",
+      "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 15
     }
   ],
   "Juli 2026": [],
@@ -7965,7 +8001,8 @@ const MEMO_MAP = {
   "178": "MO 0178 - [Kompas.id] Liputan Investigasi “Pembajakan Buku” - 18 s.d 22 Mei'26.pdf",
   "285": "285 - Timur Raya.pdf",
   "292": "292 - Bulu tangkis indonesia open update 8 juni'26.pdf",
-  "342": "342 - CFX (Transito).pdf"
+  "342": "342 - CFX (Transito).pdf",
+  "295": "295 - Edu Pack Plus.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
