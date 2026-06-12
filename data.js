@@ -7770,7 +7770,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-11",
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
-      "keterangan": "https://www.instagram.com/stories/kompasmuda/3917089261547802138?utm_source=ig_story_item_share&igsh=MnNkcmY4a3p0dXUx",
+      "keterangan": "",
       "so": "SO0121479",
       "row_idx": 13
     },
