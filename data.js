@@ -7783,7 +7783,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No.No. 020/MO/BARTER/VIII/2024",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121509",
       "row_idx": 14
     },
     {
