@@ -962,8 +962,8 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
                 with open('data.js', 'r', encoding='utf-8') as f:
                     content = f.read()
                 
-                # Parse JSON block inside data.js e.g., const INITIAL_DATA = {...};
-                match = re.search(r'const INITIAL_DATA = ({.*?});', content, re.DOTALL)
+                # Parse JSON block inside data.js e.g., const/var INITIAL_DATA = {...};
+                match = re.search(r'(?:const|var) INITIAL_DATA = ({.*?});', content, re.DOTALL)
                 if match:
                     json_str = match.group(1)
                     self.send_response(200)

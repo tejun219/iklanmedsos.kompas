@@ -205,8 +205,8 @@ def main(sync=False):
                 memo_map[str(int(prefix))] = f
 
     # Generate data.js containing the data
-    output_js = f"var INITIAL_DATA = {json.dumps(all_data, indent=2, ensure_ascii=False)};\n"
-    output_js += f"var MEMO_MAP = {json.dumps(memo_map, indent=2, ensure_ascii=False)};\n"
+    output_js = f"const INITIAL_DATA = {json.dumps(all_data, indent=2, ensure_ascii=False)};\n"
+    output_js += f"const MEMO_MAP = {json.dumps(memo_map, indent=2, ensure_ascii=False)};\n"
     output_js += "\n// Make available via window object for dynamic script loading compatibility\nif (typeof window !== 'undefined') {\n  window.INITIAL_DATA = INITIAL_DATA;\n  window.KOMPAS_DATA = INITIAL_DATA;\n  window.MEMO_MAP = MEMO_MAP;\n}\n"
     
     with open('data.js', 'w', encoding='utf-8') as f:

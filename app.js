@@ -50,6 +50,7 @@ try {
   console.warn("Failed to load local kcm links", e);
 }
 const isServerEnv = window.location.protocol.startsWith('http') && !window.location.hostname.endsWith('github.io');
+const isGitHubPages = window.location.hostname.endsWith('github.io');
 let activeAeName = "";
 let AVAILABLE_MEMOS = [];
 
@@ -2341,7 +2342,10 @@ function renderDayDetailDrawer(dayNum, dayAds) {
     const memoVal = ad.keterangan_order || '';
     let hasMemo = memoVal && memoVal !== '-';
     
-    if (isServerEnv && hasMemo && typeof AVAILABLE_MEMOS !== 'undefined') {
+    // Memo files are NOT stored on GitHub Pages — disable button for GitHub Pages visitors
+    if (isGitHubPages) {
+      hasMemo = false;
+    } else if (isServerEnv && hasMemo && typeof AVAILABLE_MEMOS !== 'undefined') {
       const match = memoVal.match(/\b(\d+)\b/) || memoVal.match(/(\d+)/);
       if (match) {
         const prefix = match[1];
@@ -2590,8 +2594,11 @@ function renderTable() {
     const memoVal = ad.keterangan_order || '';
     let hasMemo = memoVal && memoVal !== '-';
     
-    // If running in a server-connected environment, check if the actual memo file exists in the directory!
-    if (isServerEnv && hasMemo) {
+    // Memo files are NOT stored on GitHub Pages — disable button for GitHub Pages visitors
+    if (isGitHubPages) {
+      hasMemo = false;
+    } else if (isServerEnv && hasMemo) {
+      // If running in a server-connected environment, check if the actual memo file exists in the directory!
       const prefixMatch = memoVal.match(/(\d+)/);
       if (prefixMatch) {
         const prefix = prefixMatch[1];
@@ -3483,6 +3490,12 @@ function downloadMemo(event, memoNo, judul, so, posisi, total, tgl, ae) {
   
   if (!memoNo || memoNo === '-') {
     showToast("Memo tidak tersedia untuk iklan ini!", "error");
+    return;
+  }
+  
+  // Memo PDF files are not stored on GitHub Pages, only available via local server
+  if (isGitHubPages) {
+    showToast("⚠️ Unduh memo hanya tersedia saat dashboard dibuka dari server lokal (Jalankan_Dashboard.bat)", "error");
     return;
   }
   
