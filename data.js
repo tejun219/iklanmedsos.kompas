@@ -5226,7 +5226,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 1.0,
+      "keterangan": 1,
       "so": "SO0117657",
       "row_idx": 41
     },
@@ -5262,7 +5262,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 2.0,
+      "keterangan": 2,
       "so": "SO0117658",
       "row_idx": 44
     },
@@ -5274,7 +5274,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 3.0,
+      "keterangan": 3,
       "so": "SO0117659",
       "row_idx": 45
     },
@@ -5310,7 +5310,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 4.0,
+      "keterangan": 4,
       "so": "SO0117660",
       "row_idx": 48
     },
@@ -5322,7 +5322,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 5.0,
+      "keterangan": 5,
       "so": "SO0117661",
       "row_idx": 49
     },
@@ -7770,7 +7770,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-11",
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
-      "keterangan": "",
+      "keterangan": "https://www.instagram.com/stories/kompasmuda/3917089261547802138?utm_source=ig_story_item_share&igsh=MnNkcmY4a3p0dXUx",
       "so": "SO0121479",
       "row_idx": 13
     },
