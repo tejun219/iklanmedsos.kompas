@@ -5226,7 +5226,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 1,
+      "keterangan": 1.0,
       "so": "SO0117657",
       "row_idx": 41
     },
@@ -5262,7 +5262,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 2,
+      "keterangan": 2.0,
       "so": "SO0117658",
       "row_idx": 44
     },
@@ -5274,7 +5274,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-24",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 3,
+      "keterangan": 3.0,
       "so": "SO0117659",
       "row_idx": 45
     },
@@ -5310,7 +5310,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 4,
+      "keterangan": 4.0,
       "so": "SO0117660",
       "row_idx": 48
     },
@@ -5322,7 +5322,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2025-12-30",
       "ae": "Eka",
       "keterangan_order": "Memo No.867/MO/PRODUK/XII/2025",
-      "keterangan": 5,
+      "keterangan": 5.0,
       "so": "SO0117661",
       "row_idx": 49
     },
@@ -7776,6 +7776,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 12,
+      "judul": "CGV",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-11",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.No. 020/MO/BARTER/VIII/2024",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 14
+    },
+    {
+      "no": 13,
       "judul": "Cikal - EDU PACK PLUS",
       "posisi": "IG Storylink Kompas Muda",
       "total_ad": 1,
@@ -7784,10 +7796,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121480",
-      "row_idx": 14
+      "row_idx": 15
     },
     {
-      "no": 13,
+      "no": 14,
       "judul": "Cikal - EDU PACK PLUS",
       "posisi": "IG Storylink Kompas Muda",
       "total_ad": 1,
@@ -7796,10 +7808,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121481",
-      "row_idx": 15
+      "row_idx": 16
     },
     {
-      "no": 14,
+      "no": 15,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -7808,10 +7820,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121487",
-      "row_idx": 16
+      "row_idx": 17
     },
     {
-      "no": 15,
+      "no": 16,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -7820,10 +7832,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121488",
-      "row_idx": 17
+      "row_idx": 18
     },
     {
-      "no": 16,
+      "no": 17,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -7832,10 +7844,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121490",
-      "row_idx": 18
+      "row_idx": 19
     },
     {
-      "no": 17,
+      "no": 18,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -7844,7 +7856,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0121491",
-      "row_idx": 19
+      "row_idx": 20
     }
   ],
   "Juli 2026": [],
