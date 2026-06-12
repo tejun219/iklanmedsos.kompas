@@ -7728,7 +7728,7 @@ const INITIAL_DATA = {
     },
     {
       "no": 7,
-      "judul": "KOKO - EKSPEDISI MASYARAKAT ADAT NUSANTARA",
+      "judul": "Koko Global Strategic Communications Council",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-10",
@@ -7740,7 +7740,7 @@ const INITIAL_DATA = {
     },
     {
       "no": 8,
-      "judul": "KOKO - EKSPEDISI MASYARAKAT ADAT NUSANTARA",
+      "judul": "Koko Global Strategic Communications Council",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-10",
@@ -7857,6 +7857,30 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0121491",
       "row_idx": 20
+    },
+    {
+      "no": 19,
+      "judul": "Koko Global Strategic Communications Council",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-05-13",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
+      "keterangan": "",
+      "so": "SO0121514",
+      "row_idx": 21
+    },
+    {
+      "no": 20,
+      "judul": "Koko Global Strategic Communications Council",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-05-13",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
+      "keterangan": "",
+      "so": "SO0121513",
+      "row_idx": 22
     }
   ],
   "Juli 2026": [],
