@@ -7770,8 +7770,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-11",
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
-      "keterangan": "belum update memo",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0121479",
       "row_idx": 13
     },
     {
@@ -7782,8 +7782,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-12",
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
-      "keterangan": "belum update memo",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0121480",
       "row_idx": 14
     },
     {
@@ -7794,9 +7794,57 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-06-13",
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
-      "keterangan": "belum update memo",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0121481",
       "row_idx": 15
+    },
+    {
+      "no": 14,
+      "judul": "Experd",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-13",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 16
+    },
+    {
+      "no": 15,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-13",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 17
+    },
+    {
+      "no": 16,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-13",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 18
+    },
+    {
+      "no": 17,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-13",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 19
     }
   ],
   "Juli 2026": [],
@@ -7968,7 +8016,7 @@ const MEMO_MAP = {
   "867": "867 - Kemenag update 2 jan'26.pdf",
   "274": "274 - BSI update 13 mei'26.pdf",
   "836": "836 - Arkade update 30 des'25.pdf",
-  "859": "859 - Experd update 26 mei'26.pdf",
+  "859": "859 - Experd update  11 juni'26.pdf",
   "016": "016 - Bappenas.pdf",
   "16": "016 - Bappenas.pdf",
   "058": "058 - UKSW.pdf",
