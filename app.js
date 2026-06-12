@@ -2379,7 +2379,7 @@ function renderDayDetailDrawer(dayNum, dayAds) {
       }
     }
 
-    const buttonClass = `download-memo-btn ${hasMemo ? '' : 'no-memo'} ${isPublished ? 'published' : ''}`;
+    const buttonClass = `download-memo-btn ${hasMemo ? 'published' : 'no-memo'}`;
 
     item.innerHTML = `
       <div class="drawer-ad-title" style="display:flex; justify-content:space-between; align-items:flex-start;">
@@ -2643,7 +2643,7 @@ function renderTable() {
       </td>
       <td class="so-cell" style="vertical-align: middle;">${soContent} ${editSoIcon}</td>
       <td style="text-align:center;">
-        <button class="download-memo-btn ${hasMemo ? '' : 'no-memo'}" 
+        <button class="download-memo-btn ${hasMemo ? 'published' : 'no-memo'}" 
                 onclick="downloadMemo(event, '${(ad.keterangan_order || '').replace(/'/g, "\\'")}', '${(ad.judul || '').replace(/'/g, "\\'")}', '${ad.so || ''}', '${ad.posisi || ''}', '${ad.total_ad || 1}', '${dateStr}', '${(ad.ae || '').replace(/'/g, "\\'")}')" 
                 title="${hasMemo ? 'Unduh file PDF memo' : 'Memo tidak tersedia'}"
                 ${hasMemo ? '' : 'disabled'}>
