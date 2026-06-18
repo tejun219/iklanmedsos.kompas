@@ -7863,7 +7863,7 @@ const INITIAL_DATA = {
       "judul": "Koko Global Strategic Communications Council",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-05-13",
+      "tgl_terbit": "2026-06-13",
       "ae": "Reza",
       "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
       "keterangan": "",
@@ -7875,12 +7875,36 @@ const INITIAL_DATA = {
       "judul": "Koko Global Strategic Communications Council",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-05-13",
+      "tgl_terbit": "2026-06-13",
       "ae": "Reza",
       "keterangan_order": "Memo No.157/MO/PRODUK/III/2026",
       "keterangan": "",
       "so": "SO0121513",
       "row_idx": 22
+    },
+    {
+      "no": 21,
+      "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-18",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 23
+    },
+    {
+      "no": 22,
+      "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-18",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 24
     }
   ],
   "Juli 2026": [],
@@ -8085,7 +8109,7 @@ const MEMO_MAP = {
   "178": "MO 0178 - [Kompas.id] Liputan Investigasi “Pembajakan Buku” - 18 s.d 22 Mei'26.pdf",
   "285": "285 - Timur Raya.pdf",
   "292": "292 - Bulu tangkis indonesia open update 8 juni'26.pdf",
-  "342": "342 - CFX (Transito).pdf",
+  "342": "342 - CFX (Transito) update 17 juni'26.pdf",
   "295": "295 - Edu Pack Plus update 11 juni'26.pdf"
 };
 
