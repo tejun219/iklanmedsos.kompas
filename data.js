@@ -7884,24 +7884,24 @@ const INITIAL_DATA = {
     },
     {
       "no": 21,
-      "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
+      "judul": "Djarum",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-18",
       "ae": "Vicky",
-      "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
+      "keterangan_order": "Memo No.349/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 23
     },
     {
       "no": 22,
-      "judul": "BULU TANGKIS INDONESIA OPEN PB DJARUM (MEGAPRO)",
+      "judul": "Djarum",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-18",
       "ae": "Vicky",
-      "keterangan_order": "Memo No.292/MO/PRODUK/V/2026",
+      "keterangan_order": "Memo No.349/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 24
