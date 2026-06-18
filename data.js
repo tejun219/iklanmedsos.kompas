@@ -7905,6 +7905,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0121625",
       "row_idx": 24
+    },
+    {
+      "no": 23,
+      "judul": "Cikal - EDU PACK PLUS",
+      "posisi": "IG Storylink Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-19",
+      "ae": "Nina",
+      "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 25
     }
   ],
   "Juli 2026": [],
@@ -8110,7 +8122,7 @@ const MEMO_MAP = {
   "285": "285 - Timur Raya.pdf",
   "292": "292 - Bulu tangkis indonesia open update 8 juni'26.pdf",
   "342": "342 - CFX (Transito) update 17 juni'26.pdf",
-  "295": "295 - Edu Pack Plus update 11 juni'26.pdf",
+  "295": "295 - Edu Pack Plus update 18 juni'26.pdf",
   "349": "349 - MEGAPRO (DJARUM) update 18 juni'26.pdf"
 };
 
