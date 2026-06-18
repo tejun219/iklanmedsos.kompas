@@ -7884,7 +7884,7 @@ const INITIAL_DATA = {
     },
     {
       "no": 21,
-      "judul": "Djarum",
+      "judul": "PB Djarum",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-18",
@@ -7896,7 +7896,7 @@ const INITIAL_DATA = {
     },
     {
       "no": 22,
-      "judul": "Djarum",
+      "judul": "PB Djarum",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-18",
