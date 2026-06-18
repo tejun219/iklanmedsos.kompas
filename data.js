@@ -7915,7 +7915,7 @@ const INITIAL_DATA = {
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121636",
       "row_idx": 25
     }
   ],
