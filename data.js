@@ -7927,7 +7927,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No.026/MO/BARTER/VI/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121659",
       "row_idx": 26
     },
     {
@@ -7987,7 +7987,7 @@ const INITIAL_DATA = {
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121660",
       "row_idx": 31
     },
     {
@@ -7999,7 +7999,7 @@ const INITIAL_DATA = {
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121661",
       "row_idx": 32
     },
     {
@@ -8011,7 +8011,7 @@ const INITIAL_DATA = {
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121662",
       "row_idx": 33
     },
     {
@@ -8023,7 +8023,7 @@ const INITIAL_DATA = {
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121663",
       "row_idx": 34
     },
     {
@@ -8035,11 +8035,11 @@ const INITIAL_DATA = {
       "ae": "Nina",
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121664",
       "row_idx": 35
     },
     {
-      "no": "",
+      "no": 34,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8051,7 +8051,7 @@ const INITIAL_DATA = {
       "row_idx": 36
     },
     {
-      "no": "",
+      "no": 35,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8063,7 +8063,7 @@ const INITIAL_DATA = {
       "row_idx": 37
     },
     {
-      "no": "",
+      "no": 36,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8075,7 +8075,7 @@ const INITIAL_DATA = {
       "row_idx": 38
     },
     {
-      "no": "",
+      "no": 37,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
