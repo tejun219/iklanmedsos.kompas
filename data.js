@@ -7917,6 +7917,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0121636",
       "row_idx": 25
+    },
+    {
+      "no": 24,
+      "judul": "QATAR AIRWAYS",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-19",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.026/MO/BARTER/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 26
     }
   ],
   "Juli 2026": [],
