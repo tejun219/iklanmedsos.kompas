@@ -8290,7 +8290,7 @@ const MEMO_MAP = {
   "285": "285 - Timur Raya.pdf",
   "292": "292 - Bulu tangkis indonesia open update 8 juni'26.pdf",
   "342": "342 - CFX (Transito) update 17 juni'26.pdf",
-  "295": "295 - Edu Pack Plus update 18 juni'26.pdf",
+  "295": "295 - Edu Pack Plus update 19 juni'26.pdf",
   "349": "349 - MEGAPRO (DJARUM) update 18 juni'26.pdf",
   "026": "Barter 026 - Qatar.pdf",
   "26": "Barter 026 - Qatar.pdf"
