@@ -8317,7 +8317,8 @@ const MEMO_MAP = {
   "295": "295 - Edu Pack Plus update 19 juni'26.pdf",
   "349": "349 - MEGAPRO (DJARUM) update 18 juni'26.pdf",
   "026": "Barter 026 - Qatar.pdf",
-  "26": "Barter 026 - Qatar.pdf"
+  "26": "Barter 026 - Qatar.pdf",
+  "344": "344 - PT Setinggi Langit Kreatif Indonesia.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
