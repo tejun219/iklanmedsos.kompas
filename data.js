@@ -8016,13 +8016,13 @@ const INITIAL_DATA = {
     },
     {
       "no": 32,
-      "judul": "Setinggi Langit",
+      "judul": "Setinggi Langit - Cherry",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-06-23",
+      "tgl_terbit": "TBC",
       "ae": "Dika",
       "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
-      "keterangan": "",
+      "keterangan": "tunggu approval klien",
       "so": "SO0121687",
       "row_idx": 34
     },
