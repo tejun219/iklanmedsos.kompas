@@ -7753,7 +7753,7 @@ const INITIAL_DATA = {
     {
       "no": 10,
       "judul": "CFX",
-      "posisi": "Tiktok",
+      "posisi": "Tiktok Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-10",
       "ae": "Imel",
