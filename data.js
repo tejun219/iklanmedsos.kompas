@@ -8015,18 +8015,6 @@ const INITIAL_DATA = {
       "row_idx": 33
     },
     {
-      "no": 32,
-      "judul": "Setinggi Langit - Cherry",
-      "posisi": "IG Post Carousell Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "TBC",
-      "ae": "Dika",
-      "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
-      "keterangan": "tunggu approval klien",
-      "so": "SO0121687",
-      "row_idx": 34
-    },
-    {
       "no": 33,
       "judul": "Cikal - EDU PACK PLUS",
       "posisi": "IG Storylink Kompas Muda",
@@ -8036,7 +8024,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121662",
-      "row_idx": 35
+      "row_idx": 34
     },
     {
       "no": 34,
@@ -8048,7 +8036,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.349/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0121772",
-      "row_idx": 36
+      "row_idx": 35
     },
     {
       "no": 35,
@@ -8060,7 +8048,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.349/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0121773",
-      "row_idx": 37
+      "row_idx": 36
     },
     {
       "no": 36,
@@ -8072,7 +8060,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121663",
-      "row_idx": 38
+      "row_idx": 37
     },
     {
       "no": 37,
@@ -8084,7 +8072,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121664",
-      "row_idx": 39
+      "row_idx": 38
     },
     {
       "no": 38,
@@ -8096,7 +8084,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 40
+      "row_idx": 39
     },
     {
       "no": 39,
@@ -8108,7 +8096,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 41
+      "row_idx": 40
     },
     {
       "no": 40,
@@ -8120,7 +8108,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 42
+      "row_idx": 41
     },
     {
       "no": 41,
@@ -8132,7 +8120,19 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 43
+      "row_idx": 42
+    },
+    {
+      "no": 32,
+      "judul": "Setinggi Langit - Cherry",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "TBC",
+      "ae": "Dika",
+      "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
+      "keterangan": "tunggu approval klien",
+      "so": "SO0121687",
+      "row_idx": 45
     }
   ],
   "Juli 2026": [],
