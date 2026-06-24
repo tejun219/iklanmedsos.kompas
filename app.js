@@ -71,6 +71,7 @@ const PLATFORM_MAP = {
   "x harian": { label: "X (Twitter)", badgeClass: "badge-x", color: "#0ea5e9" },
   "x": { label: "X (Twitter)", badgeClass: "badge-x", color: "#0ea5e9" },
   "youtube": { label: "Youtube", badgeClass: "badge-youtube", color: "#ef4444" },
+  "tiktok": { label: "TikTok", badgeClass: "badge-tiktok", color: "#010101" },
 };
 
 // Rate Card Standard Pricing for each publication channel
