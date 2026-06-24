@@ -8040,6 +8040,30 @@ const INITIAL_DATA = {
     },
     {
       "no": 34,
+      "judul": "PB Djarum",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-24",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No.349/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 36
+    },
+    {
+      "no": 35,
+      "judul": "PB Djarum",
+      "posisi": "Tiktok Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-24",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No.349/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 37
+    },
+    {
+      "no": 36,
       "judul": "Cikal - EDU PACK PLUS",
       "posisi": "IG Storylink Kompas Muda",
       "total_ad": 1,
@@ -8048,10 +8072,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121663",
-      "row_idx": 36
+      "row_idx": 38
     },
     {
-      "no": 35,
+      "no": 37,
       "judul": "Cikal - EDU PACK PLUS",
       "posisi": "IG Storylink Kompas Muda",
       "total_ad": 1,
@@ -8060,36 +8084,12 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121664",
-      "row_idx": 37
-    },
-    {
-      "no": 36,
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-06-27",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 38
-    },
-    {
-      "no": 37,
-      "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
-      "total_ad": 1,
-      "tgl_terbit": "2026-06-27",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
-      "so": "",
       "row_idx": 39
     },
     {
       "no": 38,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-06-27",
       "ae": "Debby",
@@ -8101,7 +8101,7 @@ const INITIAL_DATA = {
     {
       "no": 39,
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-06-27",
       "ae": "Debby",
@@ -8109,6 +8109,30 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "",
       "row_idx": 41
+    },
+    {
+      "no": 40,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-27",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 42
+    },
+    {
+      "no": 41,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-27",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 43
     }
   ],
   "Juli 2026": [],
