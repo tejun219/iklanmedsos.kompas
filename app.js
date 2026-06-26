@@ -61,18 +61,30 @@ let omsetChartInstance = null;
 
 // Platform Categorization Map
 const PLATFORM_MAP = {
-  "ig story": { label: "IG Story", badgeClass: "badge-ig-story", color: "#e5a93c" },
-  "ig storylink": { label: "IG Story Link", badgeClass: "badge-ig-story", color: "#e5a93c" },
   "ig story link": { label: "IG Story Link", badgeClass: "badge-ig-story", color: "#e5a93c" },
+  "ig storylink": { label: "IG Story Link", badgeClass: "badge-ig-story", color: "#e5a93c" },
+  "ig story": { label: "IG Story", badgeClass: "badge-ig-story", color: "#e5a93c" },
   "ig post carousell": { label: "IG Post Carousel", badgeClass: "badge-ig-post", color: "#06b6d4" },
+  "ig post carousel": { label: "IG Post Carousel", badgeClass: "badge-ig-post", color: "#06b6d4" },
   "ig post harian": { label: "IG Post Harian", badgeClass: "badge-ig-post", color: "#06b6d4" },
   "ig post": { label: "IG Post", badgeClass: "badge-ig-post", color: "#06b6d4" },
   "ig reels": { label: "IG Reels", badgeClass: "badge-ig-reels", color: "#ec4899" },
+  "instagram": { label: "Instagram", badgeClass: "badge-ig-post", color: "#06b6d4" },
   "x harian": { label: "X (Twitter)", badgeClass: "badge-x", color: "#0ea5e9" },
-  "x": { label: "X (Twitter)", badgeClass: "badge-x", color: "#0ea5e9" },
+  "twitter": { label: "X (Twitter)", badgeClass: "badge-x", color: "#0ea5e9" },
+  "x post": { label: "X (Twitter)", badgeClass: "badge-x", color: "#0ea5e9" },
+  "x ": { label: "X (Twitter)", badgeClass: "badge-x", color: "#0ea5e9" },
+  " x": { label: "X (Twitter)", badgeClass: "badge-x", color: "#0ea5e9" },
+  "facebook": { label: "Facebook", badgeClass: "badge-facebook", color: "#1877f2" },
+  "fb post": { label: "Facebook", badgeClass: "badge-facebook", color: "#1877f2" },
+  "fb story": { label: "Facebook Story", badgeClass: "badge-facebook", color: "#1877f2" },
+  "fb reels": { label: "Facebook Reels", badgeClass: "badge-facebook", color: "#1877f2" },
   "youtube": { label: "Youtube", badgeClass: "badge-youtube", color: "#ef4444" },
   "tiktok": { label: "TikTok", badgeClass: "badge-tiktok", color: "#010101" },
+  "kompas.id": { label: "Kompas.id", badgeClass: "badge-other", color: "#3b82f6" },
+  "web banner": { label: "Web Banner", badgeClass: "badge-other", color: "#3b82f6" },
 };
+
 
 // Rate Card Standard Pricing for each publication channel
 const RATE_CARD = {

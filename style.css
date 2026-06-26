@@ -617,6 +617,8 @@ header {
 .badge-ig-reels { background: rgba(236, 72, 153, 0.15); color: #ec4899; }
 .badge-x { background: rgba(14, 165, 233, 0.15); color: #0ea5e9; }
 .badge-youtube { background: var(--danger-glow); color: var(--danger); }
+.badge-tiktok { background: rgba(1, 1, 1, 0.12); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); }
+.badge-facebook { background: rgba(24, 119, 242, 0.15); color: #1877f2; }
 .badge-other { background: var(--primary-glow); color: var(--primary-light); }
 
 /* Table Data Grid Grid Layout */
