@@ -8064,6 +8064,42 @@ const INITIAL_DATA = {
     },
     {
       "no": 37,
+      "judul": "Pemprov DKI",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-25",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "SO0121835",
+      "row_idx": 38
+    },
+    {
+      "no": 38,
+      "judul": "Pemprov DKI",
+      "posisi": "Facebook Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-25",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "SO0121837",
+      "row_idx": 39
+    },
+    {
+      "no": 39,
+      "judul": "Pemprov DKI",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-25",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "SO0121838",
+      "row_idx": 40
+    },
+    {
+      "no": 40,
       "judul": "Cikal - EDU PACK PLUS",
       "posisi": "IG Storylink Kompas Muda",
       "total_ad": 1,
@@ -8072,10 +8108,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.295/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121664",
-      "row_idx": 38
+      "row_idx": 41
     },
     {
-      "no": 38,
+      "no": 41,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8084,10 +8120,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 39
+      "row_idx": 42
     },
     {
-      "no": 39,
+      "no": 42,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8096,10 +8132,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 40
+      "row_idx": 43
     },
     {
-      "no": 40,
+      "no": 43,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8108,10 +8144,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 41
+      "row_idx": 44
     },
     {
-      "no": 41,
+      "no": 44,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8120,7 +8156,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 42
+      "row_idx": 45
     },
     {
       "no": 32,
@@ -8132,7 +8168,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
       "keterangan": "tunggu approval klien",
       "so": "SO0121687",
-      "row_idx": 45
+      "row_idx": 48
     }
   ],
   "Juli 2026": [],
@@ -8304,7 +8340,7 @@ const MEMO_MAP = {
   "867": "867 - Kemenag update 2 jan'26.pdf",
   "274": "274 - BSI update 13 mei'26.pdf",
   "836": "836 - Arkade update 30 des'25.pdf",
-  "859": "859 - Experd update  24 Juni'26.pdf",
+  "859": "859 - Experd update  24 Juni'26 (1).pdf",
   "016": "016 - Bappenas.pdf",
   "16": "016 - Bappenas.pdf",
   "058": "058 - UKSW.pdf",
@@ -8342,7 +8378,8 @@ const MEMO_MAP = {
   "349": "349 - MEGAPRO (DJARUM) update 24 juni'26.pdf",
   "026": "Barter 026 - Qatar.pdf",
   "26": "Barter 026 - Qatar.pdf",
-  "344": "344 - PT Setinggi Langit Kreatif Indonesia.pdf"
+  "344": "344 - PT Setinggi Langit Kreatif Indonesia.pdf",
+  "294": "294 - Pemprov DKI update 26 juni'26 (1).pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
