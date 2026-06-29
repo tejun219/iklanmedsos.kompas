@@ -8203,7 +8203,7 @@ const INITIAL_DATA = {
       "ae": "Reza",
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121905",
       "row_idx": 49
     },
     {
@@ -8215,7 +8215,7 @@ const INITIAL_DATA = {
       "ae": "Reza",
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121904",
       "row_idx": 50
     },
     {
@@ -8227,7 +8227,7 @@ const INITIAL_DATA = {
       "ae": "Reza",
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121903",
       "row_idx": 51
     },
     {
