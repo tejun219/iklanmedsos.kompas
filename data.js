@@ -7915,7 +7915,7 @@ const INITIAL_DATA = {
       "ae": "Reza",
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121849",
       "row_idx": 25
     },
     {
@@ -8155,7 +8155,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121859",
       "row_idx": 45
     },
     {
@@ -8167,7 +8167,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121860",
       "row_idx": 46
     },
     {
@@ -8179,7 +8179,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121861",
       "row_idx": 47
     },
     {
@@ -8191,8 +8191,44 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121862",
       "row_idx": 48
+    },
+    {
+      "no": 47,
+      "judul": "Pemprov DKI",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-30",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 49
+    },
+    {
+      "no": 48,
+      "judul": "Pemprov DKI",
+      "posisi": "Facebook Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-30",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 50
+    },
+    {
+      "no": 49,
+      "judul": "Pemprov DKI",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-30",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 51
     },
     {
       "no": 32,
@@ -8204,7 +8240,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
       "keterangan": "tunggu approval klien",
       "so": "SO0121687",
-      "row_idx": 51
+      "row_idx": 53
     }
   ],
   "Juli 2026": [],
@@ -8415,7 +8451,7 @@ const MEMO_MAP = {
   "026": "Barter 026 - Qatar.pdf",
   "26": "Barter 026 - Qatar.pdf",
   "344": "344 - PT Setinggi Langit Kreatif Indonesia.pdf",
-  "294": "294 - Pemprov DKI update 26 juni'26 (1).pdf"
+  "294": "294 - Pemprov DKI update 29 juni'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
