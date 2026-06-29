@@ -8196,6 +8196,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 47,
+      "judul": "YOSEO YOGURT",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-29",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.030/MO/BARTER/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 49
+    },
+    {
+      "no": 48,
       "judul": "Pemprov DKI",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8204,10 +8216,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121905",
-      "row_idx": 49
+      "row_idx": 50
     },
     {
-      "no": 48,
+      "no": 49,
       "judul": "Pemprov DKI",
       "posisi": "Facebook Harian Kompas",
       "total_ad": 1,
@@ -8216,10 +8228,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121904",
-      "row_idx": 50
+      "row_idx": 51
     },
     {
-      "no": 49,
+      "no": 50,
       "judul": "Pemprov DKI",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8228,7 +8240,19 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121903",
-      "row_idx": 51
+      "row_idx": 52
+    },
+    {
+      "no": 51,
+      "judul": "YOSEO YOGURT",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-30",
+      "ae": "Reza",
+      "keterangan_order": "Memo No.030/MO/BARTER/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 53
     },
     {
       "no": 32,
@@ -8240,7 +8264,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
       "keterangan": "tunggu approval klien",
       "so": "SO0121687",
-      "row_idx": 53
+      "row_idx": 57
     }
   ],
   "Juli 2026": [],
