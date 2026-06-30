@@ -8203,11 +8203,23 @@ const INITIAL_DATA = {
       "ae": "Reza",
       "keterangan_order": "Memo No.030/MO/BARTER/VI/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121908",
       "row_idx": 49
     },
     {
       "no": 48,
+      "judul": "Bank Permata",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-29",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No.636/MO/PRODUK/X/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 50
+    },
+    {
+      "no": 49,
       "judul": "Pemprov DKI",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8216,10 +8228,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121905",
-      "row_idx": 50
+      "row_idx": 51
     },
     {
-      "no": 49,
+      "no": 50,
       "judul": "Pemprov DKI",
       "posisi": "Facebook Harian Kompas",
       "total_ad": 1,
@@ -8228,10 +8240,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121904",
-      "row_idx": 51
+      "row_idx": 52
     },
     {
-      "no": 50,
+      "no": 51,
       "judul": "Pemprov DKI",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8240,10 +8252,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.294/MO/PRODUK/V/2026",
       "keterangan": "",
       "so": "SO0121903",
-      "row_idx": 52
+      "row_idx": 53
     },
     {
-      "no": 51,
+      "no": 52,
       "judul": "YOSEO YOGURT",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8251,8 +8263,20 @@ const INITIAL_DATA = {
       "ae": "Reza",
       "keterangan_order": "Memo No.030/MO/BARTER/VI/2026",
       "keterangan": "",
+      "so": "SO0121909",
+      "row_idx": 54
+    },
+    {
+      "no": 53,
+      "judul": "Bank Permata",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-06-30",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No.636/MO/PRODUK/X/2025",
+      "keterangan": "",
       "so": "",
-      "row_idx": 53
+      "row_idx": 55
     },
     {
       "no": 32,
@@ -8264,10 +8288,71 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
       "keterangan": "tunggu approval klien",
       "so": "SO0121687",
-      "row_idx": 57
+      "row_idx": 61
     }
   ],
-  "Juli 2026": [],
+  "Juli 2026": [
+    {
+      "no": 1,
+      "judul": "Suroboyo10K",
+      "posisi": "Youtube Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-01",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 3
+    },
+    {
+      "no": 2,
+      "judul": "Suroboyo10K",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-02",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 4
+    },
+    {
+      "no": 3,
+      "judul": "Suroboyo10K",
+      "posisi": "IG Storylink Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-02",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 5
+    },
+    {
+      "no": 4,
+      "judul": "Suroboyo10K",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-02",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 6
+    },
+    {
+      "no": 5,
+      "judul": "Suroboyo10K",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-02",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 7
+    }
+  ],
   "Agustus 2026": [],
   "September 2026": [],
   "Oktober 2026": [],
@@ -8419,7 +8504,7 @@ const MEMO_MAP = {
   "747": "747 - KOKO - DIREKTORAT PROMOSI BUDAYA KEMENBUD.pdf",
   "669": "669 - Bayan update 13 nov'25.pdf",
   "743": "743 - Saudi Arabia update 20 nov'25.pdf",
-  "636": "636 - Bank Permata update 17 nov'25.pdf",
+  "636": "636 - Bank Permata update 30 Juni'26.pdf",
   "596": "596.Memo Internal_Harian Kompas_Special Event Pacakaged  Bormar-Pertamina (Benefit Individual).pdf",
   "597": "597.Memo Internal_Harian Kompas_Special Event Pacakaged Pertamina- CEO Forum 2025 (Benefit Individual).pdf",
   "791": "791 - OJK update 9 des'25.pdf",
