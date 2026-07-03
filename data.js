@@ -8365,7 +8365,19 @@ const INITIAL_DATA = {
       "row_idx": 8
     },
     {
-      "no": "",
+      "no": 7,
+      "judul": "LPDP Kemenkeu",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-03",
+      "ae": "Dila",
+      "keterangan_order": "Memo No. 221/MO/PRODUK/IV/2026",
+      "keterangan": "",
+      "so": "SO0122058",
+      "row_idx": 9
+    },
+    {
+      "no": 8,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8373,11 +8385,11 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 9
+      "so": "SO0122043",
+      "row_idx": 10
     },
     {
-      "no": "",
+      "no": 9,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8385,11 +8397,11 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 10
+      "so": "SO0122042",
+      "row_idx": 11
     },
     {
-      "no": "",
+      "no": 10,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8397,11 +8409,11 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 11
+      "so": "SO0122041",
+      "row_idx": 12
     },
     {
-      "no": "",
+      "no": 11,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8409,8 +8421,8 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 12
+      "so": "SO0122040",
+      "row_idx": 13
     }
   ],
   "Agustus 2026": [],
