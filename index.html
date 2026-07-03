@@ -827,28 +827,95 @@
       }
     }
   </style>
-
-  <!-- Dynamically load data.js and app.js with cache busting to ensure visitors get instant updates -->
+  <!-- ============================================================ -->
+  <!-- Version-Based Cache Control System                           -->
+  <!-- Fetch version.json (tiny, no-cache) → load data.js dengan   -->
+  <!-- MD5 hash sebagai cache key yang stabil & CDN-friendly        -->
+  <!-- ============================================================ -->
   <script>
     (function() {
-      // Use current timestamp as version to completely bypass browser and CDN cache
-      const version = new Date().getTime();
-      
-      const loadScript = (src) => {
-        return new Promise((resolve, reject) => {
-          const script = document.createElement('script');
-          script.src = src + '?v=' + version;
+      // Kunci localStorage untuk menyimpan versi yang sudah dimuat
+      const VERSION_KEY = 'kompas_data_version';
+
+      // Tampilkan loading overlay sederhana
+      function showLoadingOverlay(msg) {
+        var el = document.getElementById('_version_loader');
+        if (!el) {
+          el = document.createElement('div');
+          el.id = '_version_loader';
+          el.style.cssText = 'position:fixed;top:0;left:0;width:100%;padding:10px 20px;background:linear-gradient(90deg,#0052cc,#0a7cff);color:#fff;font-family:sans-serif;font-size:14px;z-index:99999;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+          document.body.appendChild(el);
+        }
+        el.innerHTML = '<span style="opacity:0.85">⏳ ' + msg + '</span>';
+      }
+
+      function hideLoadingOverlay() {
+        var el = document.getElementById('_version_loader');
+        if (el) el.remove();
+      }
+
+      // Load sebuah script tag
+      function loadScript(src) {
+        return new Promise(function(resolve, reject) {
+          var script = document.createElement('script');
+          script.src = src;
           script.async = false;
           script.onload = resolve;
-          script.onerror = () => reject(new Error('Gagal memuat: ' + src));
+          script.onerror = function() { reject(new Error('Gagal memuat: ' + src)); };
           document.head.appendChild(script);
         });
-      };
-      
-      loadScript('data.js')
-        .then(() => loadScript('app.js'))
-        .catch(err => console.error("Error loading dashboard scripts:", err));
+      }
+
+      // Simpan versi aktif (dipakai oleh version watcher di app.js)
+      window._LOADED_DATA_VERSION = null;
+
+      showLoadingOverlay('Memeriksa versi data terbaru...');
+
+      // Langkah 1: Fetch version.json dengan cache:no-store untuk bypass CDN
+      var versionUrl = 'version.json?t=' + Date.now();
+      fetch(versionUrl, { cache: 'no-store' })
+        .then(function(res) {
+          if (!res.ok) throw new Error('version.json not found');
+          return res.json();
+        })
+        .then(function(versionData) {
+          var serverVersion = versionData.version || '';
+          var updatedAt    = versionData.updated_at || '';
+          var dataRows     = versionData.data_rows || 0;
+
+          // Simpan versi yang dimuat ke window (untuk version watcher)
+          window._LOADED_DATA_VERSION = serverVersion;
+          window._LOADED_VERSION_META = versionData;
+
+          // Simpan ke localStorage sebagai referensi
+          try { localStorage.setItem(VERSION_KEY, serverVersion); } catch(e) {}
+
+          showLoadingOverlay('Memuat data (versi ' + serverVersion + ', ' + dataRows + ' iklan)...');
+
+          // Langkah 2: Load data.js dengan MD5 hash sebagai versi cache key
+          // URL ini unik per versi → CDN cache valid, visitor dapat versi terbaru
+          return loadScript('data.js?v=' + encodeURIComponent(serverVersion))
+            .then(function() {
+              return loadScript('app.js?v=' + encodeURIComponent(serverVersion));
+            });
+        })
+        .catch(function(err) {
+          // Fallback: jika version.json gagal diambil, pakai timestamp seperti sebelumnya
+          console.warn('[version-loader] Fallback ke timestamp mode:', err.message);
+          window._LOADED_DATA_VERSION = null;
+          var ts = Date.now();
+          return loadScript('data.js?v=' + ts)
+            .then(function() { return loadScript('app.js?v=' + ts); });
+        })
+        .then(function() {
+          hideLoadingOverlay();
+        })
+        .catch(function(err) {
+          hideLoadingOverlay();
+          console.error('[version-loader] Error loading scripts:', err);
+        });
     })();
   </script>
+
 </body>
 </html>

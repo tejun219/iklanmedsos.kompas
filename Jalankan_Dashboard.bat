@@ -10,13 +10,19 @@ echo.
 cd /d "%~dp0"
 
 :: ─────────────────────────────────────────────────────────────
+:: TENTUKAN PYTHON YANG DIGUNAKAN (Python 3.13 sistem)
+:: ─────────────────────────────────────────────────────────────
+set PYTHON_EXE=C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python313\python.exe
+if not exist "%PYTHON_EXE%" set PYTHON_EXE=python
+
+:: ─────────────────────────────────────────────────────────────
 :: LANGKAH AUTO-UPLOAD: Upload data & memo ke GitHub di background
 :: ─────────────────────────────────────────────────────────────
 echo [PRE] Memeriksa & mengupload data/memo terbaru ke GitHub...
 echo.
 
 :: Regenerate data.js dulu
-python generate_data.py >nul 2>&1
+"%PYTHON_EXE%" generate_data.py >nul 2>&1
 
 :: Cari git
 set GIT_EXE=
@@ -40,7 +46,7 @@ goto :start_server
 
 :do_upload
 :: Stage semua perubahan
-%GIT_EXE% add data.js app.js index.html >nul 2>&1
+%GIT_EXE% add data.js app.js index.html version.json >nul 2>&1
 %GIT_EXE% add -A memo >nul 2>&1
 
 :: Set nama & email git
@@ -55,12 +61,17 @@ set JAM=%DT:~8,2%:%DT:~10,2%
 %GIT_EXE% commit -m "Auto-upload saat buka dashboard - %TANGGAL% %JAM%" >nul 2>&1
 set COMMIT_CODE=%errorlevel%
 
-:: Push ke GitHub di background (tidak menunggu selesai)
+:: Push ke GitHub — tunggu hasilnya (bukan background)
 if %COMMIT_CODE%==0 (
-  echo [OK] Ada perubahan baru - sedang mengupload ke GitHub di background...
-  start /b cmd /c "%GIT_EXE% push -u origin main >nul 2>&1"
+  echo [OK] Ada perubahan baru - mengupload ke GitHub...
+  %GIT_EXE% push -u origin main >nul 2>&1
+  if !errorlevel!==0 (
+    echo [OK] Upload ke GitHub Pages BERHASIL.
+  ) else (
+    echo [PERINGATAN] Upload ke GitHub gagal! Coba jalankan Upload_Memo_ke_GitHub.bat
+  )
 ) else (
-  echo [OK] Tidak ada perubahan baru. Semua data & memo sudah terupload.
+  echo [OK] Tidak ada perubahan baru. Semua data ^& memo sudah terupload.
 )
 
 :: Tampilkan memo terbaru
@@ -79,19 +90,30 @@ echo.
 :: Hapus file port lama jika ada
 if exist ".server_port" del /f /q ".server_port"
 
-echo [1/2] Memulai Server Python lokal...
+:: Pastikan openpyxl sudah terinstall
+"%PYTHON_EXE%" -c "import openpyxl" >nul 2>&1
+if %errorlevel% neq 0 (
+  echo [SETUP] Menginstall modul openpyxl yang diperlukan...
+  "%PYTHON_EXE%" -m pip install openpyxl
+  echo [SETUP] Instalasi selesai.
+)
+
+echo [1/2] Memulai Server Python lokal... (mungkin butuh ~10-20 detik)
 echo ----------------------------------------------------------
 
 :: Jalankan server Python di background
-start /b python server.py
+start /b "" "%PYTHON_EXE%" server.py
 
-:: Tunggu server siap (muncul file .server_port) maksimal 15 detik
+:: Tunggu server siap (muncul file .server_port) maksimal 45 detik
 set /a WAIT=0
 :WAIT_LOOP
 timeout /t 1 /nobreak >nul
 set /a WAIT+=1
 if exist ".server_port" goto PORT_FOUND
-if %WAIT% geq 15 goto FALLBACK
+if %WAIT%==10 echo    [tunggu] Masih memuat data... (%WAIT% detik)
+if %WAIT%==20 echo    [tunggu] Hampir siap... (%WAIT% detik)
+if %WAIT%==30 echo    [tunggu] Memuat data besar, mohon sabar... (%WAIT% detik)
+if %WAIT% geq 45 goto FALLBACK
 goto WAIT_LOOP
 
 :PORT_FOUND
@@ -108,9 +130,11 @@ start http://localhost:%ACTUAL_PORT%
 goto END
 
 :FALLBACK
-:: Jika file port tidak ditemukan, buka di port default 8000
-echo [WARN] Tidak dapat mendeteksi port otomatis, mencoba port default 8000...
+:: Jika file port tidak ditemukan setelah 45 detik, coba port default 8000
+echo [INFO] Server mungkin sudah jalan di port 8000, mencoba membuka browser...
+echo        Jika browser tidak terbuka, coba buka http://localhost:8000 secara manual.
 start http://localhost:8000
+
 
 :END
 echo.

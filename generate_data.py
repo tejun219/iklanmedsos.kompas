@@ -3,6 +3,7 @@ import json
 import datetime
 import re
 import os
+import hashlib
 
 def parse_date(date_val, sheet_name):
     if isinstance(date_val, datetime.datetime):
@@ -212,6 +213,25 @@ def main(sync=False):
     with open('data.js', 'w', encoding='utf-8') as f:
         f.write(output_js)
     print("Done parsing Excel! Written to data.js")
+
+    # Hitung MD5 hash dari data.js untuk version control
+    data_hash = hashlib.md5(output_js.encode('utf-8')).hexdigest()[:12]
+
+    # Hitung total row di semua bulan
+    total_rows = sum(len(v) for v in all_data.values())
+
+    # Timestamp WIB (UTC+7)
+    now_wib = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=7)))
+    updated_at = now_wib.strftime('%Y-%m-%dT%H:%M:%S+07:00')
+
+    version_data = {
+        "version": data_hash,
+        "updated_at": updated_at,
+        "data_rows": total_rows
+    }
+    with open('version.json', 'w', encoding='utf-8') as f:
+        json.dump(version_data, f, ensure_ascii=False)
+    print(f"version.json ditulis: version={data_hash}, rows={total_rows}, updated={updated_at}")
 
 if __name__ == "__main__":
     main()

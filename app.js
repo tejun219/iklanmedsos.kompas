@@ -3960,3 +3960,126 @@ function goToGuideSlide(index) {
 window.goToGuideSlide = goToGuideSlide;
 
 
+// ============================================================
+// Version Watcher — Auto-detect data baru di GitHub Pages
+// Memeriksa version.json setiap 5 menit.
+// Jika versi berbeda dari yang dimuat, tampilkan banner refresh.
+// ============================================================
+const VERSION_WATCHER_INTERVAL_MS = 5 * 60 * 1000; // 5 menit
+let _versionWatcherTimer = null;
+
+function startVersionWatcher() {
+  // Hanya aktif di GitHub Pages (bukan server lokal)
+  if (isServerEnv) return;
+
+  // Ambil versi yang sudah dimuat saat halaman dibuka
+  const loadedVersion = window._LOADED_DATA_VERSION || null;
+  if (!loadedVersion) return; // Jika fallback mode (tidak ada version.json), skip
+
+  function checkForNewVersion() {
+    fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(res => res.ok ? res.json() : null)
+      .then(versionData => {
+        if (!versionData) return;
+        const serverVersion = versionData.version || '';
+        const serverRows    = versionData.data_rows || 0;
+        const serverUpdated = versionData.updated_at || '';
+
+        // Jika versi di server berbeda dari yang sudah dimuat → ada data baru!
+        if (serverVersion && serverVersion !== loadedVersion) {
+          showUpdateBanner(serverVersion, serverRows, serverUpdated);
+        }
+      })
+      .catch(() => {}); // Abaikan error jaringan
+  }
+
+  // Cek pertama kali setelah 60 detik (beri waktu halaman fully load)
+  setTimeout(() => {
+    checkForNewVersion();
+    // Kemudian ulangi setiap 5 menit
+    _versionWatcherTimer = setInterval(checkForNewVersion, VERSION_WATCHER_INTERVAL_MS);
+  }, 60 * 1000);
+}
+
+// Tampilkan banner notifikasi "Data baru tersedia"
+let _bannerVisible = false;
+function showUpdateBanner(version, rows, updatedAt) {
+  if (_bannerVisible) return; // Jangan tampilkan dua kali
+  _bannerVisible = true;
+
+  // Format tanggal update
+  let updatedLabel = '';
+  try {
+    const d = new Date(updatedAt);
+    updatedLabel = d.toLocaleString('id-ID', {
+      timeZone: 'Asia/Jakarta',
+      day: '2-digit', month: 'short', year: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    });
+  } catch(e) { updatedLabel = updatedAt; }
+
+  const banner = document.createElement('div');
+  banner.id = '_update-banner';
+  banner.style.cssText = [
+    'position:fixed',
+    'top:0', 'left:0', 'width:100%',
+    'background:linear-gradient(90deg,#059669,#10b981)',
+    'color:#fff',
+    'padding:12px 20px',
+    'z-index:99998',
+    'display:flex',
+    'align-items:center',
+    'justify-content:center',
+    'gap:16px',
+    'font-family:var(--font-primary,sans-serif)',
+    'font-size:14px',
+    'font-weight:600',
+    'box-shadow:0 3px 12px rgba(5,150,105,0.4)',
+    'animation:slideDown 0.4s ease'
+  ].join(';');
+
+  // Inject animasi jika belum ada
+  if (!document.getElementById('_update-banner-style')) {
+    const style = document.createElement('style');
+    style.id = '_update-banner-style';
+    style.textContent = `
+      @keyframes slideDown {
+        from { transform: translateY(-100%); opacity: 0; }
+        to   { transform: translateY(0);    opacity: 1; }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  banner.innerHTML = `
+    <span>📢 <strong>Data baru tersedia!</strong> ${rows} iklan &mdash; diperbarui ${updatedLabel}</span>
+    <button onclick="location.reload()" style="
+      background:#fff;
+      color:#059669;
+      border:none;
+      border-radius:6px;
+      padding:6px 16px;
+      font-weight:700;
+      cursor:pointer;
+      font-size:13px;
+      white-space:nowrap;
+    ">🔄 Muat Sekarang</button>
+    <button onclick="document.getElementById('_update-banner').remove();_bannerVisible=false;" style="
+      background:transparent;
+      color:rgba(255,255,255,0.8);
+      border:1px solid rgba(255,255,255,0.4);
+      border-radius:6px;
+      padding:6px 12px;
+      font-weight:600;
+      cursor:pointer;
+      font-size:13px;
+    ">✕ Tutup</button>
+  `;
+
+  document.body.prepend(banner);
+}
+
+// Jalankan version watcher setelah app selesai init
+// (dipanggil dari initUIDisplay setelah semua data dimuat)
+setTimeout(startVersionWatcher, 2000);
+
