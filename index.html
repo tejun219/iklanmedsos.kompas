@@ -15,9 +15,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Outline Iklan Media Sosial Harian Kompas & Kompas.id</title>
   <meta name="description" content="Dashboard interaktif, modern, dan informatif untuk memantau, merencanakan, dan menganalisis jadwal iklan media sosial Harian Kompas dan Kompas.id.">
+  <!-- Prevent intermediate proxies/CDN from caching this HTML page -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   
   <!-- Modern Style Sheet -->
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
   
   <!-- FontAwesome Icons for modern dashboard elements -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -871,13 +875,38 @@
 
       showLoadingOverlay('Memeriksa versi data terbaru...');
 
-      // Langkah 1: Fetch version.json dengan cache:no-store untuk bypass CDN
-      var versionUrl = 'version.json?t=' + Date.now();
-      fetch(versionUrl, { cache: 'no-store' })
-        .then(function(res) {
-          if (!res.ok) throw new Error('version.json not found');
+      // ─────────────────────────────────────────────────────────────
+      // Langkah 1: Fetch version.json dengan multi-URL rotation
+      // GitHub Pages CDN (Fastly) kadang mengabaikan query string biasa.
+      // Solusi: coba beberapa variasi URL dengan header no-store.
+      // ─────────────────────────────────────────────────────────────
+      var ts = Date.now();
+      var rand = Math.floor(Math.random() * 1e9);
+
+      // Tiga URL kandidat — CDN tidak mungkin cache ketiganya sekaligus
+      var versionUrls = [
+        'version.json?nocache=' + ts + '&r=' + rand,
+        './version.json?bust=' + ts,
+        'version.json?_=' + rand
+      ];
+
+      var fetchVersionWithFallback = function(urls, idx) {
+        if (idx >= urls.length) {
+          return Promise.reject(new Error('Semua URL version.json gagal'));
+        }
+        return fetch(urls[idx], {
+          cache: 'no-store',
+          headers: { 'Pragma': 'no-cache', 'Cache-Control': 'no-cache, no-store' }
+        }).then(function(res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
           return res.json();
-        })
+        }).catch(function(err) {
+          console.warn('[version-loader] URL gagal (' + urls[idx] + '):', err.message);
+          return fetchVersionWithFallback(urls, idx + 1);
+        });
+      };
+
+      fetchVersionWithFallback(versionUrls, 0)
         .then(function(versionData) {
           var serverVersion = versionData.version || '';
           var updatedAt    = versionData.updated_at || '';
@@ -903,9 +932,9 @@
           // Fallback: jika version.json gagal diambil, pakai timestamp seperti sebelumnya
           console.warn('[version-loader] Fallback ke timestamp mode:', err.message);
           window._LOADED_DATA_VERSION = null;
-          var ts = Date.now();
-          return loadScript('data.js?v=' + ts)
-            .then(function() { return loadScript('app.js?v=' + ts); });
+          var ts2 = Date.now();
+          return loadScript('data.js?v=' + ts2)
+            .then(function() { return loadScript('app.js?v=' + ts2); });
         })
         .then(function() {
           hideLoadingOverlay();

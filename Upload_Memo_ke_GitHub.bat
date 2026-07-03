@@ -78,6 +78,7 @@ echo [3/5] Menambahkan file yang diperbarui...
 %GIT_EXE% add data.js
 %GIT_EXE% add app.js
 %GIT_EXE% add index.html
+%GIT_EXE% add style.css
 %GIT_EXE% add version.json
 %GIT_EXE% add -A memo
 
