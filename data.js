@@ -8357,7 +8357,7 @@ const INITIAL_DATA = {
       "judul": "Setinggi Langit - Cherry",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-03",
+      "tgl_terbit": "TBC",
       "ae": "Dika",
       "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
       "keterangan": "",
@@ -8385,7 +8385,7 @@ const INITIAL_DATA = {
       "ae": "Dila",
       "keterangan_order": "Memo No. 221/MO/PRODUK/IV/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122072",
       "row_idx": 10
     },
     {
