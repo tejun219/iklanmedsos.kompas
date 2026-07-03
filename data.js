@@ -8353,21 +8353,21 @@ const INITIAL_DATA = {
       "row_idx": 7
     },
     {
-      "no": "",
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
+      "no": 6,
+      "judul": "Setinggi Langit - Cherry",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-04",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "tgl_terbit": "2026-07-03",
+      "ae": "Dika",
+      "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0121687",
       "row_idx": 8
     },
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-07-04",
       "ae": "Debby",
@@ -8379,7 +8379,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-07-04",
       "ae": "Debby",
@@ -8391,7 +8391,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-07-04",
       "ae": "Debby",
@@ -8399,6 +8399,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "",
       "row_idx": 11
+    },
+    {
+      "no": "",
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-04",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 12
     }
   ],
   "Agustus 2026": [],
