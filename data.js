@@ -8619,7 +8619,7 @@ const MEMO_MAP = {
   "349": "349 - MEGAPRO (DJARUM) update 24 juni'26.pdf",
   "026": "Barter 026 - Qatar.pdf",
   "26": "Barter 026 - Qatar.pdf",
-  "344": "344 - PT Setinggi Langit Kreatif Indonesia.pdf",
+  "344": "344 - PT Setinggi Langit Kreatif Indonesia update 3 juli'26 (1).pdf",
   "294": "294 - Pemprov DKI update 29 juni'26.pdf"
 };
 
