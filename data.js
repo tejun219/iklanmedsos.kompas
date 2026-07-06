@@ -8465,7 +8465,7 @@ const INITIAL_DATA = {
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-07",
+      "tgl_terbit": "2026-07-09",
       "ae": "Imel",
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
