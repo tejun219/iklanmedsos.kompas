@@ -8215,7 +8215,7 @@ const INITIAL_DATA = {
       "ae": "Vicky",
       "keterangan_order": "Memo No.636/MO/PRODUK/X/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122115",
       "row_idx": 50
     },
     {
@@ -8275,7 +8275,7 @@ const INITIAL_DATA = {
       "ae": "Vicky",
       "keterangan_order": "Memo No.636/MO/PRODUK/X/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122114",
       "row_idx": 55
     },
     {
@@ -8301,7 +8301,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122111",
       "row_idx": 3
     },
     {
@@ -8313,7 +8313,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122105",
       "row_idx": 4
     },
     {
@@ -8325,7 +8325,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122108",
       "row_idx": 5
     },
     {
@@ -8337,7 +8337,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122107",
       "row_idx": 6
     },
     {
@@ -8349,7 +8349,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo No.Nomor : 302 /Event/V/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122106",
       "row_idx": 7
     },
     {
@@ -8447,6 +8447,30 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0122088",
       "row_idx": 15
+    },
+    {
+      "no": 14,
+      "judul": "Buffalo",
+      "posisi": "IG Post Carousell Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-07",
+      "ae": "Imel",
+      "keterangan_order": "Memo menyusul",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 16
+    },
+    {
+      "no": 15,
+      "judul": "Buffalo",
+      "posisi": "IG Storylink Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-07",
+      "ae": "Imel",
+      "keterangan_order": "Memo menyusul",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 17
     }
   ],
   "Agustus 2026": [],
