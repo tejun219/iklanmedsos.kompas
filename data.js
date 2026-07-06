@@ -8435,6 +8435,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0122040",
       "row_idx": 14
+    },
+    {
+      "no": 13,
+      "judul": "CIMB Niaga",
+      "posisi": "IG Story Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-06",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No : 023/MO/PRODUK-GW/VII/2026",
+      "keterangan": "",
+      "so": "SO0122088",
+      "row_idx": 15
     }
   ],
   "Agustus 2026": [],
@@ -8644,7 +8656,9 @@ const MEMO_MAP = {
   "026": "Barter 026 - Qatar.pdf",
   "26": "Barter 026 - Qatar.pdf",
   "344": "344 - PT Setinggi Langit Kreatif Indonesia update 3 juli'26 (1).pdf",
-  "294": "294 - Pemprov DKI update 29 juni'26.pdf"
+  "294": "294 - Pemprov DKI update 29 juni'26.pdf",
+  "023": "Goodwill 023 - CIMB Niaga.pdf",
+  "23": "Goodwill 023 - CIMB Niaga.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
