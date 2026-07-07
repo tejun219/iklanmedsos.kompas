@@ -8438,6 +8438,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 13,
+      "judul": "LG",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-04",
+      "ae": "Rian",
+      "keterangan_order": "Memo No : 529/MKT-PL/KMP/VI/2026/GA/ALT-04/03",
+      "keterangan": "",
+      "so": "SO0122124",
+      "row_idx": 15
+    },
+    {
+      "no": 14,
       "judul": "CIMB Niaga",
       "posisi": "IG Story Harian Kompas",
       "total_ad": 1,
@@ -8446,10 +8458,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No : 023/MO/PRODUK-GW/VII/2026",
       "keterangan": "",
       "so": "SO0122088",
-      "row_idx": 15
+      "row_idx": 16
     },
     {
-      "no": 14,
+      "no": 15,
       "judul": "Buffalo",
       "posisi": "IG Post Carousell Kompas Urbana",
       "total_ad": 1,
@@ -8457,11 +8469,11 @@ const INITIAL_DATA = {
       "ae": "Imel",
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
-      "row_idx": 16
+      "so": "SO0122135",
+      "row_idx": 17
     },
     {
-      "no": 15,
+      "no": 16,
       "judul": "Buffalo",
       "posisi": "Tiktok Harian Kompas",
       "total_ad": 1,
@@ -8469,11 +8481,11 @@ const INITIAL_DATA = {
       "ae": "Imel",
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
-      "row_idx": 17
+      "so": "SO0122136",
+      "row_idx": 18
     },
     {
-      "no": 16,
+      "no": 17,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8481,8 +8493,8 @@ const INITIAL_DATA = {
       "ae": "Imel",
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
-      "row_idx": 18
+      "so": "SO0122137",
+      "row_idx": 19
     }
   ],
   "Agustus 2026": [],
