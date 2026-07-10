@@ -8503,7 +8503,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-10",
       "ae": "Rifai",
-      "keterangan_order": "Memo No.",
+      "keterangan_order": "Memo No.Nomor : 496/Event/VI/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 20
@@ -8567,6 +8567,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0122189",
       "row_idx": 25
+    },
+    {
+      "no": 24,
+      "judul": "Buffalo",
+      "posisi": "IG Post Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-13",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "SO0122227",
+      "row_idx": 26
     }
   ],
   "Agustus 2026": [],
@@ -8669,8 +8681,8 @@ const MEMO_MAP = {
   "063": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
   "63": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
   "460": "460 - POLRI update 25 juli'25.pdf",
-  "032": "Barter 032 - Buffalo update 7 juli'26.pdf",
-  "32": "Barter 032 - Buffalo update 7 juli'26.pdf",
+  "032": "Barter 032 - Buffalo update 10 juli'26.pdf",
+  "32": "Barter 032 - Buffalo update 10 juli'26.pdf",
   "034": "Barter 034 - Gion.pdf",
   "34": "Barter 034 - Gion.pdf",
   "035": "Barter 035 -  NAPINDO update 4 agst'25.pdf",
