@@ -8850,7 +8850,8 @@ const MEMO_MAP = {
   "344": "344 - PT Setinggi Langit Kreatif Indonesia update 3 juli'26 (1).pdf",
   "294": "294 - Pemprov DKI update 29 juni'26.pdf",
   "023": "Goodwill 023 - CIMB Niaga.pdf",
-  "23": "Goodwill 023 - CIMB Niaga.pdf"
+  "23": "Goodwill 023 - CIMB Niaga.pdf",
+  "400": "400 - Pearson update 13 juli'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
