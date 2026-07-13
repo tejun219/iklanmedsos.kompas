@@ -8581,21 +8581,21 @@ const INITIAL_DATA = {
       "row_idx": 26
     },
     {
-      "no": "",
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
+      "no": 25,
+      "judul": "Samsung",
+      "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-18",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
+      "tgl_terbit": "2026-07-13",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.",
+      "keterangan": "Menunggu memo",
       "so": "",
       "row_idx": 27
     },
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-07-18",
       "ae": "Debby",
@@ -8607,7 +8607,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-07-18",
       "ae": "Debby",
@@ -8619,7 +8619,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-07-18",
       "ae": "Debby",
@@ -8627,6 +8627,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "",
       "row_idx": 30
+    },
+    {
+      "no": "",
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-18",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 31
     }
   ],
   "Agustus 2026": [],
