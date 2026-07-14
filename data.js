@@ -8438,12 +8438,12 @@ const INITIAL_DATA = {
     },
     {
       "no": 13,
-      "judul": "LG",
-      "posisi": "IG Story Link Harian Kompas",
+      "judul": "LG Electronics",
+      "posisi": "IG Story Link Kompas Urbana",
       "total_ad": 1,
       "tgl_terbit": "2026-07-04",
       "ae": "Rian",
-      "keterangan_order": "Memo No : 529/MKT-PL/KMP/VI/2026/GA/ALT-04/03",
+      "keterangan_order": "Memo No : 409/MO/PRODUK/VII/202",
       "keterangan": "",
       "so": "SO0122124",
       "row_idx": 15
@@ -8587,8 +8587,8 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-13",
       "ae": "Rian",
-      "keterangan_order": "Memo No.",
-      "keterangan": "Menunggu memo",
+      "keterangan_order": "Memo No.432/MO/PRODUK/VII/2026",
+      "keterangan": "",
       "so": "",
       "row_idx": 27
     },
@@ -8601,8 +8601,20 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.400/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122310",
       "row_idx": 28
+    },
+    {
+      "no": 27,
+      "judul": "LG Electronics",
+      "posisi": "IG Reels Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-14",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.409/MO/PRODUK/VII/202",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 29
     },
     {
       "no": "",
@@ -8614,7 +8626,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 29
+      "row_idx": 30
     },
     {
       "no": "",
@@ -8626,7 +8638,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 30
+      "row_idx": 31
     },
     {
       "no": "",
@@ -8638,7 +8650,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 31
+      "row_idx": 32
     },
     {
       "no": "",
@@ -8650,7 +8662,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 32
+      "row_idx": 33
     }
   ],
   "Agustus 2026": [],
@@ -8863,7 +8875,9 @@ const MEMO_MAP = {
   "294": "294 - Pemprov DKI update 29 juni'26.pdf",
   "023": "Goodwill 023 - CIMB Niaga.pdf",
   "23": "Goodwill 023 - CIMB Niaga.pdf",
-  "400": "400 - Pearson update 13 juli'26.pdf"
+  "400": "400 - Pearson update 13 juli'26.pdf",
+  "409": "409 - PHD (LG) update 14 juli'26.pdf",
+  "432": "432 - Samsung.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
