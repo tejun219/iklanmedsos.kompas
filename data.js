@@ -8630,12 +8630,12 @@ const INITIAL_DATA = {
     },
     {
       "no": 29,
-      "judul": "Samsung",
-      "posisi": "IG Reels Harian Kompas",
+      "judul": "UMN",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-14",
-      "ae": "Rian",
-      "keterangan_order": "Memo No.432/MO/PRODUK/VII/2026",
+      "tgl_terbit": "2026-07-15",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
       "so": "",
       "row_idx": 31
@@ -8645,7 +8645,7 @@ const INITIAL_DATA = {
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-15",
+      "tgl_terbit": "2026-07-16",
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
@@ -8657,7 +8657,7 @@ const INITIAL_DATA = {
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-16",
+      "tgl_terbit": "2026-07-17",
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
@@ -8669,24 +8669,12 @@ const INITIAL_DATA = {
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-17",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 34
-    },
-    {
-      "no": 33,
-      "judul": "UMN",
-      "posisi": "IG Post Carousell Harian Kompas",
-      "total_ad": 1,
       "tgl_terbit": "2026-07-18",
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 35
+      "row_idx": 34
     },
     {
       "no": "",
@@ -8698,7 +8686,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 36
+      "row_idx": 35
     },
     {
       "no": "",
@@ -8710,7 +8698,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 37
+      "row_idx": 36
     },
     {
       "no": "",
@@ -8722,7 +8710,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 38
+      "row_idx": 37
     },
     {
       "no": "",
@@ -8734,7 +8722,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 39
+      "row_idx": 38
     }
   ],
   "Agustus 2026": [],
