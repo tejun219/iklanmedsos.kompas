@@ -8613,8 +8613,20 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No.409/MO/PRODUK/VII/202",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122358",
       "row_idx": 29
+    },
+    {
+      "no": 28,
+      "judul": "Samsung",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-14",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.432/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 30
     },
     {
       "no": "",
@@ -8626,7 +8638,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 30
+      "row_idx": 31
     },
     {
       "no": "",
@@ -8638,7 +8650,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 31
+      "row_idx": 32
     },
     {
       "no": "",
@@ -8650,7 +8662,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 32
+      "row_idx": 33
     },
     {
       "no": "",
@@ -8662,7 +8674,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 33
+      "row_idx": 34
     }
   ],
   "Agustus 2026": [],
