@@ -8606,18 +8606,6 @@ const INITIAL_DATA = {
     },
     {
       "no": 27,
-      "judul": "LG Electronics",
-      "posisi": "IG Reels Kompas Urbana",
-      "total_ad": 1,
-      "tgl_terbit": "2026-07-14",
-      "ae": "Rian",
-      "keterangan_order": "Memo No.409/MO/PRODUK/VII/202",
-      "keterangan": "",
-      "so": "SO0122358",
-      "row_idx": 29
-    },
-    {
-      "no": 28,
       "judul": "Samsung",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -8626,7 +8614,79 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.432/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "",
+      "row_idx": 29
+    },
+    {
+      "no": 28,
+      "judul": "LG Electronics",
+      "posisi": "IG Reels Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-14",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.409/MO/PRODUK/VII/202",
+      "keterangan": "",
+      "so": "SO0122358",
       "row_idx": 30
+    },
+    {
+      "no": 29,
+      "judul": "Samsung",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-14",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.432/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 31
+    },
+    {
+      "no": 30,
+      "judul": "UMN",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-15",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 32
+    },
+    {
+      "no": 31,
+      "judul": "UMN",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-16",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 33
+    },
+    {
+      "no": 32,
+      "judul": "UMN",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-17",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 34
+    },
+    {
+      "no": 33,
+      "judul": "UMN",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-18",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 35
     },
     {
       "no": "",
@@ -8638,7 +8698,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 31
+      "row_idx": 36
     },
     {
       "no": "",
@@ -8650,7 +8710,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 32
+      "row_idx": 37
     },
     {
       "no": "",
@@ -8662,7 +8722,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 33
+      "row_idx": 38
     },
     {
       "no": "",
@@ -8674,7 +8734,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 34
+      "row_idx": 39
     }
   ],
   "Agustus 2026": [],
