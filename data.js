@@ -8589,7 +8589,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No.432/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122366",
       "row_idx": 27
     },
     {
@@ -8613,7 +8613,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No.432/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122367",
       "row_idx": 29
     },
     {
@@ -8637,7 +8637,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122363",
       "row_idx": 31
     },
     {
@@ -8649,11 +8649,47 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122363",
       "row_idx": 32
     },
     {
       "no": 31,
+      "judul": "Bank bjb Tangerang10K",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-16",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 33
+    },
+    {
+      "no": 32,
+      "judul": "Bank bjb Tangerang10K",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-16",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 34
+    },
+    {
+      "no": 33,
+      "judul": "Buffalo",
+      "posisi": "IG Storylink Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-16",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 35
+    },
+    {
+      "no": 34,
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8661,11 +8697,35 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 33
+      "so": "SO0122363",
+      "row_idx": 36
     },
     {
-      "no": 32,
+      "no": 35,
+      "judul": "Bank bjb Tangerang10K",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-17",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 37
+    },
+    {
+      "no": 36,
+      "judul": "Bank bjb Tangerang10K",
+      "posisi": "IG Storylink Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-17",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 38
+    },
+    {
+      "no": 37,
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8673,11 +8733,11 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 34
+      "so": "SO0122363",
+      "row_idx": 39
     },
     {
-      "no": "",
+      "no": 38,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8686,10 +8746,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 35
+      "row_idx": 40
     },
     {
-      "no": "",
+      "no": 39,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8698,10 +8758,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 36
+      "row_idx": 41
     },
     {
-      "no": "",
+      "no": 40,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8710,10 +8770,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 37
+      "row_idx": 42
     },
     {
-      "no": "",
+      "no": 41,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8722,7 +8782,31 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 38
+      "row_idx": 43
+    },
+    {
+      "no": 42,
+      "judul": "Buffalo",
+      "posisi": "IG Storylink Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-23",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 44
+    },
+    {
+      "no": 43,
+      "judul": "Buffalo",
+      "posisi": "IG Storylink Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-30",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 45
     }
   ],
   "Agustus 2026": [],
@@ -8825,8 +8909,8 @@ const MEMO_MAP = {
   "063": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
   "63": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
   "460": "460 - POLRI update 25 juli'25.pdf",
-  "032": "Barter 032 - Buffalo update 10 juli'26.pdf",
-  "32": "Barter 032 - Buffalo update 10 juli'26.pdf",
+  "032": "Barter 032 - Buffalo update 15 juli'26.pdf",
+  "32": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "034": "Barter 034 - Gion.pdf",
   "34": "Barter 034 - Gion.pdf",
   "035": "Barter 035 -  NAPINDO update 4 agst'25.pdf",
