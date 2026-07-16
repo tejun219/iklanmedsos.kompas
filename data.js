@@ -8659,7 +8659,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-16",
       "ae": "Rifai",
-      "keterangan_order": "Memo No.",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 33
@@ -8671,7 +8671,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-16",
       "ae": "Rifai",
-      "keterangan_order": "Memo No.",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 34
@@ -8707,7 +8707,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-17",
       "ae": "Rifai",
-      "keterangan_order": "Memo No.",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 37
@@ -8719,7 +8719,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-17",
       "ae": "Rifai",
-      "keterangan_order": "Memo No.",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 38
@@ -8847,7 +8847,7 @@ const MEMO_MAP = {
   "2024": "Memo Internal_East Ventures_Indiv_CEO Forum 2024_REV.pdf",
   "0046": "0046 - Dyandra IIMS update 11 feb'25.pdf",
   "46": "0046 - Dyandra IIMS update 11 feb'25.pdf",
-  "10": "Memo Internal_Harian Kompas_ bankbjb SURBOYO10K_PAID_REV1.pdf",
+  "10": "Memo Internal_Harian Kompas_ bankbjb TANGERANG10K_PAID_ SIGN.pdf",
   "109": "109 - BI Sultra.pdf",
   "105": "105 - DPR RI.pdf",
   "113": "113 - Universitas Terbuka upd 12 feb'25.pdf",
