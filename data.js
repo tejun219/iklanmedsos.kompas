@@ -8847,7 +8847,7 @@ const MEMO_MAP = {
   "2024": "Memo Internal_East Ventures_Indiv_CEO Forum 2024_REV.pdf",
   "0046": "0046 - Dyandra IIMS update 11 feb'25.pdf",
   "46": "0046 - Dyandra IIMS update 11 feb'25.pdf",
-  "10": "Memo Internal_Harian Kompas_ bankbjb TANGERANG10K_PAID_ SIGN.pdf",
+  "10": "Memo Internal_Harian Kompas_ bankbjb SURBOYO10K_PAID_REV1.pdf",
   "109": "109 - BI Sultra.pdf",
   "105": "105 - DPR RI.pdf",
   "113": "113 - Universitas Terbuka upd 12 feb'25.pdf",
@@ -9022,7 +9022,8 @@ const MEMO_MAP = {
   "400": "400 - Pearson update 13 juli'26.pdf",
   "409": "409 - PHD (LG) update 14 juli'26.pdf",
   "432": "432 - Samsung.pdf",
-  "522": "522 - UMN update 14 juli'26.pdf"
+  "522": "522 - UMN update 14 juli'26.pdf",
+  "508": "Memo Nomor  508 Event VII 2026.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
