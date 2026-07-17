@@ -8846,12 +8846,12 @@ const INITIAL_DATA = {
     },
     {
       "no": 47,
-      "judul": "Buffalo",
-      "posisi": "IG Storylink Kompas Urbana",
+      "judul": "Albayrak",
+      "posisi": "IG Storylink harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-23",
-      "ae": "Imel",
-      "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
+      "tgl_terbit": "2026-07-18",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.356/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 49
@@ -8861,12 +8861,24 @@ const INITIAL_DATA = {
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-30",
+      "tgl_terbit": "2026-07-23",
       "ae": "Imel",
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 50
+    },
+    {
+      "no": 49,
+      "judul": "Buffalo",
+      "posisi": "IG Storylink Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-30",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 51
     }
   ],
   "Agustus 2026": [],
@@ -9084,7 +9096,8 @@ const MEMO_MAP = {
   "432": "432 - Samsung.pdf",
   "522": "522 - UMN update 14 juli'26.pdf",
   "508": "Memo Nomor  508 Event VII 2026.pdf",
-  "348": "348 - DR.Rio update 6 Juli'26.pdf"
+  "348": "348 - DR.Rio update 6 Juli'26.pdf",
+  "356": "356 - SUPPLEMENT ALBAYRAK MEDIA GROUP update 17 Juli'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
