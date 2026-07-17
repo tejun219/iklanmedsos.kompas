@@ -8685,11 +8685,23 @@ const INITIAL_DATA = {
       "ae": "Imel",
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122441",
       "row_idx": 35
     },
     {
       "no": 34,
+      "judul": "ARUNA",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-16",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 36
+    },
+    {
+      "no": 35,
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8698,10 +8710,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
       "so": "SO0122363",
-      "row_idx": 36
+      "row_idx": 37
     },
     {
-      "no": 35,
+      "no": 36,
       "judul": "Bank bjb Tangerang10K",
       "posisi": "IG Post Kompas Muda",
       "total_ad": 1,
@@ -8710,10 +8722,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "SO0122439",
-      "row_idx": 37
+      "row_idx": 38
     },
     {
-      "no": 36,
+      "no": 37,
       "judul": "Bank bjb Tangerang10K",
       "posisi": "IG Storylink Kompas Muda",
       "total_ad": 1,
@@ -8722,10 +8734,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "SO0122440",
-      "row_idx": 38
+      "row_idx": 39
     },
     {
-      "no": 37,
+      "no": 38,
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8734,10 +8746,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
       "so": "SO0122363",
-      "row_idx": 39
+      "row_idx": 40
     },
     {
-      "no": 38,
+      "no": 39,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8746,10 +8758,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122432",
-      "row_idx": 40
+      "row_idx": 41
     },
     {
-      "no": 39,
+      "no": 40,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8758,10 +8770,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122433",
-      "row_idx": 41
+      "row_idx": 42
     },
     {
-      "no": 40,
+      "no": 41,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8770,10 +8782,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122434",
-      "row_idx": 42
+      "row_idx": 43
     },
     {
-      "no": 41,
+      "no": 42,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8782,10 +8794,58 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122435",
-      "row_idx": 43
+      "row_idx": 44
     },
     {
-      "no": 42,
+      "no": 43,
+      "judul": "ARUNA",
+      "posisi": "IG Post Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-18",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 45
+    },
+    {
+      "no": 44,
+      "judul": "ARUNA",
+      "posisi": "IG Storylink Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-18",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 46
+    },
+    {
+      "no": 45,
+      "judul": "ARUNA",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-18",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 47
+    },
+    {
+      "no": 46,
+      "judul": "ARUNA",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-18",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 48
+    },
+    {
+      "no": 47,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8794,10 +8854,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 44
+      "row_idx": 49
     },
     {
-      "no": 43,
+      "no": 48,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8806,7 +8866,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 45
+      "row_idx": 50
     }
   ],
   "Agustus 2026": [],
@@ -9023,7 +9083,8 @@ const MEMO_MAP = {
   "409": "409 - PHD (LG) update 14 juli'26.pdf",
   "432": "432 - Samsung.pdf",
   "522": "522 - UMN update 14 juli'26.pdf",
-  "508": "Memo Nomor  508 Event VII 2026.pdf"
+  "508": "Memo Nomor  508 Event VII 2026.pdf",
+  "348": "348 - DR.Rio update 6 Juli'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
