@@ -8661,7 +8661,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122437",
       "row_idx": 33
     },
     {
@@ -8673,7 +8673,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122438",
       "row_idx": 34
     },
     {
@@ -8709,7 +8709,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122439",
       "row_idx": 37
     },
     {
@@ -8721,7 +8721,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122440",
       "row_idx": 38
     },
     {
@@ -8745,7 +8745,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122432",
       "row_idx": 40
     },
     {
@@ -8757,7 +8757,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122433",
       "row_idx": 41
     },
     {
@@ -8769,7 +8769,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122434",
       "row_idx": 42
     },
     {
@@ -8781,7 +8781,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122435",
       "row_idx": 43
     },
     {
