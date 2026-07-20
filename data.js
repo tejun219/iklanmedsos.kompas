@@ -8865,7 +8865,7 @@ const INITIAL_DATA = {
       "ae": "Vicky",
       "keterangan_order": "Memo No : 444/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122514",
       "row_idx": 50
     },
     {
