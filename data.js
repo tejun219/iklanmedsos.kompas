@@ -8637,7 +8637,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "SO0122363",
+      "so": "",
       "row_idx": 31
     },
     {
@@ -8649,7 +8649,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "SO0122363",
+      "so": "SO0122497",
       "row_idx": 32
     },
     {
@@ -8709,7 +8709,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "SO0122363",
+      "so": "",
       "row_idx": 37
     },
     {
@@ -8745,7 +8745,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "SO0122363",
+      "so": "",
       "row_idx": 40
     },
     {
@@ -8853,17 +8853,17 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.356/MO/PRODUK/VI/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122495",
       "row_idx": 49
     },
     {
       "no": 48,
-      "judul": "Buffalo",
-      "posisi": "IG Storylink Kompas Urbana",
+      "judul": "Djarum Bhakti Budaya",
+      "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-23",
-      "ae": "Imel",
-      "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
+      "tgl_terbit": "2026-07-21",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No : 444/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 50
@@ -8873,12 +8873,24 @@ const INITIAL_DATA = {
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-30",
+      "tgl_terbit": "2026-07-23",
       "ae": "Imel",
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 51
+    },
+    {
+      "no": 50,
+      "judul": "Buffalo",
+      "posisi": "IG Storylink Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-30",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 52
     }
   ],
   "Agustus 2026": [],
@@ -9097,7 +9109,8 @@ const MEMO_MAP = {
   "522": "522 - UMN update 14 juli'26.pdf",
   "508": "Memo Nomor  508 Event VII 2026.pdf",
   "348": "348 - DR.Rio update 6 Juli'26.pdf",
-  "356": "356 - SUPPLEMENT ALBAYRAK MEDIA GROUP update 17 Juli'26.pdf"
+  "356": "356 - SUPPLEMENT ALBAYRAK MEDIA GROUP update 17 Juli'26.pdf",
+  "444": "444 - Djarum Bakti Budaya.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
