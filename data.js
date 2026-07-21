@@ -8697,7 +8697,7 @@ const INITIAL_DATA = {
       "ae": "Aldo",
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122595",
       "row_idx": 36
     },
     {
@@ -8805,7 +8805,7 @@ const INITIAL_DATA = {
       "ae": "Aldo",
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122598",
       "row_idx": 45
     },
     {
@@ -8817,7 +8817,7 @@ const INITIAL_DATA = {
       "ae": "Aldo",
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122591",
       "row_idx": 46
     },
     {
@@ -8829,7 +8829,7 @@ const INITIAL_DATA = {
       "ae": "Aldo",
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122590",
       "row_idx": 47
     },
     {
