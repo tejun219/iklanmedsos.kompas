@@ -8857,7 +8857,7 @@ const INITIAL_DATA = {
       "row_idx": 49
     },
     {
-      "no": 6,
+      "no": 49,
       "judul": "Setinggi Langit - Cherry",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8869,19 +8869,19 @@ const INITIAL_DATA = {
       "row_idx": 50
     },
     {
-      "no": "",
+      "no": 50,
       "judul": "DBL",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-07-22",
       "ae": "Dika",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 395/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 51
     },
     {
-      "no": 49,
+      "no": 51,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
