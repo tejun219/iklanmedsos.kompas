@@ -8986,7 +8986,7 @@ const MEMO_MAP = {
   "338": "338 - ISC-XCID.pdf",
   "387": "387 - BPN Jateng.pdf",
   "393": "393 - Bank Syariah Indonesia update 25 juni'25.pdf",
-  "395": "395 - Pemprov DKI update 17 nov'25.pdf",
+  "395": "395 - DBL Indonesia.pdf",
   "307": "307 - CIMB NIAGA update 25 sept'25.pdf",
   "449": "449 - DYNAMIC (DJARUM FOUNDATION) update 24 juli'25.pdf",
   "377": "377 - JFFF SUMMARECON update 22 juli'25.pdf",
