@@ -8869,6 +8869,18 @@ const INITIAL_DATA = {
       "row_idx": 50
     },
     {
+      "no": "",
+      "judul": "DBL",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-22",
+      "ae": "Dika",
+      "keterangan_order": "",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 51
+    },
+    {
       "no": 49,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
@@ -8878,7 +8890,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 51
+      "row_idx": 52
     },
     {
       "no": 50,
@@ -8890,7 +8902,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 52
+      "row_idx": 53
     }
   ],
   "Agustus 2026": [],
