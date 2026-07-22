@@ -8353,18 +8353,6 @@ const INITIAL_DATA = {
       "row_idx": 7
     },
     {
-      "no": 6,
-      "judul": "Setinggi Langit - Cherry",
-      "posisi": "IG Post Carousell Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "TBC",
-      "ae": "Dika",
-      "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
-      "keterangan": "",
-      "so": "SO0121687",
-      "row_idx": 8
-    },
-    {
       "no": 7,
       "judul": "LPDP Kemenkeu",
       "posisi": "IG Post Harian Kompas",
@@ -8374,7 +8362,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 221/MO/PRODUK/IV/2026",
       "keterangan": "",
       "so": "SO0122058",
-      "row_idx": 9
+      "row_idx": 8
     },
     {
       "no": 8,
@@ -8386,7 +8374,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 221/MO/PRODUK/IV/2026",
       "keterangan": "",
       "so": "SO0122072",
-      "row_idx": 10
+      "row_idx": 9
     },
     {
       "no": 9,
@@ -8398,7 +8386,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122043",
-      "row_idx": 11
+      "row_idx": 10
     },
     {
       "no": 10,
@@ -8410,7 +8398,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122042",
-      "row_idx": 12
+      "row_idx": 11
     },
     {
       "no": 11,
@@ -8422,7 +8410,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122041",
-      "row_idx": 13
+      "row_idx": 12
     },
     {
       "no": 12,
@@ -8434,7 +8422,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122040",
-      "row_idx": 14
+      "row_idx": 13
     },
     {
       "no": 13,
@@ -8446,7 +8434,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No : 409/MO/PRODUK/VII/202",
       "keterangan": "",
       "so": "SO0122124",
-      "row_idx": 15
+      "row_idx": 14
     },
     {
       "no": 14,
@@ -8458,7 +8446,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No : 023/MO/PRODUK-GW/VII/2026",
       "keterangan": "",
       "so": "SO0122088",
-      "row_idx": 16
+      "row_idx": 15
     },
     {
       "no": 15,
@@ -8470,7 +8458,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0122135",
-      "row_idx": 17
+      "row_idx": 16
     },
     {
       "no": 16,
@@ -8482,7 +8470,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0122136",
-      "row_idx": 18
+      "row_idx": 17
     },
     {
       "no": 17,
@@ -8494,7 +8482,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0122137",
-      "row_idx": 19
+      "row_idx": 18
     },
     {
       "no": 18,
@@ -8506,7 +8494,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.Nomor : 496/Event/VI/2026",
       "keterangan": "",
       "so": "SO0122248",
-      "row_idx": 20
+      "row_idx": 19
     },
     {
       "no": 19,
@@ -8518,7 +8506,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122218",
-      "row_idx": 21
+      "row_idx": 20
     },
     {
       "no": 20,
@@ -8530,7 +8518,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122219",
-      "row_idx": 22
+      "row_idx": 21
     },
     {
       "no": 21,
@@ -8542,7 +8530,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122220",
-      "row_idx": 23
+      "row_idx": 22
     },
     {
       "no": 22,
@@ -8554,7 +8542,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122246",
-      "row_idx": 24
+      "row_idx": 23
     },
     {
       "no": 23,
@@ -8566,7 +8554,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.034/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0122189",
-      "row_idx": 25
+      "row_idx": 24
     },
     {
       "no": 24,
@@ -8578,7 +8566,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0122227",
-      "row_idx": 26
+      "row_idx": 25
     },
     {
       "no": 25,
@@ -8590,7 +8578,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.432/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122366",
-      "row_idx": 27
+      "row_idx": 26
     },
     {
       "no": 26,
@@ -8602,7 +8590,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.400/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122310",
-      "row_idx": 28
+      "row_idx": 27
     },
     {
       "no": 27,
@@ -8614,7 +8602,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.432/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122367",
-      "row_idx": 29
+      "row_idx": 28
     },
     {
       "no": 28,
@@ -8626,7 +8614,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.409/MO/PRODUK/VII/202",
       "keterangan": "",
       "so": "SO0122358",
-      "row_idx": 30
+      "row_idx": 29
     },
     {
       "no": 29,
@@ -8638,7 +8626,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 31
+      "row_idx": 30
     },
     {
       "no": 30,
@@ -8650,7 +8638,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
       "so": "SO0122497",
-      "row_idx": 32
+      "row_idx": 31
     },
     {
       "no": 31,
@@ -8662,7 +8650,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "SO0122437",
-      "row_idx": 33
+      "row_idx": 32
     },
     {
       "no": 32,
@@ -8674,7 +8662,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "SO0122438",
-      "row_idx": 34
+      "row_idx": 33
     },
     {
       "no": 33,
@@ -8686,7 +8674,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0122441",
-      "row_idx": 35
+      "row_idx": 34
     },
     {
       "no": 34,
@@ -8698,7 +8686,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0122595",
-      "row_idx": 36
+      "row_idx": 35
     },
     {
       "no": 35,
@@ -8710,7 +8698,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 37
+      "row_idx": 36
     },
     {
       "no": 36,
@@ -8722,7 +8710,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "SO0122439",
-      "row_idx": 38
+      "row_idx": 37
     },
     {
       "no": 37,
@@ -8734,7 +8722,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "SO0122440",
-      "row_idx": 39
+      "row_idx": 38
     },
     {
       "no": 38,
@@ -8746,7 +8734,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 40
+      "row_idx": 39
     },
     {
       "no": 39,
@@ -8758,7 +8746,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122432",
-      "row_idx": 41
+      "row_idx": 40
     },
     {
       "no": 40,
@@ -8770,7 +8758,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122433",
-      "row_idx": 42
+      "row_idx": 41
     },
     {
       "no": 41,
@@ -8782,7 +8770,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122434",
-      "row_idx": 43
+      "row_idx": 42
     },
     {
       "no": 42,
@@ -8794,7 +8782,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122435",
-      "row_idx": 44
+      "row_idx": 43
     },
     {
       "no": 43,
@@ -8806,7 +8794,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0122598",
-      "row_idx": 45
+      "row_idx": 44
     },
     {
       "no": 44,
@@ -8818,7 +8806,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0122591",
-      "row_idx": 46
+      "row_idx": 45
     },
     {
       "no": 45,
@@ -8830,7 +8818,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0122590",
-      "row_idx": 47
+      "row_idx": 46
     },
     {
       "no": 46,
@@ -8842,7 +8830,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 48
+      "row_idx": 47
     },
     {
       "no": 47,
@@ -8854,7 +8842,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.356/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0122495",
-      "row_idx": 49
+      "row_idx": 48
     },
     {
       "no": 48,
@@ -8866,6 +8854,18 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No : 444/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122514",
+      "row_idx": 49
+    },
+    {
+      "no": 6,
+      "judul": "Setinggi Langit - Cherry",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-22",
+      "ae": "Dika",
+      "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "SO0121687",
       "row_idx": 50
     },
     {
