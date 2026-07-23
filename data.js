@@ -8353,7 +8353,7 @@ const INITIAL_DATA = {
       "row_idx": 7
     },
     {
-      "no": 7,
+      "no": 6,
       "judul": "LPDP Kemenkeu",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -8365,7 +8365,7 @@ const INITIAL_DATA = {
       "row_idx": 8
     },
     {
-      "no": 8,
+      "no": 7,
       "judul": "LPDP Kemenkeu",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8377,7 +8377,7 @@ const INITIAL_DATA = {
       "row_idx": 9
     },
     {
-      "no": 9,
+      "no": 8,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8389,7 +8389,7 @@ const INITIAL_DATA = {
       "row_idx": 10
     },
     {
-      "no": 10,
+      "no": 9,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8401,7 +8401,7 @@ const INITIAL_DATA = {
       "row_idx": 11
     },
     {
-      "no": 11,
+      "no": 10,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8413,7 +8413,7 @@ const INITIAL_DATA = {
       "row_idx": 12
     },
     {
-      "no": 12,
+      "no": 11,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8425,7 +8425,7 @@ const INITIAL_DATA = {
       "row_idx": 13
     },
     {
-      "no": 13,
+      "no": 12,
       "judul": "LG Electronics",
       "posisi": "IG Story Link Kompas Urbana",
       "total_ad": 1,
@@ -8437,7 +8437,7 @@ const INITIAL_DATA = {
       "row_idx": 14
     },
     {
-      "no": 14,
+      "no": 13,
       "judul": "CIMB Niaga",
       "posisi": "IG Story Harian Kompas",
       "total_ad": 1,
@@ -8449,7 +8449,7 @@ const INITIAL_DATA = {
       "row_idx": 15
     },
     {
-      "no": 15,
+      "no": 14,
       "judul": "Buffalo",
       "posisi": "IG Post Carousell Kompas Urbana",
       "total_ad": 1,
@@ -8461,7 +8461,7 @@ const INITIAL_DATA = {
       "row_idx": 16
     },
     {
-      "no": 16,
+      "no": 15,
       "judul": "Buffalo",
       "posisi": "Tiktok Harian Kompas",
       "total_ad": 1,
@@ -8473,7 +8473,7 @@ const INITIAL_DATA = {
       "row_idx": 17
     },
     {
-      "no": 17,
+      "no": 16,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8485,7 +8485,7 @@ const INITIAL_DATA = {
       "row_idx": 18
     },
     {
-      "no": 18,
+      "no": 17,
       "judul": "PLataran - PLN Electric Run",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8497,7 +8497,7 @@ const INITIAL_DATA = {
       "row_idx": 19
     },
     {
-      "no": 19,
+      "no": 18,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8509,7 +8509,7 @@ const INITIAL_DATA = {
       "row_idx": 20
     },
     {
-      "no": 20,
+      "no": 19,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8521,7 +8521,7 @@ const INITIAL_DATA = {
       "row_idx": 21
     },
     {
-      "no": 21,
+      "no": 20,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8533,7 +8533,7 @@ const INITIAL_DATA = {
       "row_idx": 22
     },
     {
-      "no": 22,
+      "no": 21,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8545,7 +8545,7 @@ const INITIAL_DATA = {
       "row_idx": 23
     },
     {
-      "no": 23,
+      "no": 22,
       "judul": "Gion",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -8557,7 +8557,7 @@ const INITIAL_DATA = {
       "row_idx": 24
     },
     {
-      "no": 24,
+      "no": 23,
       "judul": "Buffalo",
       "posisi": "IG Post Kompas Urbana",
       "total_ad": 1,
@@ -8569,7 +8569,7 @@ const INITIAL_DATA = {
       "row_idx": 25
     },
     {
-      "no": 25,
+      "no": 24,
       "judul": "Samsung",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -8581,7 +8581,7 @@ const INITIAL_DATA = {
       "row_idx": 26
     },
     {
-      "no": 26,
+      "no": 25,
       "judul": "Pearson",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -8593,7 +8593,7 @@ const INITIAL_DATA = {
       "row_idx": 27
     },
     {
-      "no": 27,
+      "no": 26,
       "judul": "Samsung",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -8605,7 +8605,7 @@ const INITIAL_DATA = {
       "row_idx": 28
     },
     {
-      "no": 28,
+      "no": 27,
       "judul": "LG Electronics",
       "posisi": "IG Reels Kompas Urbana",
       "total_ad": 1,
@@ -8617,7 +8617,7 @@ const INITIAL_DATA = {
       "row_idx": 29
     },
     {
-      "no": 29,
+      "no": 28,
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8629,7 +8629,7 @@ const INITIAL_DATA = {
       "row_idx": 30
     },
     {
-      "no": 30,
+      "no": 29,
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8641,7 +8641,7 @@ const INITIAL_DATA = {
       "row_idx": 31
     },
     {
-      "no": 31,
+      "no": 30,
       "judul": "Bank bjb Tangerang10K",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -8653,7 +8653,7 @@ const INITIAL_DATA = {
       "row_idx": 32
     },
     {
-      "no": 32,
+      "no": 31,
       "judul": "Bank bjb Tangerang10K",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8665,7 +8665,7 @@ const INITIAL_DATA = {
       "row_idx": 33
     },
     {
-      "no": 33,
+      "no": 32,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8677,7 +8677,7 @@ const INITIAL_DATA = {
       "row_idx": 34
     },
     {
-      "no": 34,
+      "no": 33,
       "judul": "ARUNA",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -8689,7 +8689,7 @@ const INITIAL_DATA = {
       "row_idx": 35
     },
     {
-      "no": 35,
+      "no": 34,
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8701,7 +8701,7 @@ const INITIAL_DATA = {
       "row_idx": 36
     },
     {
-      "no": 36,
+      "no": 35,
       "judul": "Bank bjb Tangerang10K",
       "posisi": "IG Post Kompas Muda",
       "total_ad": 1,
@@ -8713,7 +8713,7 @@ const INITIAL_DATA = {
       "row_idx": 37
     },
     {
-      "no": 37,
+      "no": 36,
       "judul": "Bank bjb Tangerang10K",
       "posisi": "IG Storylink Kompas Muda",
       "total_ad": 1,
@@ -8725,7 +8725,7 @@ const INITIAL_DATA = {
       "row_idx": 38
     },
     {
-      "no": 38,
+      "no": 37,
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8737,7 +8737,7 @@ const INITIAL_DATA = {
       "row_idx": 39
     },
     {
-      "no": 39,
+      "no": 38,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8749,7 +8749,7 @@ const INITIAL_DATA = {
       "row_idx": 40
     },
     {
-      "no": 40,
+      "no": 39,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8761,7 +8761,7 @@ const INITIAL_DATA = {
       "row_idx": 41
     },
     {
-      "no": 41,
+      "no": 40,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8773,7 +8773,7 @@ const INITIAL_DATA = {
       "row_idx": 42
     },
     {
-      "no": 42,
+      "no": 41,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8785,7 +8785,7 @@ const INITIAL_DATA = {
       "row_idx": 43
     },
     {
-      "no": 43,
+      "no": 42,
       "judul": "ARUNA",
       "posisi": "IG Post Kompas Urbana",
       "total_ad": 1,
@@ -8797,7 +8797,7 @@ const INITIAL_DATA = {
       "row_idx": 44
     },
     {
-      "no": 44,
+      "no": 43,
       "judul": "ARUNA",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8809,7 +8809,7 @@ const INITIAL_DATA = {
       "row_idx": 45
     },
     {
-      "no": 45,
+      "no": 44,
       "judul": "ARUNA",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -8821,7 +8821,7 @@ const INITIAL_DATA = {
       "row_idx": 46
     },
     {
-      "no": 46,
+      "no": 45,
       "judul": "ARUNA",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8833,7 +8833,7 @@ const INITIAL_DATA = {
       "row_idx": 47
     },
     {
-      "no": 47,
+      "no": 46,
       "judul": "Albayrak",
       "posisi": "IG Storylink harian Kompas",
       "total_ad": 1,
@@ -8845,7 +8845,7 @@ const INITIAL_DATA = {
       "row_idx": 48
     },
     {
-      "no": 48,
+      "no": 47,
       "judul": "Djarum Bhakti Budaya",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -8857,7 +8857,7 @@ const INITIAL_DATA = {
       "row_idx": 49
     },
     {
-      "no": 49,
+      "no": 48,
       "judul": "Setinggi Langit - Cherry",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8869,7 +8869,7 @@ const INITIAL_DATA = {
       "row_idx": 50
     },
     {
-      "no": 50,
+      "no": 49,
       "judul": "DBL",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8877,11 +8877,11 @@ const INITIAL_DATA = {
       "ae": "Dika",
       "keterangan_order": "Memo No. 395/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122678",
       "row_idx": 51
     },
     {
-      "no": 51,
+      "no": 50,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8893,7 +8893,67 @@ const INITIAL_DATA = {
       "row_idx": 52
     },
     {
-      "no": 50,
+      "no": 51,
+      "judul": "Sociolla",
+      "posisi": "IG Post Carousell Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-23",
+      "ae": "Kimberly",
+      "keterangan_order": "Memo No.033/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "SO0122680",
+      "row_idx": 53
+    },
+    {
+      "no": 52,
+      "judul": "Experd",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-25",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 54
+    },
+    {
+      "no": 53,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-25",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 55
+    },
+    {
+      "no": 54,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-25",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 56
+    },
+    {
+      "no": 55,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-25",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 57
+    },
+    {
+      "no": 56,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8902,7 +8962,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 53
+      "row_idx": 58
     }
   ],
   "Agustus 2026": [],
@@ -9028,8 +9088,8 @@ const MEMO_MAP = {
   "031": "Goodwill 031-  Pemprov Kalteng.pdf",
   "31": "Goodwill 031-  Pemprov Kalteng.pdf",
   "569": "569 - RM Sederhana update 25 agst'25.pdf",
-  "033": "Barter 033 -  Shafwah Holiday update 11 maret'26.pdf",
-  "33": "Barter 033 -  Shafwah Holiday update 11 maret'26.pdf",
+  "033": "Barter 033 - Sociolla update 23 juli'26.pdf",
+  "33": "Barter 033 - Sociolla update 23 juli'26.pdf",
   "427": "427 - TSI update 27 agst'25.pdf",
   "0343": "MO 0343 - [Kompas.id] Bogor Illustrator Fair (BIF) - 28 s.s 30 Agustus'25.pdf",
   "343": "MO 0343 - [Kompas.id] Bogor Illustrator Fair (BIF) - 28 s.s 30 Agustus'25.pdf",
