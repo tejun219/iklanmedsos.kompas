@@ -8906,20 +8906,20 @@ const INITIAL_DATA = {
     },
     {
       "no": 52,
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
+      "judul": "BNI",
+      "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-25",
+      "tgl_terbit": "2026-07-23",
       "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
+      "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
+      "keterangan": "update tanggal menyusul",
       "so": "",
       "row_idx": 54
     },
     {
       "no": 53,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-07-25",
       "ae": "Debby",
@@ -8931,7 +8931,7 @@ const INITIAL_DATA = {
     {
       "no": 54,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-07-25",
       "ae": "Debby",
@@ -8943,7 +8943,7 @@ const INITIAL_DATA = {
     {
       "no": 55,
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-07-25",
       "ae": "Debby",
@@ -8954,6 +8954,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 56,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-25",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 58
+    },
+    {
+      "no": 57,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8962,7 +8974,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 58
+      "row_idx": 59
     }
   ],
   "Agustus 2026": [],
@@ -9064,7 +9076,7 @@ const MEMO_MAP = {
   "377": "377 - JFFF SUMMARECON update 22 juli'25.pdf",
   "063": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
   "63": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
-  "460": "460 - POLRI update 25 juli'25.pdf",
+  "460": "460 - BNI (DENTSU).pdf",
   "032": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "32": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "034": "Barter 034 - Gion.pdf",
