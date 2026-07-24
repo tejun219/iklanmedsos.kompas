@@ -9191,7 +9191,7 @@ const MEMO_MAP = {
   "197": "197 - Kolab KCM-KMN Taja.pdf",
   "201": "201 - Jasa Marga.pdf",
   "235": "235 - UKSW update 27 apr'26.pdf",
-  "221": "221 - LPDP Kemenkeu update  3 Juli'26.pdf",
+  "221": "221 - LPDP Kemenkeu update  24 Juli'26.pdf",
   "242": "242 - Garasi Bloko update 18 mei'26 (revisi).pdf",
   "157": "157 - KOKO Global Strategic Communications Council update 12 juni'26.pdf",
   "272": "272 - PT Infiniti update 22 mei'26_update.pdf",
