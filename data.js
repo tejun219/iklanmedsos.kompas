@@ -8912,7 +8912,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-07-23",
       "ae": "Debby",
       "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
-      "keterangan": "",
+      "keterangan": "unbranded",
       "so": "SO0122710",
       "row_idx": 54
     },
@@ -8936,12 +8936,24 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-07-24",
       "ae": "Debby",
       "keterangan_order": "Memo No. 463/MO/PRODUK/VII/2026",
-      "keterangan": "belum ada memo",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0122754",
       "row_idx": 56
     },
     {
       "no": 55,
+      "judul": "BNI",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-24",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
+      "keterangan": "unbranded",
+      "so": "SO0122759",
+      "row_idx": 57
+    },
+    {
+      "no": 56,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8950,10 +8962,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122718",
-      "row_idx": 57
+      "row_idx": 58
     },
     {
-      "no": 56,
+      "no": 57,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8962,10 +8974,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122717",
-      "row_idx": 58
+      "row_idx": 59
     },
     {
-      "no": 57,
+      "no": 58,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8974,10 +8986,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122716",
-      "row_idx": 59
+      "row_idx": 60
     },
     {
-      "no": 58,
+      "no": 59,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -8986,10 +8998,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122715",
-      "row_idx": 60
+      "row_idx": 61
     },
     {
-      "no": 59,
+      "no": 60,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8998,7 +9010,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 61
+      "row_idx": 62
     }
   ],
   "Agustus 2026": [],
