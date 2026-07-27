@@ -8945,7 +8945,7 @@ const INITIAL_DATA = {
       "judul": "BNI",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-24",
+      "tgl_terbit": "2026-07-25",
       "ae": "Debby",
       "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
       "keterangan": "unbranded",
@@ -9002,6 +9002,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 60,
+      "judul": "BNI",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-27",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
+      "keterangan": "unbranded",
+      "so": "SO0122764",
+      "row_idx": 62
+    },
+    {
+      "no": 61,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -9009,8 +9021,8 @@ const INITIAL_DATA = {
       "ae": "Imel",
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
-      "row_idx": 62
+      "so": "SO0122765",
+      "row_idx": 63
     }
   ],
   "Agustus 2026": [],
@@ -9112,7 +9124,7 @@ const MEMO_MAP = {
   "377": "377 - JFFF SUMMARECON update 22 juli'25.pdf",
   "063": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
   "63": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
-  "460": "460 - BNI (DENTSU) update 24 juli'26.pdf",
+  "460": "460 - BNI (DENTSU) update 27 juli'26.pdf",
   "032": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "32": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "034": "Barter 034 - Gion.pdf",
