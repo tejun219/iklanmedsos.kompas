@@ -8625,7 +8625,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122820",
       "row_idx": 30
     },
     {
@@ -8637,7 +8637,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "SO0122497",
+      "so": "SO0122819",
       "row_idx": 31
     },
     {
@@ -8693,11 +8693,11 @@ const INITIAL_DATA = {
       "judul": "UMN",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-17",
+      "tgl_terbit": "2026-07-16",
       "ae": "Debby",
       "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122363",
       "row_idx": 36
     },
     {
@@ -8725,18 +8725,6 @@ const INITIAL_DATA = {
       "row_idx": 38
     },
     {
-      "no": 37,
-      "judul": "UMN",
-      "posisi": "IG Post Carousell Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-07-18",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.NO : 522/MO/PRODUK/VIII/2025",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 39
-    },
-    {
       "no": 38,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
@@ -8746,7 +8734,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122432",
-      "row_idx": 40
+      "row_idx": 39
     },
     {
       "no": 39,
@@ -8758,7 +8746,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122433",
-      "row_idx": 41
+      "row_idx": 40
     },
     {
       "no": 40,
@@ -8770,7 +8758,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122434",
-      "row_idx": 42
+      "row_idx": 41
     },
     {
       "no": 41,
@@ -8782,7 +8770,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0122435",
-      "row_idx": 43
+      "row_idx": 42
     },
     {
       "no": 42,
@@ -8794,7 +8782,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0122598",
-      "row_idx": 44
+      "row_idx": 43
     },
     {
       "no": 43,
@@ -8806,7 +8794,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0122591",
-      "row_idx": 45
+      "row_idx": 44
     },
     {
       "no": 44,
@@ -8818,7 +8806,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0122590",
-      "row_idx": 46
+      "row_idx": 45
     },
     {
       "no": 45,
@@ -8830,7 +8818,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 47
+      "row_idx": 46
     },
     {
       "no": 46,
@@ -8842,7 +8830,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.356/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0122495",
-      "row_idx": 48
+      "row_idx": 47
     },
     {
       "no": 47,
@@ -8854,7 +8842,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No : 444/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122514",
-      "row_idx": 49
+      "row_idx": 48
     },
     {
       "no": 48,
@@ -8866,7 +8854,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.344/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0121687",
-      "row_idx": 50
+      "row_idx": 49
     },
     {
       "no": 49,
@@ -8878,10 +8866,22 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 395/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122678",
-      "row_idx": 51
+      "row_idx": 50
     },
     {
       "no": 50,
+      "judul": "Starbucks",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-22",
+      "ae": "Intan",
+      "keterangan_order": "Memo No.817/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "SO0122822",
+      "row_idx": 51
+    },
+    {
+      "no": 51,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -8893,7 +8893,7 @@ const INITIAL_DATA = {
       "row_idx": 52
     },
     {
-      "no": 51,
+      "no": 52,
       "judul": "Sociolla",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8905,7 +8905,7 @@ const INITIAL_DATA = {
       "row_idx": 53
     },
     {
-      "no": 52,
+      "no": 53,
       "judul": "BNI",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -8917,7 +8917,7 @@ const INITIAL_DATA = {
       "row_idx": 54
     },
     {
-      "no": 53,
+      "no": 54,
       "judul": "LPDP Kemenkeu",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8929,7 +8929,7 @@ const INITIAL_DATA = {
       "row_idx": 55
     },
     {
-      "no": 54,
+      "no": 55,
       "judul": "UKSW",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8941,7 +8941,7 @@ const INITIAL_DATA = {
       "row_idx": 56
     },
     {
-      "no": 55,
+      "no": 56,
       "judul": "BNI",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -8953,7 +8953,7 @@ const INITIAL_DATA = {
       "row_idx": 57
     },
     {
-      "no": 56,
+      "no": 57,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -8965,7 +8965,7 @@ const INITIAL_DATA = {
       "row_idx": 58
     },
     {
-      "no": 57,
+      "no": 58,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -8977,7 +8977,7 @@ const INITIAL_DATA = {
       "row_idx": 59
     },
     {
-      "no": 58,
+      "no": 59,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -8989,7 +8989,7 @@ const INITIAL_DATA = {
       "row_idx": 60
     },
     {
-      "no": 59,
+      "no": 60,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -9001,7 +9001,7 @@ const INITIAL_DATA = {
       "row_idx": 61
     },
     {
-      "no": 60,
+      "no": 61,
       "judul": "BNI",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -9013,7 +9013,43 @@ const INITIAL_DATA = {
       "row_idx": 62
     },
     {
-      "no": 61,
+      "no": 62,
+      "judul": "Uniqlo",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-28",
+      "ae": "Kimberly",
+      "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 63
+    },
+    {
+      "no": 63,
+      "judul": "Uniqlo",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-28",
+      "ae": "Kimberly",
+      "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 64
+    },
+    {
+      "no": 64,
+      "judul": "Uniqlo",
+      "posisi": "IG Storylink Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-28",
+      "ae": "Kimberly",
+      "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 65
+    },
+    {
+      "no": 65,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -9022,7 +9058,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0122765",
-      "row_idx": 63
+      "row_idx": 66
     }
   ],
   "Agustus 2026": [],
