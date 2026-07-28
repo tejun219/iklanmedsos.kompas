@@ -9021,7 +9021,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122867",
       "row_idx": 63
     },
     {
@@ -9033,7 +9033,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122865",
       "row_idx": 64
     },
     {
@@ -9045,7 +9045,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122866",
       "row_idx": 65
     },
     {
