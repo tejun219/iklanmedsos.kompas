@@ -1178,21 +1178,29 @@ function renderCharts() {
 // State for single-ad spotlight viewer
 let medsosSpotlightIndex = 0;
 let medsosSpotlightAds = [];
+let activeGalleryPlatform = "all";
+let activeGallerySort = "newest";
 
-// Render dynamic single-ad spotlight viewer for social media ads
+function setGalleryPlatform(platform) {
+  activeGalleryPlatform = platform;
+  renderMedsosGallery();
+}
+window.setGalleryPlatform = setGalleryPlatform;
+
+function setGallerySort(sort) {
+  activeGallerySort = sort;
+  renderMedsosGallery();
+}
+window.setGallerySort = setGallerySort;
+
+// Render dynamic Visual Gallery Grid for social media ads
 function renderMedsosGallery() {
   const monthData = WORKING_DATA[currentMonth] || [];
   const galleryGrid = document.getElementById("ads-gallery-grid");
   if (!galleryGrid) return;
 
-  // Preserve current ad if any before re-filtering
-  const currentActiveAd = medsosSpotlightAds[medsosSpotlightIndex];
-  const activeRowIdx = currentActiveAd ? currentActiveAd.row_idx : null;
-
-  galleryGrid.innerHTML = "";
-
-  // All social media ads in this month
-  const allSocialAds = monthData.filter(ad => ad.tgl_terbit && ad.posisi && ad.judul);
+  // Filter all social media ads in this month
+  let ads = monthData.filter(ad => ad.tgl_terbit && ad.posisi && ad.judul);
 
   // Filter by selected calendar day if a day is active
   if (selectedDayNum !== null) {
@@ -1200,61 +1208,248 @@ function renderMedsosGallery() {
     const mm = String(mInfo.month + 1).padStart(2, '0');
     const dd = String(selectedDayNum).padStart(2, '0');
     const targetDate = `${mInfo.year}-${mm}-${dd}`;
-    medsosSpotlightAds = allSocialAds.filter(ad => ad.tgl_terbit === targetDate);
-  } else {
-    medsosSpotlightAds = allSocialAds;
+    ads = ads.filter(ad => ad.tgl_terbit === targetDate);
   }
 
-  // Determine empty message
-  const emptyMsg = selectedDayNum !== null
-    ? `Tidak ada bukti tayang iklan pada tanggal ${selectedDayNum} ${currentMonth}.`
-    : `Tidak ada outline iklan media sosial yang terdaftar pada bulan ${currentMonth}.`;
+  // Filter by platform pill
+  if (activeGalleryPlatform !== "all") {
+    ads = ads.filter(ad => {
+      const posLower = (ad.posisi || "").toLowerCase();
+      if (activeGalleryPlatform === "instagram") return posLower.includes("ig") || posLower.includes("instagram");
+      if (activeGalleryPlatform === "tiktok") return posLower.includes("tiktok");
+      if (activeGalleryPlatform === "x") return posLower.includes("x") || posLower.includes("twitter");
+      if (activeGalleryPlatform === "youtube") return posLower.includes("youtube") || posLower.includes("yt");
+      if (activeGalleryPlatform === "facebook") return posLower.includes("fb") || posLower.includes("facebook");
+      return true;
+    });
+  }
 
-  if (medsosSpotlightAds.length === 0) {
-    galleryGrid.innerHTML = `
-      <div class="no-ads-gallery">
+  // Sort ads
+  ads.sort((a, b) => {
+    const dateA = a.tgl_terbit || "";
+    const dateB = b.tgl_terbit || "";
+    return activeGallerySort === "newest" ? dateB.localeCompare(dateA) : dateA.localeCompare(dateB);
+  });
+
+  // Keep reference for preview modal navigation
+  medsosSpotlightAds = ads;
+
+  // Build filter & navigation controls
+  const filterLabel = selectedDayNum !== null
+    ? `<span class="spotlight-date-filter"><i class="fa-solid fa-calendar-day"></i> Filter: ${selectedDayNum} ${currentMonth} &nbsp;<button class="spotlight-clear-filter" onclick="medsosSpotlightClearFilter()" title="Tampilkan semua iklan bulan ini"><i class="fa-solid fa-xmark"></i></button></span>`
+    : ``;
+
+  const platforms = [
+    { id: "all", label: "SHOW ALL" },
+    { id: "instagram", label: "INSTAGRAM", icon: "fa-brands fa-instagram" },
+    { id: "tiktok", label: "TIKTOK", icon: "fa-brands fa-tiktok" },
+    { id: "x", label: "X (TWITTER)", icon: "fa-brands fa-x-twitter" },
+    { id: "youtube", label: "YOUTUBE", icon: "fa-brands fa-youtube" },
+    { id: "facebook", label: "FACEBOOK", icon: "fa-brands fa-facebook" }
+  ];
+
+  const pillsHtml = platforms.map(p => `
+    <button class="vg-pill ${activeGalleryPlatform === p.id ? 'active' : ''}" onclick="setGalleryPlatform('${p.id}')">
+      ${p.icon ? `<i class="${p.icon}"></i>` : ''} ${p.label}
+    </button>
+  `).join("");
+
+  const headerHtml = `
+    <div class="vg-container">
+      <div class="vg-header-bar">
+        <div class="vg-brand">
+          <span class="bold">VISUAL</span><span class="cyan">GALLERY</span>
+        </div>
+        ${filterLabel}
+        <button class="vg-reset-btn" onclick="medsosSpotlightClearFilter()" title="Kembali ke Tampilan Utama">
+          <i class="fa-solid fa-arrow-left"></i> HOME
+        </button>
+      </div>
+
+      <div class="vg-controls-row">
+        <div class="vg-filter-pills">
+          ${pillsHtml}
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:12px; font-weight:700; color:var(--text-secondary);">URUTKAN:</span>
+          <select class="vg-sort-select" onchange="setGallerySort(this.value)">
+            <option value="newest" ${activeGallerySort === 'newest' ? 'selected' : ''}>Terbaru</option>
+            <option value="oldest" ${activeGallerySort === 'oldest' ? 'selected' : ''}>Terlama</option>
+          </select>
+        </div>
+      </div>
+  `;
+
+  if (ads.length === 0) {
+    const emptyMsg = selectedDayNum !== null
+      ? `Tidak ada bukti tayang iklan pada tanggal ${selectedDayNum} ${currentMonth}.`
+      : `Tidak ada iklan yang cocok dengan filter platform "${activeGalleryPlatform.toUpperCase()}".`;
+
+    galleryGrid.innerHTML = headerHtml + `
+      <div class="no-ads-gallery" style="grid-column: 1 / -1; margin-top:20px;">
         <i class="fa-solid fa-photo-film"></i>
-        <h3>${selectedDayNum !== null ? 'Tidak Ada Iklan pada Tanggal Ini' : 'Belum Ada Bukti Tayang Iklan'}</h3>
+        <h3>Belum Ada Bukti Tayang Iklan</h3>
         <p>${emptyMsg}</p>
       </div>
-    `;
+    </div>`;
     return;
   }
 
-  // Try to preserve index if the ad is still in the filtered list
-  if (activeRowIdx !== null) {
-    const foundIdx = medsosSpotlightAds.findIndex(a => String(a.row_idx) === String(activeRowIdx));
-    medsosSpotlightIndex = foundIdx !== -1 ? foundIdx : 0;
-  } else {
-    medsosSpotlightIndex = 0;
-  }
+  const today = new Date();
+  const todayStr = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
 
-  // Build a date filter label for the nav row
-  const filterLabel = selectedDayNum !== null
-    ? `<span class="spotlight-date-filter"><i class="fa-solid fa-calendar-day"></i> ${selectedDayNum} ${currentMonth} &nbsp;<button class="spotlight-clear-filter" onclick="medsosSpotlightClearFilter()" title="Tampilkan semua iklan bulan ini"><i class="fa-solid fa-xmark"></i></button></span>`
-    : `<span class="spotlight-month-label"><i class="fa-solid fa-calendar"></i> ${currentMonth}</span>`;
+  const DEMO_LINKS = {
+    "bsi": { type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-bank-building-with-columns-in-a-city-43183-large.mp4", thumbnail: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&auto=format&fit=crop" },
+    "djarum": { type: "image", url: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop" },
+    "rolex": { type: "image", url: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&auto=format&fit=crop" },
+    "cgv": { type: "video", url: "https://www.w3schools.com/html/movie.mp4", thumbnail: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=800&auto=format&fit=crop" },
+    "lottemart": { type: "image", url: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&auto=format&fit=crop" },
+    "dyandra": { type: "video", url: "https://www.w3schools.com/html/mov_bbb.mp4", thumbnail: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=800&auto=format&fit=crop" },
+    "pluang": { type: "image", url: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop" },
+    "pegadaian": { type: "image", url: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&auto=format&fit=crop" }
+  };
 
-  galleryGrid.innerHTML = `
-    <div class="spotlight-wrapper" id="spotlight-wrapper">
-      <div class="spotlight-nav-row">
-        <button class="spotlight-nav-btn" id="spotlight-prev" onclick="medsosNavigate(-1)" title="Iklan Sebelumnya">
-          <i class="fa-solid fa-chevron-left"></i>
+  const cardsHtml = ads.map((ad, idx) => {
+    let linkUrl = null;
+    if (ad.keterangan) {
+      const match = ad.keterangan.match(/(https?:\/\/[^\s]+)/i);
+      if (match) linkUrl = match[1];
+    }
+
+    const platformInfo = getPlatformInfo(ad.posisi);
+
+    let mediaType = "none";
+    let mediaUrl = linkUrl;
+    let embedUrl = linkUrl;
+    let mediaThumbnail = null;
+
+    if (linkUrl) {
+      const ext = linkUrl.split('?')[0].split('.').pop().toLowerCase();
+      if (['mp4', 'webm', 'mov'].includes(ext)) { mediaType = "video"; }
+      else if (['jpg', 'jpeg', 'png', 'webp', 'gif'].includes(ext)) { mediaType = "image"; }
+      else if (linkUrl.includes("instagram.com")) { mediaType = "ig-embed"; }
+      else if (linkUrl.includes("youtube.com") || linkUrl.includes("youtu.be")) { mediaType = "yt-embed"; }
+      else if (linkUrl.includes("tiktok.com")) { mediaType = "tk-embed"; }
+      else if (linkUrl.includes("facebook.com") || linkUrl.includes("fb.watch") || linkUrl.includes("fb.com")) {
+        mediaType = "fb-embed";
+        embedUrl = `https://www.facebook.com/plugins/post.php?href=${encodeURIComponent(linkUrl)}&show_text=true&width=500`;
+      }
+      else if (linkUrl.includes("twitter.com") || linkUrl.includes("x.com")) {
+        const twMatch = linkUrl.match(/(?:twitter|x)\.com\/[^/]+\/status\/(\d+)/i);
+        mediaType = "tw-embed";
+        embedUrl = twMatch ? `https://platform.twitter.com/embed/Tweet.html?id=${twMatch[1]}` : linkUrl;
+      }
+      else { mediaType = "link"; }
+    } else {
+      const titleLower = (ad.judul || "").toLowerCase();
+      for (const [key, val] of Object.entries(DEMO_LINKS)) {
+        if (titleLower.includes(key)) {
+          mediaType = val.type;
+          mediaUrl = val.url;
+          embedUrl = val.url;
+          mediaThumbnail = val.thumbnail || null;
+          break;
+        }
+      }
+    }
+
+    const isPublished = ad.tgl_terbit && ad.tgl_terbit <= todayStr;
+    const statusText = isPublished ? "Sudah Tayang" : "Terjadwal";
+    const statusClass = isPublished ? "" : "scheduled";
+
+    let dateStr = ad.tgl_terbit || "";
+    if (dateStr.includes('-')) {
+      const pts = dateStr.split('-');
+      if (pts.length === 3) {
+        const monthNames = ["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"];
+        const mNum = parseInt(pts[1], 10) - 1;
+        const mName = monthNames[mNum] || pts[1];
+        const yShort = pts[0].slice(-2);
+        dateStr = `${pts[2]}-${mName}-${yShort}`;
+      }
+    }
+
+    let handle = "@hariankompas";
+    const posLower = (ad.posisi || "").toLowerCase();
+    if (posLower.includes("muda")) handle = "@kompasmuda";
+    else if (posLower.includes("urbana")) handle = "@kompasurbana";
+
+    let mediaInnerHtml = "";
+    if (mediaType === "image") {
+      mediaInnerHtml = `<img src="${embedUrl}" alt="${ad.judul}" loading="lazy">`;
+    } else if (mediaType === "video") {
+      mediaInnerHtml = `<video src="${embedUrl}" poster="${mediaThumbnail || ''}" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>`;
+    } else if (['ig-embed', 'yt-embed', 'tk-embed', 'fb-embed', 'tw-embed'].includes(mediaType)) {
+      mediaInnerHtml = `<iframe src="${embedUrl}" loading="lazy" style="width:100%; height:100%; border:none; pointer-events:none;"></iframe>`;
+    } else {
+      let platformIcon = "fa-solid fa-photo-film";
+      let placeholderBg = "linear-gradient(45deg, #0f172a 0%, #1e293b 100%)";
+      if (posLower.includes("ig") || posLower.includes("instagram")) {
+        placeholderBg = "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)";
+        platformIcon = "fa-brands fa-instagram";
+      } else if (posLower.includes("tiktok")) {
+        placeholderBg = "linear-gradient(135deg, #010101 0%, #25F4EE 50%, #FE2C55 100%)";
+        platformIcon = "fa-brands fa-tiktok";
+      } else if (posLower.includes("x") || posLower.includes("twitter")) {
+        placeholderBg = "linear-gradient(135deg, #14171A 0%, #000000 100%)";
+        platformIcon = "fa-brands fa-x-twitter";
+      } else if (posLower.includes("youtube")) {
+        placeholderBg = "linear-gradient(135deg, #FF0000 0%, #280000 100%)";
+        platformIcon = "fa-brands fa-youtube";
+      }
+      mediaInnerHtml = `
+        <div class="ad-media-placeholder" style="background: ${placeholderBg}; color: white; width:100%; height:100%;">
+          <i class="${platformIcon}" style="font-size: 48px;"></i>
+          <span class="ad-placeholder-text" style="font-size: 11px;">${mediaType === 'link' ? 'Tautan Media' : 'Pratinjau Materi'}</span>
+        </div>`;
+    }
+
+    const openBtnHtml = mediaUrl
+      ? `<a href="${mediaUrl}" target="_blank" class="ad-card-action-btn" onclick="event.stopPropagation();"><i class="fa-solid fa-arrow-up-right-from-square"></i> BUKA LINK ASLI</a>`
+      : `<button class="ad-card-action-btn" onclick="event.stopPropagation(); openPreviewModal(${idx});"><i class="fa-solid fa-expand"></i> BUKA PREVIEW</button>`;
+
+    return `
+      <div class="ad-gallery-card" onclick="openPreviewModal(${idx})">
+        <span class="ad-card-status-badge ${statusClass}">${statusText}</span>
+        <button class="card-spotlight-btn" onclick="event.stopPropagation(); openPreviewModal(${idx})" title="Buka Preview Modal">
+          <i class="fa-solid fa-expand"></i>
         </button>
-        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
-          ${filterLabel}
-          <span class="spotlight-counter" id="spotlight-counter"></span>
+        <div class="ad-card-media">
+          ${mediaInnerHtml}
         </div>
-        <button class="spotlight-nav-btn" id="spotlight-next" onclick="medsosNavigate(1)" title="Iklan Berikutnya">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
+        <div class="ad-card-body">
+          <div class="ad-card-title-row">
+            <h4 class="ad-card-title" title="${ad.judul}">${ad.judul || 'Untitled Ad'}</h4>
+          </div>
+          <div style="font-size: 12px; font-weight: 700; color: var(--primary-light); margin-top: -4px;">
+            ${platformInfo.label}
+          </div>
+          <div class="ad-card-details" style="margin-top: 4px;">
+            <div class="ad-card-detail-item">
+              <i class="fa-solid fa-calendar-day"></i>
+              <span>${dateStr}</span>
+            </div>
+            <div class="ad-card-detail-item">
+              <i class="fa-solid fa-at"></i>
+              <span>${handle}</span>
+            </div>
+          </div>
+          <div class="ad-card-footer">
+            ${openBtnHtml}
+          </div>
+        </div>
       </div>
-      <div id="spotlight-card-area"></div>
-    </div>
-  `;
+    `;
+  }).join("");
 
-  renderSpotlightCard();
+  galleryGrid.innerHTML = headerHtml + `
+      <div class="ads-gallery-cards-grid">
+        ${cardsHtml}
+      </div>
+    </div>`;
 }
 window.renderMedsosGallery = renderMedsosGallery;
+
 
 // ══════════════════════════════════════════════════════════════════
 // LIVE PERFORMANCE — Mirror data dari Google Sheets
