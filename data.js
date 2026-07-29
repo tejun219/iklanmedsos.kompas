@@ -9045,7 +9045,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122918",
       "row_idx": 65
     },
     {
@@ -9057,7 +9057,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122919",
       "row_idx": 66
     },
     {
@@ -9069,7 +9069,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122917",
       "row_idx": 67
     },
     {
@@ -9086,6 +9086,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 67,
+      "judul": "BNI",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-27",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
+      "keterangan": "unbranded",
+      "so": "",
+      "row_idx": 69
+    },
+    {
+      "no": 68,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -9094,7 +9106,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0122765",
-      "row_idx": 69
+      "row_idx": 70
     }
   ],
   "Agustus 2026": [
