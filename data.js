@@ -9017,11 +9017,11 @@ const INITIAL_DATA = {
       "judul": "Uniqlo",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-28",
+      "tgl_terbit": "2026-07-29",
       "ae": "Kimberly",
       "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "SO0122867",
+      "so": "",
       "row_idx": 63
     },
     {
@@ -9029,11 +9029,11 @@ const INITIAL_DATA = {
       "judul": "Uniqlo",
       "posisi": "IG Post Kompas Muda",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-28",
+      "tgl_terbit": "2026-07-29",
       "ae": "Kimberly",
       "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "SO0122865",
+      "so": "",
       "row_idx": 64
     },
     {
@@ -9041,11 +9041,11 @@ const INITIAL_DATA = {
       "judul": "Uniqlo",
       "posisi": "IG Storylink Kompas Muda",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-28",
+      "tgl_terbit": "2026-07-29",
       "ae": "Kimberly",
       "keterangan_order": "Memo No.448/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "SO0122866",
+      "so": "",
       "row_idx": 65
     },
     {
