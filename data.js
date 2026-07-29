@@ -9074,6 +9074,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 66,
+      "judul": "Lexus",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-29",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.",
+      "keterangan": "belum ada memo",
+      "so": "",
+      "row_idx": 68
+    },
+    {
+      "no": 67,
       "judul": "Buffalo",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
@@ -9082,10 +9094,23 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.032/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0122765",
-      "row_idx": 68
+      "row_idx": 69
     }
   ],
-  "Agustus 2026": [],
+  "Agustus 2026": [
+    {
+      "no": "",
+      "judul": "Arista",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-31",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 4
+    }
+  ],
   "September 2026": [],
   "Oktober 2026": [],
   "November 2026": [],
