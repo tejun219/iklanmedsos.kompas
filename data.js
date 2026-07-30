@@ -9341,7 +9341,8 @@ const MEMO_MAP = {
   "356": "356 - SUPPLEMENT ALBAYRAK MEDIA GROUP update 17 Juli'26.pdf",
   "444": "444 - Djarum Bakti Budaya.pdf",
   "463": "463 - UKSW (Naura).pdf",
-  "448": "448 - UNIQLO update 29 juli'26.pdf"
+  "448": "448 - UNIQLO update 29 juli'26.pdf",
+  "488": "488 - Lexus.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
