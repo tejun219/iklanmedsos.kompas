@@ -9107,6 +9107,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0122765",
       "row_idx": 70
+    },
+    {
+      "no": 69,
+      "judul": "LG Electronics",
+      "posisi": "IG Post Carousell Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-07-30",
+      "ae": "Rian",
+      "keterangan_order": "Memo No : 409/MO/PRODUK/VII/202",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 71
     }
   ],
   "Agustus 2026": [
