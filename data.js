@@ -9079,8 +9079,8 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-29",
       "ae": "Rian",
-      "keterangan_order": "Memo No.",
-      "keterangan": "belum ada memo",
+      "keterangan_order": "Memo No.488/MO/PRODUK/VII/2026",
+      "keterangan": "",
       "so": "",
       "row_idx": 68
     },
