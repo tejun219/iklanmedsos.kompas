@@ -9080,7 +9080,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-07-29",
       "ae": "Rian",
       "keterangan_order": "Memo No.488/MO/PRODUK/VII/2026",
-      "keterangan": "",
+      "keterangan": "belum ada data pemasang",
       "so": "",
       "row_idx": 68
     },
@@ -9093,7 +9093,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
       "keterangan": "unbranded",
-      "so": "",
+      "so": "SO0122925",
       "row_idx": 69
     },
     {
@@ -9117,7 +9117,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No : 409/MO/PRODUK/VII/202",
       "keterangan": "",
-      "so": "",
+      "so": "SO0122952",
       "row_idx": 71
     }
   ],
