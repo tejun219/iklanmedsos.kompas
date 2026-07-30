@@ -9221,7 +9221,7 @@ const MEMO_MAP = {
   "377": "377 - JFFF SUMMARECON update 22 juli'25.pdf",
   "063": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
   "63": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
-  "460": "460 - BNI (DENTSU) update 27 juli'26.pdf",
+  "460": "460 - BNI (DENTSU) update 30 juli'26.pdf",
   "032": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "32": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "034": "Barter 034 - Gion.pdf",
