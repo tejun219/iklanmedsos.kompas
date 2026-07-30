@@ -9333,7 +9333,7 @@ const MEMO_MAP = {
   "023": "Goodwill 023 - CIMB Niaga.pdf",
   "23": "Goodwill 023 - CIMB Niaga.pdf",
   "400": "400 - Pearson update 13 juli'26.pdf",
-  "409": "409 - PHD (LG) update 14 juli'26.pdf",
+  "409": "409 - PHD (LG) update 30 juli'26.pdf",
   "432": "432 - Samsung.pdf",
   "522": "522 - UMN update 14 juli'26.pdf",
   "508": "Memo Nomor  508 Event VII 2026.pdf",
