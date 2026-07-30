@@ -9089,7 +9089,7 @@ const INITIAL_DATA = {
       "judul": "BNI",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-07-29",
+      "tgl_terbit": "2026-07-30",
       "ae": "Debby",
       "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
       "keterangan": "unbranded",
