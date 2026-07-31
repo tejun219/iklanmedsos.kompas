@@ -9127,7 +9127,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-30",
       "ae": "Rian",
-      "keterangan_order": "Memo No.",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 72
@@ -9139,7 +9139,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-30",
       "ae": "Rian",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 73
@@ -9151,7 +9151,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-30",
       "ae": "Rian",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 74
@@ -9163,7 +9163,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-30",
       "ae": "Rian",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 75
@@ -9175,7 +9175,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-07-30",
       "ae": "Rian",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 76
@@ -9237,7 +9237,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-08-01",
       "ae": "Rian",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 7
@@ -9249,7 +9249,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-08-01",
       "ae": "Rian",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 8
@@ -9261,7 +9261,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-08-03",
       "ae": "Rian",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 9
@@ -9273,7 +9273,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-08-07",
       "ae": "Rian",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 10
@@ -9285,7 +9285,7 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-08-08",
       "ae": "Rian",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 11
