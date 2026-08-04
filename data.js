@@ -9490,7 +9490,7 @@ const MEMO_MAP = {
   "0112": "MO 0112 - [ADV] Promo Earth Hour - WWF Indonesia - Harian Kompas - 31 Maret 2026 - Revisi MO.pdf",
   "112": "MO 0112 - [ADV] Promo Earth Hour - WWF Indonesia - Harian Kompas - 31 Maret 2026 - Revisi MO.pdf",
   "197": "197 - Kolab KCM-KMN Taja.pdf",
-  "201": "201 - Jasa Marga.pdf",
+  "201": "201 - Jasa Marga update 4 agst'26.pdf",
   "235": "235 - UKSW update 27 apr'26.pdf",
   "221": "221 - LPDP Kemenkeu update  24 Juli'26.pdf",
   "242": "242 - Garasi Bloko update 18 mei'26 (revisi).pdf",
@@ -9524,7 +9524,8 @@ const MEMO_MAP = {
   "448": "448 - UNIQLO update 29 juli'26.pdf",
   "488": "488 - Lexus.pdf",
   "042": "Barter 042 -  Seven (Gaikindo) update 3 agst'26.pdf",
-  "42": "Barter 042 -  Seven (Gaikindo) update 3 agst'26.pdf"
+  "42": "Barter 042 -  Seven (Gaikindo) update 3 agst'26.pdf",
+  "391": "391 - Bank Syariah Indonesia update 4 agst'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
