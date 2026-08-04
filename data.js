@@ -9129,7 +9129,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123030",
       "row_idx": 72
     },
     {
@@ -9141,20 +9141,8 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123029",
       "row_idx": 73
-    },
-    {
-      "no": 72,
-      "judul": "Seven GIIAS",
-      "posisi": "IG Story Link Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-07-30",
-      "ae": "Rian",
-      "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 74
     },
     {
       "no": 73,
@@ -9165,8 +9153,8 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
-      "row_idx": 75
+      "so": "SO0123031",
+      "row_idx": 74
     },
     {
       "no": 74,
@@ -9177,8 +9165,8 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
-      "row_idx": 76
+      "so": "SO0123034",
+      "row_idx": 75
     }
   ],
   "Agustus 2026": [
@@ -9239,7 +9227,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123035",
       "row_idx": 7
     },
     {
@@ -9251,7 +9239,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123037",
       "row_idx": 8
     },
     {
@@ -9268,6 +9256,30 @@ const INITIAL_DATA = {
     },
     {
       "no": 8,
+      "judul": "Bank BSI",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-04",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.391/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 10
+    },
+    {
+      "no": 9,
+      "judul": "Jasamarga",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-05",
+      "ae": "Eka",
+      "keterangan_order": "Memo No.201/MO/PRODUK/IV/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 11
+    },
+    {
+      "no": 10,
       "judul": "Seven GIIAS",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -9276,10 +9288,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 10
+      "row_idx": 12
     },
     {
-      "no": 9,
+      "no": 11,
       "judul": "Seven GIIAS",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -9288,10 +9300,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 11
+      "row_idx": 13
     },
     {
-      "no": 10,
+      "no": 12,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9299,8 +9311,8 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
-      "row_idx": 12
+      "so": "SO0122936",
+      "row_idx": 14
     }
   ],
   "September 2026": [],
