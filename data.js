@@ -9537,7 +9537,8 @@ const MEMO_MAP = {
   "488": "488 - Lexus.pdf",
   "042": "Barter 042 -  Seven (Gaikindo) update 3 agst'26.pdf",
   "42": "Barter 042 -  Seven (Gaikindo) update 3 agst'26.pdf",
-  "391": "391 - Bank Syariah Indonesia update 4 agst'26.pdf"
+  "391": "391 - Bank Syariah Indonesia update 4 agst'26.pdf",
+  "507": "507 - Napindo.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
