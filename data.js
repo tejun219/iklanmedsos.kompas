@@ -9251,7 +9251,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123126",
       "row_idx": 9
     },
     {
@@ -9275,7 +9275,7 @@ const INITIAL_DATA = {
       "ae": "Eka",
       "keterangan_order": "Memo No.201/MO/PRODUK/IV/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123125",
       "row_idx": 11
     },
     {
@@ -9287,7 +9287,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123127",
       "row_idx": 12
     },
     {
@@ -9299,7 +9299,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No. 042/MO/BARTER/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123128",
       "row_idx": 13
     },
     {
