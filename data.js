@@ -9286,7 +9286,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-08-05",
       "ae": "Rian",
       "keterangan_order": "Memo No.376/MO/PRODUK/VI/2026",
-      "keterangan": "",
+      "keterangan": "belum ada NPWP",
       "so": "",
       "row_idx": 12
     },
