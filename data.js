@@ -9347,7 +9347,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123223",
       "row_idx": 17
     },
     {
@@ -9359,7 +9359,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123222",
       "row_idx": 18
     },
     {
@@ -9371,7 +9371,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123221",
       "row_idx": 19
     },
     {
@@ -9383,11 +9383,23 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123220",
       "row_idx": 20
     },
     {
       "no": 19,
+      "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-29",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "SO0123224",
+      "row_idx": 21
+    },
+    {
+      "no": 20,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9396,10 +9408,23 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 21
+      "row_idx": 22
     }
   ],
-  "September 2026": [],
+  "September 2026": [
+    {
+      "no": "",
+      "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-13",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "SO0123225",
+      "row_idx": 3
+    }
+  ],
   "Oktober 2026": [],
   "November 2026": [],
   "Desember 2026": []
@@ -9502,8 +9527,8 @@ const MEMO_MAP = {
   "32": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "034": "Barter 034 - Gion.pdf",
   "34": "Barter 034 - Gion.pdf",
-  "035": "Barter 035 -  NAPINDO update 4 agst'25.pdf",
-  "35": "Barter 035 -  NAPINDO update 4 agst'25.pdf",
+  "035": "Barter 035 - Doubletree By Hilton Jakarta Bintaro Jaya update 7 agst'26.pdf",
+  "35": "Barter 035 - Doubletree By Hilton Jakarta Bintaro Jaya update 7 agst'26.pdf",
   "525": "525 - PDIP update 5 agst'25.pdf",
   "401": "401 - Bina Sarana Informatika update 5 agst'25.pdf",
   "381": "381 - Alamtri update 7 agst'25.pdf",
