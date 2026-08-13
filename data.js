@@ -9388,6 +9388,42 @@ const INITIAL_DATA = {
     },
     {
       "no": 19,
+      "judul": "Bank BNI",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-13",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "SO0123256",
+      "row_idx": 21
+    },
+    {
+      "no": 20,
+      "judul": "Bank BNI",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-13",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 22
+    },
+    {
+      "no": 21,
+      "judul": "Bank BNI",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-13",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 23
+    },
+    {
+      "no": 22,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9396,10 +9432,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123224",
-      "row_idx": 21
+      "row_idx": 24
     },
     {
-      "no": 20,
+      "no": 23,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9408,7 +9444,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 22
+      "row_idx": 25
     }
   ],
   "September 2026": [
