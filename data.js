@@ -9407,7 +9407,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123408",
       "row_idx": 22
     },
     {
@@ -9419,11 +9419,71 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123409",
       "row_idx": 23
     },
     {
       "no": 22,
+      "judul": "Bank BNI",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-13",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.460/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "SO0123410",
+      "row_idx": 24
+    },
+    {
+      "no": 23,
+      "judul": "Experd",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-15",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 25
+    },
+    {
+      "no": 24,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-15",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 26
+    },
+    {
+      "no": 25,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-15",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 27
+    },
+    {
+      "no": 26,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-15",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 28
+    },
+    {
+      "no": 27,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9432,10 +9492,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123224",
-      "row_idx": 24
+      "row_idx": 29
     },
     {
-      "no": 23,
+      "no": 28,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9444,7 +9504,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 25
+      "row_idx": 30
     }
   ],
   "September 2026": [
@@ -9558,7 +9618,7 @@ const MEMO_MAP = {
   "377": "377 - JFFF SUMMARECON update 22 juli'25.pdf",
   "063": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
   "63": "063 - Universitas Bunda Mulia update 24 Juli'25.pdf",
-  "460": "460 - BNI (DENTSU) update 13 agst'26.pdf",
+  "460": "460 - BNI (DENTSU) update 14 agst'26.pdf",
   "032": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "32": "Barter 032 - Buffalo update 15 juli'26.pdf",
   "034": "Barter 034 - Gion.pdf",
