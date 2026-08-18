@@ -9484,6 +9484,66 @@ const INITIAL_DATA = {
     },
     {
       "no": 27,
+      "judul": "Kementerian Komunikasi dan Digital (Komdigi)",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-18",
+      "ae": "Dila",
+      "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 29
+    },
+    {
+      "no": 28,
+      "judul": "Kementerian Komunikasi dan Digital (Komdigi)",
+      "posisi": "Facebook Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-18",
+      "ae": "Dila",
+      "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 30
+    },
+    {
+      "no": 29,
+      "judul": "Kementerian Komunikasi dan Digital (Komdigi)",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-18",
+      "ae": "Dila",
+      "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 31
+    },
+    {
+      "no": 30,
+      "judul": "Kementerian Komunikasi dan Digital (Komdigi)",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-18",
+      "ae": "Dila",
+      "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 32
+    },
+    {
+      "no": 31,
+      "judul": "Kementerian Komunikasi dan Digital (Komdigi)",
+      "posisi": "Tiktok Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-18",
+      "ae": "Dila",
+      "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 33
+    },
+    {
+      "no": 32,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9492,10 +9552,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123224",
-      "row_idx": 29
+      "row_idx": 34
     },
     {
-      "no": 28,
+      "no": 33,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9504,7 +9564,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 30
+      "row_idx": 35
     }
   ],
   "September 2026": [
