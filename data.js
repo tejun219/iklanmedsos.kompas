@@ -9490,7 +9490,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-08-18",
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
-      "keterangan": "",
+      "keterangan": "belum ada NPWP",
       "so": "",
       "row_idx": 29
     },
@@ -9502,7 +9502,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-08-18",
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
-      "keterangan": "",
+      "keterangan": "belum ada NPWP",
       "so": "",
       "row_idx": 30
     },
@@ -9514,7 +9514,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-08-18",
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
-      "keterangan": "",
+      "keterangan": "belum ada NPWP",
       "so": "",
       "row_idx": 31
     },
@@ -9526,7 +9526,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-08-18",
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
-      "keterangan": "",
+      "keterangan": "belum ada NPWP",
       "so": "",
       "row_idx": 32
     },
@@ -9538,12 +9538,24 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-08-18",
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
-      "keterangan": "",
+      "keterangan": "belum ada NPWP",
       "so": "",
       "row_idx": 33
     },
     {
       "no": 32,
+      "judul": "Djarum (megapro)",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-18",
+      "ae": "Vicky",
+      "keterangan_order": "Memo No.443/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "SO0123529",
+      "row_idx": 34
+    },
+    {
+      "no": 33,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9552,10 +9564,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123224",
-      "row_idx": 34
+      "row_idx": 35
     },
     {
-      "no": 33,
+      "no": 34,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9564,7 +9576,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 35
+      "row_idx": 36
     }
   ],
   "September 2026": [
