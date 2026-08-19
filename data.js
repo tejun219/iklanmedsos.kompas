@@ -9555,6 +9555,18 @@ const INITIAL_DATA = {
       "row_idx": 34
     },
     {
+      "no": "",
+      "judul": "Tangerang 10K",
+      "posisi": "Youtube Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-20",
+      "ae": "Rifai",
+      "keterangan_order": "",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 35
+    },
+    {
       "no": 33,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
@@ -9564,7 +9576,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123224",
-      "row_idx": 35
+      "row_idx": 36
     },
     {
       "no": 34,
@@ -9576,7 +9588,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 36
+      "row_idx": 37
     }
   ],
   "September 2026": [
@@ -9817,7 +9829,8 @@ const MEMO_MAP = {
   "391": "391 - Bank Syariah Indonesia update 4 agst'26.pdf",
   "507": "507 - Napindo.pdf",
   "376": "376 - Lexus update 5 agst'26.pdf",
-  "506": "506 - Komdigi update 18 agst'26.pdf"
+  "506": "506 - Komdigi update 18 agst'26.pdf",
+  "443": "443 - DJARUM (HUT RI) update 18 agst'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
