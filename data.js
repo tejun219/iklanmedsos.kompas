@@ -9555,19 +9555,19 @@ const INITIAL_DATA = {
       "row_idx": 34
     },
     {
-      "no": "",
+      "no": 33,
       "judul": "Tangerang 10K",
       "posisi": "Youtube Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-20",
       "ae": "Rifai",
-      "keterangan_order": "",
+      "keterangan_order": "Memo No.153/IS/DK/VIII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123548",
       "row_idx": 35
     },
     {
-      "no": 33,
+      "no": 34,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9579,7 +9579,7 @@ const INITIAL_DATA = {
       "row_idx": 36
     },
     {
-      "no": 34,
+      "no": 35,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
