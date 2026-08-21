@@ -9569,31 +9569,31 @@ const INITIAL_DATA = {
     {
       "no": 34,
       "judul": "Travellane",
-      "posisi": "IG Reels Kompas Urbana",
+      "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-20",
       "ae": "Intan",
       "keterangan_order": "Memo No.405/MO/PRODUK/VII/2026",
-      "keterangan": "",
+      "keterangan": "amplifikasi BRC",
       "so": "",
       "row_idx": 36
     },
     {
       "no": 35,
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
+      "judul": "Travellane",
+      "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-08-22",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
+      "tgl_terbit": "2026-08-21",
+      "ae": "Intan",
+      "keterangan_order": "Memo No.405/MO/PRODUK/VII/2026",
+      "keterangan": "amplifikasi After hours",
       "so": "",
       "row_idx": 37
     },
     {
       "no": 36,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-22",
       "ae": "Debby",
@@ -9605,7 +9605,7 @@ const INITIAL_DATA = {
     {
       "no": 37,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-08-22",
       "ae": "Debby",
@@ -9617,7 +9617,7 @@ const INITIAL_DATA = {
     {
       "no": 38,
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-22",
       "ae": "Debby",
@@ -9628,6 +9628,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 39,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-22",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 41
+    },
+    {
+      "no": 40,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9636,24 +9648,12 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123224",
-      "row_idx": 41
-    },
-    {
-      "no": 40,
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-08-29",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
-      "so": "",
       "row_idx": 42
     },
     {
       "no": 41,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-29",
       "ae": "Debby",
@@ -9665,7 +9665,7 @@ const INITIAL_DATA = {
     {
       "no": 42,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-08-29",
       "ae": "Debby",
@@ -9677,7 +9677,7 @@ const INITIAL_DATA = {
     {
       "no": 43,
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-29",
       "ae": "Debby",
@@ -9688,6 +9688,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 44,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-29",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 46
+    },
+    {
+      "no": 45,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9696,7 +9708,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 46
+      "row_idx": 47
     }
   ],
   "September 2026": [
