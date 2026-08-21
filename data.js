@@ -9823,14 +9823,15 @@ const MEMO_MAP = {
   "444": "444 - Djarum Bakti Budaya.pdf",
   "463": "463 - UKSW (Naura).pdf",
   "448": "448 - UNIQLO update 29 juli'26.pdf",
-  "488": "488 - Lexus.pdf",
+  "488": "488 - Lexus update 20 agst'26.pdf",
   "042": "Barter 042 -  Seven (Gaikindo) update 3 agst'26.pdf",
   "42": "Barter 042 -  Seven (Gaikindo) update 3 agst'26.pdf",
   "391": "391 - Bank Syariah Indonesia update 4 agst'26.pdf",
   "507": "507 - Napindo.pdf",
-  "376": "376 - Lexus update 5 agst'26.pdf",
+  "376": "376 - Lexus update 20 agst'26.pdf",
   "506": "506 - Komdigi update 18 agst'26.pdf",
-  "443": "443 - DJARUM (HUT RI) update 18 agst'26.pdf"
+  "443": "443 - DJARUM (HUT RI) update 18 agst'26.pdf",
+  "405": "405 - Travellane update 21 agst'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
