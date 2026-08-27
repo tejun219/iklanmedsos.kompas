@@ -9491,7 +9491,7 @@ const INITIAL_DATA = {
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
       "keterangan": "belum ada NPWP",
-      "so": "",
+      "so": "SO0123503",
       "row_idx": 29
     },
     {
@@ -9503,7 +9503,7 @@ const INITIAL_DATA = {
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
       "keterangan": "belum ada NPWP",
-      "so": "",
+      "so": "SO0123504",
       "row_idx": 30
     },
     {
@@ -9515,7 +9515,7 @@ const INITIAL_DATA = {
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
       "keterangan": "belum ada NPWP",
-      "so": "",
+      "so": "SO0123505",
       "row_idx": 31
     },
     {
@@ -9527,7 +9527,7 @@ const INITIAL_DATA = {
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
       "keterangan": "belum ada NPWP",
-      "so": "",
+      "so": "SO0123506",
       "row_idx": 32
     },
     {
@@ -9539,7 +9539,7 @@ const INITIAL_DATA = {
       "ae": "Dila",
       "keterangan_order": "Memo No.506/MO/PRODUK/VIII/2026",
       "keterangan": "belum ada NPWP",
-      "so": "",
+      "so": "SO0123508",
       "row_idx": 33
     },
     {
@@ -9668,7 +9668,7 @@ const INITIAL_DATA = {
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-26",
-      "ae": "Debby",
+      "ae": "Imel",
       "keterangan_order": "Memo No.552/MO/PRODUK/VIII/2026",
       "keterangan": "",
       "so": "SO0123681",
@@ -9676,6 +9676,42 @@ const INITIAL_DATA = {
     },
     {
       "no": 43,
+      "judul": "Bayan Resources",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-26",
+      "ae": "Dika",
+      "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 45
+    },
+    {
+      "no": 44,
+      "judul": "Bayan Resources",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-27",
+      "ae": "Dika",
+      "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 46
+    },
+    {
+      "no": 45,
+      "judul": "Bayan Resources",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-28",
+      "ae": "Dika",
+      "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 47
+    },
+    {
+      "no": 46,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9684,48 +9720,12 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123224",
-      "row_idx": 45
-    },
-    {
-      "no": 44,
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-08-29",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 46
-    },
-    {
-      "no": 45,
-      "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
-      "total_ad": 1,
-      "tgl_terbit": "2026-08-29",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 47
-    },
-    {
-      "no": 46,
-      "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-08-29",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
-      "so": "",
       "row_idx": 48
     },
     {
       "no": 47,
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-29",
       "ae": "Debby",
@@ -9736,6 +9736,42 @@ const INITIAL_DATA = {
     },
     {
       "no": 48,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-29",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 50
+    },
+    {
+      "no": 49,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-29",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 51
+    },
+    {
+      "no": 50,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-29",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 52
+    },
+    {
+      "no": 51,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9744,7 +9780,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 50
+      "row_idx": 53
     }
   ],
   "September 2026": [
@@ -9927,7 +9963,7 @@ const MEMO_MAP = {
   "867": "867 - Kemenag update 2 jan'26.pdf",
   "274": "274 - BSI update 13 mei'26.pdf",
   "836": "836 - Arkade update 30 des'25.pdf",
-  "859": "859 - Experd update  19 agst'26.pdf",
+  "859": "859 - Experd update 27 agst'26.pdf",
   "016": "016 - Bappenas.pdf",
   "16": "016 - Bappenas.pdf",
   "058": "058 - UKSW.pdf",
@@ -9990,7 +10026,8 @@ const MEMO_MAP = {
   "405": "405 - Travellane update 21 agst'26.pdf",
   "513": "513 - Kemenpar update 24 agst'26.pdf",
   "510": "510 - PUMA & SOCIOLLA update 24 agst'26.pdf",
-  "552": "552 - CSI (Bank Syariah Indonesia).pdf"
+  "552": "552 - CSI (Bank Syariah Indonesia).pdf",
+  "480": "480 - Bayan Resources update  27 agst'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
