@@ -9679,7 +9679,7 @@ const INITIAL_DATA = {
       "judul": "Bayan Resources",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-08-26",
+      "tgl_terbit": "2026-08-27",
       "ae": "Dika",
       "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
       "keterangan": "",
@@ -9691,7 +9691,7 @@ const INITIAL_DATA = {
       "judul": "Bayan Resources",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-08-27",
+      "tgl_terbit": "2026-08-28",
       "ae": "Dika",
       "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
       "keterangan": "",
@@ -9700,18 +9700,6 @@ const INITIAL_DATA = {
     },
     {
       "no": 45,
-      "judul": "Bayan Resources",
-      "posisi": "IG Post Carousell Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-08-28",
-      "ae": "Dika",
-      "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 47
-    },
-    {
-      "no": 46,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9720,12 +9708,24 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123224",
+      "row_idx": 47
+    },
+    {
+      "no": 46,
+      "judul": "Experd",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-29",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
       "row_idx": 48
     },
     {
       "no": 47,
       "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-08-29",
       "ae": "Debby",
@@ -9737,7 +9737,7 @@ const INITIAL_DATA = {
     {
       "no": 48,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-29",
       "ae": "Debby",
@@ -9749,7 +9749,7 @@ const INITIAL_DATA = {
     {
       "no": 49,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "X Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-08-29",
       "ae": "Debby",
@@ -9760,18 +9760,6 @@ const INITIAL_DATA = {
     },
     {
       "no": 50,
-      "judul": "Experd",
-      "posisi": "X Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-08-29",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 52
-    },
-    {
-      "no": 51,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9780,7 +9768,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 53
+      "row_idx": 52
     }
   ],
   "September 2026": [
@@ -10027,7 +10015,7 @@ const MEMO_MAP = {
   "513": "513 - Kemenpar update 24 agst'26.pdf",
   "510": "510 - PUMA & SOCIOLLA update 24 agst'26.pdf",
   "552": "552 - CSI (Bank Syariah Indonesia).pdf",
-  "480": "480 - Bayan Resources update  27 agst'26.pdf"
+  "480": "480 - Bayan Resources update 28 agst'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
