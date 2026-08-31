@@ -9683,32 +9683,8 @@ const INITIAL_DATA = {
       "ae": "Dika",
       "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123815",
       "row_idx": 45
-    },
-    {
-      "no": 44,
-      "judul": "Bayan Resources",
-      "posisi": "IG Post Carousell Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-08-28",
-      "ae": "Dika",
-      "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 46
-    },
-    {
-      "no": 45,
-      "judul": "Bayan Resources",
-      "posisi": "IG Reels Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-08-28",
-      "ae": "Dika",
-      "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 47
     },
     {
       "no": 46,
@@ -9720,7 +9696,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123224",
-      "row_idx": 48
+      "row_idx": 46
     },
     {
       "no": 47,
@@ -9731,8 +9707,8 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 49
+      "so": "SO0123728",
+      "row_idx": 47
     },
     {
       "no": 48,
@@ -9743,8 +9719,8 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 50
+      "so": "SO0123727",
+      "row_idx": 48
     },
     {
       "no": 49,
@@ -9755,8 +9731,8 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 51
+      "so": "SO0123729",
+      "row_idx": 49
     },
     {
       "no": 50,
@@ -9767,20 +9743,32 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
-      "row_idx": 52
+      "so": "SO0123730",
+      "row_idx": 50
+    },
+    {
+      "no": 44,
+      "judul": "Bayan Resources",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-08-30",
+      "ae": "Dika",
+      "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
+      "keterangan": "",
+      "so": "SO0123816",
+      "row_idx": 51
     },
     {
       "no": 51,
       "judul": "Arista",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-08-31",
+      "tgl_terbit": "TBC",
       "ae": "Rian",
       "keterangan_order": "Memo No.481/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "SO0122936",
-      "row_idx": 53
+      "row_idx": 52
     }
   ],
   "September 2026": [
@@ -9795,6 +9783,42 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0123225",
       "row_idx": 3
+    },
+    {
+      "no": "",
+      "judul": "Aruna / Dr.Rio",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-19",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 4
+    },
+    {
+      "no": "",
+      "judul": "Aruna / Dr.Rio",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-19",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 5
+    },
+    {
+      "no": "",
+      "judul": "Aruna / Dr.Rio",
+      "posisi": "IG Post Carousell Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-19",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 6
     }
   ],
   "Oktober 2026": [],
