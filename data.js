@@ -9882,12 +9882,12 @@ const INITIAL_DATA = {
     },
     {
       "no": "",
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
+      "judul": "Bayan Resources",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-09-12",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "tgl_terbit": "2026-09-07",
+      "ae": "Dika",
+      "keterangan_order": "Memo No.480/MO/PRODUK/VII/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 11
@@ -9895,7 +9895,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-12",
       "ae": "Debby",
@@ -9907,7 +9907,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-09-12",
       "ae": "Debby",
@@ -9919,7 +9919,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-12",
       "ae": "Debby",
@@ -9927,6 +9927,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "",
       "row_idx": 14
+    },
+    {
+      "no": "",
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-12",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 15
     },
     {
       "no": "",
@@ -9938,24 +9950,12 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123225",
-      "row_idx": 15
-    },
-    {
-      "no": "",
-      "judul": "Aruna / Dr.Rio",
-      "posisi": "IG Post Carousell Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-09-19",
-      "ae": "Aldo",
-      "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
-      "keterangan": "",
-      "so": "",
       "row_idx": 16
     },
     {
       "no": "",
       "judul": "Aruna / Dr.Rio",
-      "posisi": "IG Storylink Harian Kompas",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-19",
       "ae": "Aldo",
@@ -9967,7 +9967,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Aruna / Dr.Rio",
-      "posisi": "IG Post Carousell Kompas Urbana",
+      "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-19",
       "ae": "Aldo",
@@ -9975,6 +9975,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "",
       "row_idx": 18
+    },
+    {
+      "no": "",
+      "judul": "Aruna / Dr.Rio",
+      "posisi": "IG Post Carousell Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-19",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 19
     },
     {
       "no": "",
@@ -9986,7 +9998,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 19
+      "row_idx": 20
     },
     {
       "no": "",
@@ -9998,7 +10010,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 20
+      "row_idx": 21
     },
     {
       "no": "",
@@ -10010,7 +10022,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 21
+      "row_idx": 22
     },
     {
       "no": "",
@@ -10022,7 +10034,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 22
+      "row_idx": 23
     }
   ],
   "Oktober 2026": [],
