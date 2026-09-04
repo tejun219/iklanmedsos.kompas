@@ -10208,7 +10208,9 @@ const MEMO_MAP = {
   "510": "510 - PUMA & SOCIOLLA update 24 agst'26.pdf",
   "552": "552 - CSI (Bank Syariah Indonesia).pdf",
   "480": "480 - Bayan Resources update 3 sept'26.pdf",
-  "481": "481 - ARISTA update 1 sept'26.pdf"
+  "481": "481 - ARISTA update 1 sept'26.pdf",
+  "047": "Barter 047 -  KAI EXPO update 4 sept'26.pdf",
+  "47": "Barter 047 -  KAI EXPO update 4 sept'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
