@@ -10097,7 +10097,7 @@ const MEMO_MAP = {
   "2024": "Memo Internal_East Ventures_Indiv_CEO Forum 2024_REV.pdf",
   "0046": "0046 - Dyandra IIMS update 11 feb'25.pdf",
   "46": "0046 - Dyandra IIMS update 11 feb'25.pdf",
-  "10": "Memo Internal_Harian Kompas_ bankbjb SURBOYO10K_PAID_REV1.pdf",
+  "10": "Memo Internal_Harian Kompas_ S10K_Filler_Litbang Survey.pdf",
   "109": "109 - BI Sultra.pdf",
   "105": "105 - DPR RI.pdf",
   "113": "113 - Universitas Terbuka upd 12 feb'25.pdf",
