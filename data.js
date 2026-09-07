@@ -9894,24 +9894,24 @@ const INITIAL_DATA = {
     },
     {
       "no": "",
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
+      "judul": "Suroboyo10K",
+      "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-09-12",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "tgl_terbit": "2026-09-09",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.",
       "keterangan": "",
       "so": "",
       "row_idx": 12
     },
     {
       "no": "",
-      "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
+      "judul": "Suroboyo10K",
+      "posisi": "IG Post Kompas Data",
       "total_ad": 1,
-      "tgl_terbit": "2026-09-12",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "tgl_terbit": "2026-09-09",
+      "ae": "Rifai",
+      "keterangan_order": "",
       "keterangan": "",
       "so": "",
       "row_idx": 13
@@ -9919,7 +9919,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-12",
       "ae": "Debby",
@@ -9931,7 +9931,7 @@ const INITIAL_DATA = {
     {
       "no": "",
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-09-12",
       "ae": "Debby",
@@ -9939,6 +9939,30 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "",
       "row_idx": 15
+    },
+    {
+      "no": "",
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-12",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 16
+    },
+    {
+      "no": "",
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-12",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 17
     },
     {
       "no": "",
@@ -9950,7 +9974,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123225",
-      "row_idx": 16
+      "row_idx": 18
     },
     {
       "no": "",
@@ -9962,7 +9986,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 17
+      "row_idx": 19
     },
     {
       "no": "",
@@ -9974,7 +9998,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 18
+      "row_idx": 20
     },
     {
       "no": "",
@@ -9986,7 +10010,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 19
+      "row_idx": 21
     },
     {
       "no": "",
@@ -9998,7 +10022,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 20
+      "row_idx": 22
     },
     {
       "no": "",
@@ -10010,7 +10034,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 21
+      "row_idx": 23
     },
     {
       "no": "",
@@ -10022,7 +10046,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 22
+      "row_idx": 24
     },
     {
       "no": "",
@@ -10034,7 +10058,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 23
+      "row_idx": 25
     }
   ],
   "Oktober 2026": [],
