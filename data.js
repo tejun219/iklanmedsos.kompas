@@ -9817,7 +9817,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No.047/MO/BARTER/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123954",
       "row_idx": 5
     },
     {
@@ -9829,7 +9829,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123971",
       "row_idx": 6
     },
     {
@@ -9841,7 +9841,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123972",
       "row_idx": 7
     },
     {
@@ -9853,7 +9853,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123970",
       "row_idx": 8
     },
     {
@@ -9865,7 +9865,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0123969",
       "row_idx": 9
     },
     {
@@ -9899,9 +9899,9 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-09-09",
       "ae": "Rifai",
-      "keterangan_order": "Memo No.",
+      "keterangan_order": "Memo Nomor : 689/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124008",
       "row_idx": 12
     },
     {
@@ -9911,9 +9911,9 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-09-09",
       "ae": "Rifai",
-      "keterangan_order": "",
+      "keterangan_order": "Memo Nomor : 689/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124009",
       "row_idx": 13
     },
     {
