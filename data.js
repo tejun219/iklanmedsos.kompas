@@ -9817,7 +9817,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No.047/MO/BARTER/IX/2026",
       "keterangan": "",
-      "so": "SO0123954",
+      "so": "SO0124044",
       "row_idx": 5
     },
     {
@@ -9877,7 +9877,7 @@ const INITIAL_DATA = {
       "ae": "Rian",
       "keterangan_order": "Memo No.047/MO/BARTER/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124043",
       "row_idx": 10
     },
     {
@@ -9901,19 +9901,19 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124040",
       "row_idx": 12
     },
     {
       "no": 11,
       "judul": "Bank Jateng Borobudur Marathon 2026",
-      "posisi": "IG Post Kompas Klasika",
+      "posisi": "IG Post Kompas Urbana",
       "total_ad": 1,
       "tgl_terbit": "2026-09-08",
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124041",
       "row_idx": 13
     },
     {
@@ -9925,7 +9925,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124042",
       "row_idx": 14
     },
     {
@@ -9961,19 +9961,19 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124040",
       "row_idx": 17
     },
     {
       "no": 16,
       "judul": "Bank Jateng Borobudur Marathon 2026",
-      "posisi": "IG Post Kompas Klasika",
+      "posisi": "IG Post Kompas Urbana",
       "total_ad": 1,
       "tgl_terbit": "2026-09-09",
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124041",
       "row_idx": 18
     },
     {
@@ -9985,7 +9985,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124042",
       "row_idx": 19
     },
     {
@@ -10155,6 +10155,54 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "",
       "row_idx": 33
+    },
+    {
+      "no": 32,
+      "judul": "Bank BJB - Tangerang10K",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-25",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 34
+    },
+    {
+      "no": 33,
+      "judul": "Bank BJB - Tangerang10K",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-25",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 35
+    },
+    {
+      "no": 34,
+      "judul": "Bank BJB - Tangerang10K",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-25",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 36
+    },
+    {
+      "no": 35,
+      "judul": "Bank BJB - Tangerang10K",
+      "posisi": "Youtube Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-25",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 37
     }
   ],
   "Oktober 2026": [],
