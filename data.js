@@ -9785,7 +9785,7 @@ const INITIAL_DATA = {
   ],
   "September 2026": [
     {
-      "no": "",
+      "no": 1,
       "judul": "Bayan Resources",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -9797,7 +9797,7 @@ const INITIAL_DATA = {
       "row_idx": 3
     },
     {
-      "no": "",
+      "no": 2,
       "judul": "Bayan Resources",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9809,7 +9809,7 @@ const INITIAL_DATA = {
       "row_idx": 4
     },
     {
-      "no": "",
+      "no": 3,
       "judul": "KAI expo",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9821,7 +9821,7 @@ const INITIAL_DATA = {
       "row_idx": 5
     },
     {
-      "no": "",
+      "no": 4,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -9833,7 +9833,7 @@ const INITIAL_DATA = {
       "row_idx": 6
     },
     {
-      "no": "",
+      "no": 5,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -9845,7 +9845,7 @@ const INITIAL_DATA = {
       "row_idx": 7
     },
     {
-      "no": "",
+      "no": 6,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -9857,7 +9857,7 @@ const INITIAL_DATA = {
       "row_idx": 8
     },
     {
-      "no": "",
+      "no": 7,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -9869,7 +9869,7 @@ const INITIAL_DATA = {
       "row_idx": 9
     },
     {
-      "no": "",
+      "no": 8,
       "judul": "KAI expo",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -9881,7 +9881,7 @@ const INITIAL_DATA = {
       "row_idx": 10
     },
     {
-      "no": "",
+      "no": 9,
       "judul": "Bayan Resources",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -9893,7 +9893,43 @@ const INITIAL_DATA = {
       "row_idx": 11
     },
     {
-      "no": "",
+      "no": 10,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-08",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 12
+    },
+    {
+      "no": 11,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Klasika",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-08",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 13
+    },
+    {
+      "no": 12,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-08",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 14
+    },
+    {
+      "no": 13,
       "judul": "Suroboyo10K",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -9902,10 +9938,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 689/Event/IX/2026",
       "keterangan": "",
       "so": "SO0124008",
-      "row_idx": 12
+      "row_idx": 15
     },
     {
-      "no": "",
+      "no": 14,
       "judul": "Suroboyo10K",
       "posisi": "IG Post Kompas Data",
       "total_ad": 1,
@@ -9914,10 +9950,46 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 689/Event/IX/2026",
       "keterangan": "",
       "so": "SO0124009",
-      "row_idx": 13
+      "row_idx": 16
     },
     {
-      "no": "",
+      "no": 15,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-09",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 17
+    },
+    {
+      "no": 16,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Klasika",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-09",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 18
+    },
+    {
+      "no": 17,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-09",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 19
+    },
+    {
+      "no": 18,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -9926,10 +9998,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 14
+      "row_idx": 20
     },
     {
-      "no": "",
+      "no": 19,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -9938,10 +10010,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 15
+      "row_idx": 21
     },
     {
-      "no": "",
+      "no": 20,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -9950,10 +10022,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 16
+      "row_idx": 22
     },
     {
-      "no": "",
+      "no": 21,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -9962,10 +10034,34 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 17
+      "row_idx": 23
     },
     {
-      "no": "",
+      "no": 22,
+      "judul": "Aruna / Dr.Rio",
+      "posisi": "IG Post Carousell Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-12",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 24
+    },
+    {
+      "no": 23,
+      "judul": "Aruna / Dr.Rio",
+      "posisi": "IG Storylink Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-12",
+      "ae": "Aldo",
+      "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 25
+    },
+    {
+      "no": 24,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -9974,10 +10070,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123225",
-      "row_idx": 18
+      "row_idx": 26
     },
     {
-      "no": "",
+      "no": 25,
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -9986,10 +10082,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 19
+      "row_idx": 27
     },
     {
-      "no": "",
+      "no": 26,
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -9998,10 +10094,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 20
+      "row_idx": 28
     },
     {
-      "no": "",
+      "no": 27,
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Post Carousell Kompas Urbana",
       "total_ad": 1,
@@ -10010,10 +10106,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 21
+      "row_idx": 29
     },
     {
-      "no": "",
+      "no": 28,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -10022,10 +10118,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 22
+      "row_idx": 30
     },
     {
-      "no": "",
+      "no": 29,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -10034,10 +10130,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 23
+      "row_idx": 31
     },
     {
-      "no": "",
+      "no": 30,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -10046,10 +10142,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 24
+      "row_idx": 32
     },
     {
-      "no": "",
+      "no": 31,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -10058,7 +10154,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 25
+      "row_idx": 33
     }
   ],
   "Oktober 2026": [],
@@ -10294,7 +10390,9 @@ const MEMO_MAP = {
   "480": "480 - Bayan Resources update 3 sept'26.pdf",
   "481": "481 - ARISTA update 1 sept'26.pdf",
   "047": "Barter 047 -  KAI EXPO update 4 sept'26.pdf",
-  "47": "Barter 047 -  KAI EXPO update 4 sept'26.pdf"
+  "47": "Barter 047 -  KAI EXPO update 4 sept'26.pdf",
+  "689": "Memo No.689.pdf",
+  "694": "694 Event Bank Jateng BOMAR 2026.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
