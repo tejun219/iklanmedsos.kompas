@@ -10045,7 +10045,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124129",
       "row_idx": 24
     },
     {
@@ -10057,7 +10057,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124128",
       "row_idx": 25
     },
     {
@@ -10069,7 +10069,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124130",
       "row_idx": 26
     },
     {
@@ -10081,7 +10081,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124131",
       "row_idx": 27
     },
     {
@@ -10089,7 +10089,7 @@ const INITIAL_DATA = {
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Post Carousell Kompas Urbana",
       "total_ad": 1,
-      "tgl_terbit": "2026-09-12",
+      "tgl_terbit": "TBC",
       "ae": "Aldo",
       "keterangan_order": "Memo No. : 172/IS/DK/IX/2026",
       "keterangan": "",
@@ -10101,7 +10101,7 @@ const INITIAL_DATA = {
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-09-12",
+      "tgl_terbit": "TBC",
       "ae": "Aldo",
       "keterangan_order": "Memo No. : 172/IS/DK/IX/2026",
       "keterangan": "",
@@ -10113,7 +10113,7 @@ const INITIAL_DATA = {
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Storylink Kompas Urbana",
       "total_ad": 1,
-      "tgl_terbit": "2026-09-12",
+      "tgl_terbit": "TBC",
       "ae": "Aldo",
       "keterangan_order": "Memo No. : 172/IS/DK/IX/2026",
       "keterangan": "",
@@ -10125,7 +10125,7 @@ const INITIAL_DATA = {
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-09-12",
+      "tgl_terbit": "TBC",
       "ae": "Aldo",
       "keterangan_order": "Memo No. : 172/IS/DK/IX/2026",
       "keterangan": "",
