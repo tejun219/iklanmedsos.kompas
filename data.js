@@ -10085,54 +10085,6 @@ const INITIAL_DATA = {
       "row_idx": 27
     },
     {
-      "no": 26,
-      "judul": "Aruna / Dr.Rio",
-      "posisi": "IG Post Carousell Kompas Urbana",
-      "total_ad": 1,
-      "tgl_terbit": "TBC",
-      "ae": "Aldo",
-      "keterangan_order": "Memo No. : 172/IS/DK/IX/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 28
-    },
-    {
-      "no": 27,
-      "judul": "Aruna / Dr.Rio",
-      "posisi": "IG Post Carousell Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "TBC",
-      "ae": "Aldo",
-      "keterangan_order": "Memo No. : 172/IS/DK/IX/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 29
-    },
-    {
-      "no": 28,
-      "judul": "Aruna / Dr.Rio",
-      "posisi": "IG Storylink Kompas Urbana",
-      "total_ad": 1,
-      "tgl_terbit": "TBC",
-      "ae": "Aldo",
-      "keterangan_order": "Memo No. : 172/IS/DK/IX/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 30
-    },
-    {
-      "no": 29,
-      "judul": "Aruna / Dr.Rio",
-      "posisi": "IG Storylink Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "TBC",
-      "ae": "Aldo",
-      "keterangan_order": "Memo No. : 172/IS/DK/IX/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 31
-    },
-    {
       "no": 30,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
@@ -10142,7 +10094,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0123225",
-      "row_idx": 32
+      "row_idx": 28
     },
     {
       "no": 31,
@@ -10154,7 +10106,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No, 817/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124251",
-      "row_idx": 33
+      "row_idx": 29
     },
     {
       "no": 32,
@@ -10166,7 +10118,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No, 817/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124252",
-      "row_idx": 34
+      "row_idx": 30
     },
     {
       "no": 33,
@@ -10178,7 +10130,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 35
+      "row_idx": 31
     },
     {
       "no": 34,
@@ -10190,7 +10142,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 36
+      "row_idx": 32
     },
     {
       "no": 35,
@@ -10202,7 +10154,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 37
+      "row_idx": 33
     },
     {
       "no": 36,
@@ -10214,7 +10166,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 38
+      "row_idx": 34
     },
     {
       "no": 37,
@@ -10226,7 +10178,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 39
+      "row_idx": 35
     },
     {
       "no": 38,
@@ -10238,7 +10190,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 40
+      "row_idx": 36
     },
     {
       "no": 39,
@@ -10250,7 +10202,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "",
-      "row_idx": 41
+      "row_idx": 37
     },
     {
       "no": 40,
@@ -10262,7 +10214,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 42
+      "row_idx": 38
     },
     {
       "no": 41,
@@ -10274,7 +10226,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 43
+      "row_idx": 39
     },
     {
       "no": 42,
@@ -10286,7 +10238,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 44
+      "row_idx": 40
     },
     {
       "no": 43,
@@ -10298,7 +10250,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 45
+      "row_idx": 41
     }
   ],
   "Oktober 2026": [],
