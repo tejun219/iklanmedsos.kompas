@@ -10526,7 +10526,8 @@ const MEMO_MAP = {
   "47": "Barter 047 -  KAI EXPO update 4 sept'26.pdf",
   "689": "Memo No.689.pdf",
   "694": "694 Event Bank Jateng BOMAR 2026.pdf",
-  "581": "581 - Megapro (Djarum).pdf"
+  "581": "581 - Megapro (Djarum).pdf",
+  "101": "101 - CIMB Niaga update 18 sept'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
