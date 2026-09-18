@@ -10165,7 +10165,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124284",
       "row_idx": 34
     },
     {
@@ -10177,7 +10177,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124285",
       "row_idx": 35
     },
     {
@@ -10189,7 +10189,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124283",
       "row_idx": 36
     },
     {
@@ -10201,7 +10201,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124282",
       "row_idx": 37
     },
     {
