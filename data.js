@@ -10134,6 +10134,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 34,
+      "judul": "SDHI",
+      "posisi": "Tiktok Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-18",
+      "ae": "Andika",
+      "keterangan_order": "Memo No.606/MO/PRODUK/IX/2026",
+      "keterangan": "",
+      "so": "SO0124311",
+      "row_idx": 32
+    },
+    {
+      "no": 35,
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -10142,10 +10154,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 32
+      "row_idx": 33
     },
     {
-      "no": 35,
+      "no": 36,
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10154,10 +10166,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "SO0124303",
-      "row_idx": 33
+      "row_idx": 34
     },
     {
-      "no": 36,
+      "no": 37,
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Post Carousell Kompas Urbana",
       "total_ad": 1,
@@ -10166,10 +10178,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No. 348/MO/PRODUK/VI/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 34
+      "row_idx": 35
     },
     {
-      "no": 37,
+      "no": 38,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -10178,10 +10190,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124284",
-      "row_idx": 35
+      "row_idx": 36
     },
     {
-      "no": 38,
+      "no": 39,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -10190,10 +10202,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124285",
-      "row_idx": 36
+      "row_idx": 37
     },
     {
-      "no": 39,
+      "no": 40,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -10202,10 +10214,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124283",
-      "row_idx": 37
+      "row_idx": 38
     },
     {
-      "no": 40,
+      "no": 41,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -10214,10 +10226,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124282",
-      "row_idx": 38
+      "row_idx": 39
     },
     {
-      "no": 41,
+      "no": 42,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10226,24 +10238,12 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 39
-    },
-    {
-      "no": 42,
-      "judul": "Bank BJB - Tangerang10K",
-      "posisi": "IG Post Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "2026-09-25",
-      "ae": "Rifai",
-      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
-      "keterangan": "",
-      "so": "",
       "row_idx": 40
     },
     {
       "no": 43,
       "judul": "Bank BJB - Tangerang10K",
-      "posisi": "IG Storylink Harian Kompas",
+      "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
       "ae": "Rifai",
@@ -10255,7 +10255,7 @@ const INITIAL_DATA = {
     {
       "no": 44,
       "judul": "Bank BJB - Tangerang10K",
-      "posisi": "IG Post Kompas Muda",
+      "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
       "ae": "Rifai",
@@ -10267,7 +10267,7 @@ const INITIAL_DATA = {
     {
       "no": 45,
       "judul": "Bank BJB - Tangerang10K",
-      "posisi": "Youtube Harian Kompas",
+      "posisi": "IG Post Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
       "ae": "Rifai",
@@ -10275,6 +10275,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "",
       "row_idx": 43
+    },
+    {
+      "no": 46,
+      "judul": "Bank BJB - Tangerang10K",
+      "posisi": "Youtube Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-25",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 44
     }
   ],
   "Oktober 2026": [
