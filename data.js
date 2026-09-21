@@ -10242,20 +10242,20 @@ const INITIAL_DATA = {
     },
     {
       "no": 43,
-      "judul": "Bank BJB - Tangerang10K",
-      "posisi": "IG Post Harian Kompas",
+      "judul": "KEMENPAR RI",
+      "posisi": "IG Post Carousell harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-09-25",
-      "ae": "Rifai",
-      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
+      "tgl_terbit": "2026-09-21",
+      "ae": "Nadila",
+      "keterangan_order": "Memo No.513/MO/PRODUK/VIII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124374",
       "row_idx": 41
     },
     {
       "no": 44,
       "judul": "Bank BJB - Tangerang10K",
-      "posisi": "IG Storylink Harian Kompas",
+      "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
       "ae": "Rifai",
@@ -10267,7 +10267,7 @@ const INITIAL_DATA = {
     {
       "no": 45,
       "judul": "Bank BJB - Tangerang10K",
-      "posisi": "IG Post Kompas Muda",
+      "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
       "ae": "Rifai",
@@ -10279,7 +10279,7 @@ const INITIAL_DATA = {
     {
       "no": 46,
       "judul": "Bank BJB - Tangerang10K",
-      "posisi": "Youtube Harian Kompas",
+      "posisi": "IG Post Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
       "ae": "Rifai",
@@ -10287,6 +10287,18 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "",
       "row_idx": 44
+    },
+    {
+      "no": 47,
+      "judul": "Bank BJB - Tangerang10K",
+      "posisi": "Youtube Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-25",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 45
     }
   ],
   "Oktober 2026": [
