@@ -10254,6 +10254,54 @@ const INITIAL_DATA = {
     },
     {
       "no": 44,
+      "judul": "Hot and Cream - Tangerang10K",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-23",
+      "ae": "Rifai",
+      "keterangan_order": "Memo No.Nomor : 760/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 42
+    },
+    {
+      "no": 45,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-23",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 43
+    },
+    {
+      "no": 46,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-23",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 44
+    },
+    {
+      "no": 47,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-23",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 45
+    },
+    {
+      "no": 48,
       "judul": "Bank BJB - Tangerang10K",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -10262,10 +10310,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 42
+      "row_idx": 46
     },
     {
-      "no": 45,
+      "no": 49,
       "judul": "Bank BJB - Tangerang10K",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10274,10 +10322,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 43
+      "row_idx": 47
     },
     {
-      "no": 46,
+      "no": 50,
       "judul": "Bank BJB - Tangerang10K",
       "posisi": "IG Post Kompas Muda",
       "total_ad": 1,
@@ -10286,10 +10334,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 44
+      "row_idx": 48
     },
     {
-      "no": 47,
+      "no": 51,
       "judul": "Bank BJB - Tangerang10K",
       "posisi": "Youtube Harian Kompas",
       "total_ad": 1,
@@ -10298,7 +10346,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 45
+      "row_idx": 49
     }
   ],
   "Oktober 2026": [
@@ -10480,7 +10528,7 @@ const MEMO_MAP = {
   "867": "867 - Kemenag update 2 jan'26.pdf",
   "274": "274 - BSI update 13 mei'26.pdf",
   "836": "836 - Arkade update 30 des'25.pdf",
-  "859": "859 - Experd update  16 sept'26 (1).pdf",
+  "859": "859 - Experd update  22 sept'26.pdf",
   "016": "016 - Bappenas.pdf",
   "16": "016 - Bappenas.pdf",
   "058": "058 - UKSW.pdf",
