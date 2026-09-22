@@ -10261,7 +10261,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo No.Nomor : 760/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124420",
       "row_idx": 42
     },
     {
@@ -10273,7 +10273,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124422",
       "row_idx": 43
     },
     {
@@ -10285,7 +10285,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124423",
       "row_idx": 44
     },
     {
@@ -10297,7 +10297,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124424",
       "row_idx": 45
     },
     {
@@ -10597,10 +10597,11 @@ const MEMO_MAP = {
   "047": "Barter 047 -  KAI EXPO update 4 sept'26.pdf",
   "47": "Barter 047 -  KAI EXPO update 4 sept'26.pdf",
   "689": "Memo No.689.pdf",
-  "694": "694 Event Bank Jateng BOMAR 2026.pdf",
+  "694": "694 HARIAN KOMPAS_BJBM2026_REV1.pdf",
   "581": "581 - Megapro (Djarum).pdf",
   "101": "101 - CIMB Niaga update 18 sept'26.pdf",
-  "606": "606 - SDHI.pdf"
+  "606": "606 - SDHI.pdf",
+  "760": "760 TANGERANG10K HOT  CREAM INDIVIDUAL.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
