@@ -10613,7 +10613,8 @@ const MEMO_MAP = {
   "581": "581 - Megapro (Djarum).pdf",
   "101": "101 - CIMB Niaga update 18 sept'26.pdf",
   "606": "606 - SDHI.pdf",
-  "760": "760 TANGERANG10K HOT  CREAM INDIVIDUAL.pdf"
+  "760": "760 TANGERANG10K HOT  CREAM INDIVIDUAL.pdf",
+  "164": "164 - Conrad Bali update 23 sept'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
