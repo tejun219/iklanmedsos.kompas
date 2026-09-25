@@ -10085,7 +10085,7 @@ const INITIAL_DATA = {
       "row_idx": 27
     },
     {
-      "no": 30,
+      "no": 26,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -10097,7 +10097,7 @@ const INITIAL_DATA = {
       "row_idx": 28
     },
     {
-      "no": 31,
+      "no": 27,
       "judul": "KOKO - STARBUCKS (PHD)",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -10109,7 +10109,7 @@ const INITIAL_DATA = {
       "row_idx": 29
     },
     {
-      "no": 32,
+      "no": 28,
       "judul": "KOKO - STARBUCKS (PHD)",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -10121,7 +10121,7 @@ const INITIAL_DATA = {
       "row_idx": 30
     },
     {
-      "no": 33,
+      "no": 29,
       "judul": "Tag Heuer",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10133,7 +10133,7 @@ const INITIAL_DATA = {
       "row_idx": 31
     },
     {
-      "no": 34,
+      "no": 30,
       "judul": "SDHI",
       "posisi": "Tiktok Harian Kompas",
       "total_ad": 1,
@@ -10145,7 +10145,7 @@ const INITIAL_DATA = {
       "row_idx": 32
     },
     {
-      "no": 35,
+      "no": 31,
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -10157,7 +10157,7 @@ const INITIAL_DATA = {
       "row_idx": 33
     },
     {
-      "no": 36,
+      "no": 32,
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10169,7 +10169,7 @@ const INITIAL_DATA = {
       "row_idx": 34
     },
     {
-      "no": 37,
+      "no": 33,
       "judul": "Aruna / Dr.Rio",
       "posisi": "IG Post Carousell Kompas Urbana",
       "total_ad": 1,
@@ -10181,7 +10181,7 @@ const INITIAL_DATA = {
       "row_idx": 35
     },
     {
-      "no": 38,
+      "no": 34,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -10193,7 +10193,7 @@ const INITIAL_DATA = {
       "row_idx": 36
     },
     {
-      "no": 39,
+      "no": 35,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -10205,7 +10205,7 @@ const INITIAL_DATA = {
       "row_idx": 37
     },
     {
-      "no": 40,
+      "no": 36,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -10217,7 +10217,7 @@ const INITIAL_DATA = {
       "row_idx": 38
     },
     {
-      "no": 41,
+      "no": 37,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -10229,19 +10229,7 @@ const INITIAL_DATA = {
       "row_idx": 39
     },
     {
-      "no": 42,
-      "judul": "CIMB Niaga",
-      "posisi": "IG Storylink Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "TBC",
-      "ae": "Kimberly",
-      "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 40
-    },
-    {
-      "no": 43,
+      "no": 38,
       "judul": "KEMENPAR RI",
       "posisi": "IG Post Carousell harian Kompas",
       "total_ad": 1,
@@ -10250,10 +10238,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.513/MO/PRODUK/VIII/2026",
       "keterangan": "",
       "so": "SO0124374",
-      "row_idx": 41
+      "row_idx": 40
     },
     {
-      "no": 44,
+      "no": 39,
       "judul": "Hot and Cream - Tangerang10K",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -10262,10 +10250,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.Nomor : 760/Event/IX/2026",
       "keterangan": "",
       "so": "SO0124420",
-      "row_idx": 42
+      "row_idx": 41
     },
     {
-      "no": 45,
+      "no": 40,
       "judul": "Bank Jateng Borobudur Marathon 2026",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -10274,10 +10262,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
       "so": "SO0124422",
-      "row_idx": 43
+      "row_idx": 42
     },
     {
-      "no": 46,
+      "no": 41,
       "judul": "Bank Jateng Borobudur Marathon 2026",
       "posisi": "IG Post Kompas Urbana",
       "total_ad": 1,
@@ -10286,10 +10274,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
       "so": "SO0124423",
-      "row_idx": 44
+      "row_idx": 43
     },
     {
-      "no": 47,
+      "no": 42,
       "judul": "Bank Jateng Borobudur Marathon 2026",
       "posisi": "IG Post Kompas Muda",
       "total_ad": 1,
@@ -10298,10 +10286,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
       "so": "SO0124424",
-      "row_idx": 45
+      "row_idx": 44
     },
     {
-      "no": 48,
+      "no": 43,
       "judul": "CONRAD BALI",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10309,13 +10297,25 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.164/MO/PRODUK/III/2026",
       "keterangan": "",
+      "so": "SO0124445",
+      "row_idx": 45
+    },
+    {
+      "no": 44,
+      "judul": "Bank BJB - Tangerang10K",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-25",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
+      "keterangan": "",
       "so": "",
       "row_idx": 46
     },
     {
-      "no": 49,
+      "no": 45,
       "judul": "Bank BJB - Tangerang10K",
-      "posisi": "IG Post Harian Kompas",
+      "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
       "ae": "Rifai",
@@ -10325,9 +10325,9 @@ const INITIAL_DATA = {
       "row_idx": 47
     },
     {
-      "no": 50,
+      "no": 46,
       "judul": "Bank BJB - Tangerang10K",
-      "posisi": "IG Storylink Harian Kompas",
+      "posisi": "IG Post Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
       "ae": "Rifai",
@@ -10337,9 +10337,9 @@ const INITIAL_DATA = {
       "row_idx": 48
     },
     {
-      "no": 51,
+      "no": 47,
       "judul": "Bank BJB - Tangerang10K",
-      "posisi": "IG Post Kompas Muda",
+      "posisi": "Youtube Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
       "ae": "Rifai",
@@ -10349,16 +10349,76 @@ const INITIAL_DATA = {
       "row_idx": 49
     },
     {
-      "no": 52,
-      "judul": "Bank BJB - Tangerang10K",
-      "posisi": "Youtube Harian Kompas",
+      "no": 48,
+      "judul": "CIMB Niaga",
+      "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-09-25",
-      "ae": "Rifai",
-      "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
+      "ae": "Kimberly",
+      "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "",
       "row_idx": 50
+    },
+    {
+      "no": 49,
+      "judul": "Experd",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-26",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 51
+    },
+    {
+      "no": 50,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-26",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 52
+    },
+    {
+      "no": 51,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-26",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 53
+    },
+    {
+      "no": 52,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-26",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 54
+    },
+    {
+      "no": 53,
+      "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-26",
+      "ae": "Kimberly",
+      "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "SO0124458",
+      "row_idx": 55
     }
   ],
   "Oktober 2026": [
