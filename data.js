@@ -10309,7 +10309,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124525",
       "row_idx": 46
     },
     {
@@ -10321,7 +10321,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124526",
       "row_idx": 47
     },
     {
@@ -10333,7 +10333,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124527",
       "row_idx": 48
     },
     {
@@ -10345,7 +10345,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124528",
       "row_idx": 49
     },
     {
@@ -10353,7 +10353,7 @@ const INITIAL_DATA = {
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-09-25",
+      "tgl_terbit": "TBC",
       "ae": "Kimberly",
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
@@ -10369,7 +10369,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124503",
       "row_idx": 51
     },
     {
@@ -10381,7 +10381,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124502",
       "row_idx": 52
     },
     {
@@ -10393,7 +10393,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124504",
       "row_idx": 53
     },
     {
@@ -10405,7 +10405,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124505",
       "row_idx": 54
     },
     {
