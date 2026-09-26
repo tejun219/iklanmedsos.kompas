@@ -10419,6 +10419,42 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0124458",
       "row_idx": 55
+    },
+    {
+      "no": 54,
+      "judul": "Djarum",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-26",
+      "ae": "Rian",
+      "keterangan_order": "Memo No.",
+      "keterangan": "memo menyusul",
+      "so": "",
+      "row_idx": 56
+    },
+    {
+      "no": 55,
+      "judul": "Djarum",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-26",
+      "ae": "Rian",
+      "keterangan_order": "",
+      "keterangan": "memo menyusul",
+      "so": "",
+      "row_idx": 57
+    },
+    {
+      "no": 56,
+      "judul": "Djarum",
+      "posisi": "Tiktok Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-26",
+      "ae": "Rian",
+      "keterangan_order": "",
+      "keterangan": "memo menyusul",
+      "so": "",
+      "row_idx": 58
     }
   ],
   "Oktober 2026": [
