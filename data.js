@@ -10321,7 +10321,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 508/Event/VII/2026",
       "keterangan": "",
-      "so": "SO0124526",
+      "so": "SO0124538",
       "row_idx": 47
     },
     {
@@ -10427,9 +10427,9 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-09-26",
       "ae": "Rian",
-      "keterangan_order": "Memo No.",
-      "keterangan": "memo menyusul",
-      "so": "",
+      "keterangan_order": "Memo No.624/MO/PRODUK/IX/2026",
+      "keterangan": "",
+      "so": "SO0124536",
       "row_idx": 56
     },
     {
@@ -10439,9 +10439,9 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-09-26",
       "ae": "Rian",
-      "keterangan_order": "",
-      "keterangan": "memo menyusul",
-      "so": "",
+      "keterangan_order": "Memo No.624/MO/PRODUK/IX/2026",
+      "keterangan": "",
+      "so": "SO0124535",
       "row_idx": 57
     },
     {
@@ -10451,9 +10451,9 @@ const INITIAL_DATA = {
       "total_ad": 1,
       "tgl_terbit": "2026-09-26",
       "ae": "Rian",
-      "keterangan_order": "",
-      "keterangan": "memo menyusul",
-      "so": "",
+      "keterangan_order": "Memo No.624/MO/PRODUK/IX/2026",
+      "keterangan": "",
+      "so": "SO0124537",
       "row_idx": 58
     }
   ],
@@ -10710,7 +10710,8 @@ const MEMO_MAP = {
   "101": "101 - CIMB Niaga update 18 sept'26.pdf",
   "606": "606 - SDHI.pdf",
   "760": "760 TANGERANG10K HOT  CREAM INDIVIDUAL.pdf",
-  "164": "164 - Conrad Bali update 23 sept'26.pdf"
+  "164": "164 - Conrad Bali update 23 sept'26.pdf",
+  "624": "624 - Megapro (Djarum).pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
