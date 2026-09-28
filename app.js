@@ -36,7 +36,7 @@ const ROWS_PER_PAGE = 20;
 let currentPage = 1;
 
 // Admin Mode State Management
-let isAdminLoggedIn = sessionStorage.getItem("isAdminLoggedIn") === "true";
+let isAdminLoggedIn = true;
 let adminPassword = sessionStorage.getItem("adminPassword") || "";
 
 // Dynamic Google Sheets KCM links configuration
@@ -493,7 +493,7 @@ function initApp() {
         // Fallback for static (save in memory/localStorage only for display purpose)
         KCM_LINKS = newLinks;
         localStorage.setItem("kcm_links_local", JSON.stringify(newLinks));
-        showToast("Link disimpan secara lokal di browser (Visitor Mode). Untuk permanen, jalankan Server lokal.", "success");
+        showToast("Link disimpan secara lokal di browser . Untuk permanen, jalankan Server lokal.", "success");
         closeKcmLinksModal();
         const tabModeKcm = document.getElementById("tab-mode-kcm");
         if (tabModeKcm && tabModeKcm.classList.contains("active")) {
@@ -514,7 +514,7 @@ function initApp() {
   document.getElementById("admin-lock-btn").addEventListener("click", () => {
     if (isAdminLoggedIn) {
       // Logout Admin
-      isAdminLoggedIn = false;
+      // isAdminLoggedIn = false;
       adminPassword = "";
       sessionStorage.removeItem("isAdminLoggedIn");
       sessionStorage.removeItem("adminPassword");
@@ -614,7 +614,7 @@ function initUIDisplay() {
   
   // Auto-onboarding trigger for first-time visitors
   setTimeout(() => {
-    if (localStorage.getItem("guide_seen") !== "true") {
+    if (false) {
       openGuideModal();
     }
   }, 800);
@@ -3179,7 +3179,7 @@ function handleAddAdForm(e) {
     .then(res => {
       if (res.status === 401) {
         // Admin authorization failed
-        isAdminLoggedIn = false;
+        // isAdminLoggedIn = false;
         adminPassword = "";
         sessionStorage.removeItem("isAdminLoggedIn");
         sessionStorage.removeItem("adminPassword");
@@ -3477,7 +3477,7 @@ function updateAdminUI() {
   const kcmLinksBtn = document.getElementById("admin-kcm-links-btn");
   
   if (isAdminLoggedIn) {
-    lockBtn.className = "theme-btn admin-unlocked";
+    lockBtn.style.display = "none";
     lockBtn.title = "Admin Mode Aktif. Klik untuk Logout.";
     lockIcon.className = "fa-solid fa-lock-open";
     
@@ -3489,7 +3489,7 @@ function updateAdminUI() {
       openPlannerBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Tambah Outline Iklan';
     }
     
-    if (openVisitorBtn) openVisitorBtn.style.display = "inline-flex";
+    if (openVisitorBtn) openVisitorBtn.style.display = "none";
     if (syncBtn) syncBtn.style.display = "inline-flex";
     if (analyticsBtn) analyticsBtn.style.display = "inline-flex";
     if (kcmLinksBtn) kcmLinksBtn.style.display = "inline-flex";
@@ -4160,7 +4160,7 @@ window.goToGuideSlide = goToGuideSlide;
 // Memeriksa version.json setiap 5 menit.
 // Jika versi berbeda dari yang dimuat, tampilkan banner refresh.
 // ============================================================
-const VERSION_WATCHER_INTERVAL_MS = 5 * 60 * 1000; // 5 menit
+const VERSION_WATCHER_INTERVAL_MS = 10000; // 5 menit
 let _versionWatcherTimer = null;
 
 function startVersionWatcher() {
@@ -4182,7 +4182,7 @@ function startVersionWatcher() {
 
         // Jika versi di server berbeda dari yang sudah dimuat → ada data baru!
         if (serverVersion && serverVersion !== loadedVersion) {
-          showUpdateBanner(serverVersion, serverRows, serverUpdated);
+          location.reload();
         }
       })
       .catch(() => {}); // Abaikan error jaringan
