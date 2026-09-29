@@ -10455,11 +10455,95 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0124537",
       "row_idx": 58
+    },
+    {
+      "no": 57,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-29",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "SO0124561",
+      "row_idx": 59
+    },
+    {
+      "no": 58,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-29",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "SO0124562",
+      "row_idx": 60
+    },
+    {
+      "no": 59,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-29",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "SO0124563",
+      "row_idx": 61
+    },
+    {
+      "no": 60,
+      "judul": "Tepa Salira",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-29",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.619/MO/PRODUK/IX/2026",
+      "keterangan": "",
+      "so": "SO0124585",
+      "row_idx": 62
     }
   ],
   "Oktober 2026": [
     {
       "no": 1,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-02",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 3
+    },
+    {
+      "no": 2,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-02",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 4
+    },
+    {
+      "no": 3,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-02",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 5
+    },
+    {
+      "no": 4,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10468,7 +10552,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 3
+      "row_idx": 6
     }
   ],
   "November 2026": [],
