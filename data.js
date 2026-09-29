@@ -10707,11 +10707,12 @@ const MEMO_MAP = {
   "689": "Memo No.689.pdf",
   "694": "694 HARIAN KOMPAS_BJBM2026_REV1.pdf",
   "581": "581 - Megapro (Djarum).pdf",
-  "101": "101 - CIMB Niaga update 18 sept'26.pdf",
+  "101": "101 - CIMB Niaga update 29 sept'26.pdf",
   "606": "606 - SDHI.pdf",
   "760": "760 TANGERANG10K HOT  CREAM INDIVIDUAL.pdf",
   "164": "164 - Conrad Bali update 23 sept'26.pdf",
-  "624": "624 - Megapro (Djarum).pdf"
+  "624": "624 - Megapro (Djarum).pdf",
+  "619": "619 - Tepa Salira update 29 sept'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
