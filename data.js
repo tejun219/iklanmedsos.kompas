@@ -10515,7 +10515,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124680",
       "row_idx": 3
     },
     {
@@ -10527,7 +10527,7 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124681",
       "row_idx": 4
     },
     {
@@ -10539,17 +10539,17 @@ const INITIAL_DATA = {
       "ae": "Rifai",
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124682",
       "row_idx": 5
     },
     {
       "no": 4,
-      "judul": "Experd",
-      "posisi": "IG Story Link Harian Kompas",
+      "judul": "Changan",
+      "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-10-03",
-      "ae": "Debby",
-      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "tgl_terbit": "2026-10-02",
+      "ae": "Andika",
+      "keterangan_order": "Memo No.",
       "keterangan": "",
       "so": "",
       "row_idx": 6
@@ -10557,7 +10557,7 @@ const INITIAL_DATA = {
     {
       "no": 5,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Kompas Muda",
+      "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-10-03",
       "ae": "Debby",
@@ -10569,7 +10569,7 @@ const INITIAL_DATA = {
     {
       "no": 6,
       "judul": "Experd",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
       "tgl_terbit": "2026-10-03",
       "ae": "Debby",
@@ -10581,7 +10581,7 @@ const INITIAL_DATA = {
     {
       "no": 7,
       "judul": "Experd",
-      "posisi": "X Harian Kompas",
+      "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-10-03",
       "ae": "Debby",
@@ -10592,6 +10592,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 8,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-03",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 10
+    },
+    {
+      "no": 9,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10600,7 +10612,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 10
+      "row_idx": 11
     }
   ],
   "November 2026": [],
