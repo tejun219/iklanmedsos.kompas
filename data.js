@@ -10563,7 +10563,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.049/MO/BARTER/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124743",
       "row_idx": 7
     },
     {
@@ -10575,7 +10575,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.049/MO/BARTER/IX/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124744",
       "row_idx": 8
     },
     {
