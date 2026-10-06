@@ -10880,10 +10880,11 @@ const MEMO_MAP = {
   "760": "760 TANGERANG10K HOT  CREAM INDIVIDUAL.pdf",
   "164": "164 - Conrad Bali update 23 sept'26.pdf",
   "624": "624 - Megapro (Djarum).pdf",
-  "619": "619 - Tepa Salira update 29 sept'26.pdf",
+  "619": "619 - Tepa Salira update 5 okt'26.pdf",
   "632": "632 - Changan.pdf",
   "049": "Barter 049 -  Lamudi update 2 Okt'26.pdf",
-  "49": "Barter 049 -  Lamudi update 2 Okt'26.pdf"
+  "49": "Barter 049 -  Lamudi update 2 Okt'26.pdf",
+  "608": "608 - BTN update 6 okt'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
