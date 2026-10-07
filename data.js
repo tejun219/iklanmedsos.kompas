@@ -10350,18 +10350,6 @@ const INITIAL_DATA = {
     },
     {
       "no": 48,
-      "judul": "CIMB Niaga",
-      "posisi": "IG Storylink Harian Kompas",
-      "total_ad": 1,
-      "tgl_terbit": "TBC",
-      "ae": "Kimberly",
-      "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
-      "keterangan": "",
-      "so": "",
-      "row_idx": 50
-    },
-    {
-      "no": 49,
       "judul": "Experd",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -10370,10 +10358,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124503",
-      "row_idx": 51
+      "row_idx": 50
     },
     {
-      "no": 50,
+      "no": 49,
       "judul": "Experd",
       "posisi": "IG Post Carousell Kompas Muda",
       "total_ad": 1,
@@ -10382,10 +10370,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124502",
-      "row_idx": 52
+      "row_idx": 51
     },
     {
-      "no": 51,
+      "no": 50,
       "judul": "Experd",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -10394,10 +10382,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124504",
-      "row_idx": 53
+      "row_idx": 52
     },
     {
-      "no": 52,
+      "no": 51,
       "judul": "Experd",
       "posisi": "X Harian Kompas",
       "total_ad": 1,
@@ -10406,10 +10394,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
       "so": "SO0124505",
-      "row_idx": 54
+      "row_idx": 53
     },
     {
-      "no": 53,
+      "no": 52,
       "judul": "DOUBLETREE BY HILTON JAKARTA BINTARO JAYA",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -10418,10 +10406,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
       "keterangan": "",
       "so": "SO0124458",
-      "row_idx": 55
+      "row_idx": 54
     },
     {
-      "no": 54,
+      "no": 53,
       "judul": "Djarum",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
@@ -10430,10 +10418,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.624/MO/PRODUK/IX/2026",
       "keterangan": "",
       "so": "SO0124536",
-      "row_idx": 56
+      "row_idx": 55
     },
     {
-      "no": 55,
+      "no": 54,
       "judul": "Djarum",
       "posisi": "IG Story Link Harian Kompas",
       "total_ad": 1,
@@ -10442,10 +10430,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.624/MO/PRODUK/IX/2026",
       "keterangan": "",
       "so": "SO0124535",
-      "row_idx": 57
+      "row_idx": 56
     },
     {
-      "no": 56,
+      "no": 55,
       "judul": "Djarum",
       "posisi": "Tiktok Post Harian Kompas",
       "total_ad": 1,
@@ -10454,10 +10442,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.624/MO/PRODUK/IX/2026",
       "keterangan": "",
       "so": "SO0124537",
-      "row_idx": 58
+      "row_idx": 57
     },
     {
-      "no": 57,
+      "no": 56,
       "judul": "Bank Jateng Borobudur Marathon 2026",
       "posisi": "IG Post Harian Kompas",
       "total_ad": 1,
@@ -10466,10 +10454,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
       "so": "SO0124561",
-      "row_idx": 59
+      "row_idx": 58
     },
     {
-      "no": 58,
+      "no": 57,
       "judul": "Bank Jateng Borobudur Marathon 2026",
       "posisi": "IG Post Kompas Urbana",
       "total_ad": 1,
@@ -10478,10 +10466,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
       "so": "SO0124562",
-      "row_idx": 60
+      "row_idx": 59
     },
     {
-      "no": 59,
+      "no": 58,
       "judul": "Bank Jateng Borobudur Marathon 2026",
       "posisi": "IG Post Kompas Muda",
       "total_ad": 1,
@@ -10490,10 +10478,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
       "keterangan": "",
       "so": "SO0124563",
-      "row_idx": 61
+      "row_idx": 60
     },
     {
-      "no": 60,
+      "no": 59,
       "judul": "Tepa Salira",
       "posisi": "IG Reels Harian Kompas",
       "total_ad": 1,
@@ -10502,6 +10490,18 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.619/MO/PRODUK/IX/2026",
       "keterangan": "",
       "so": "SO0124585",
+      "row_idx": 61
+    },
+    {
+      "no": 60,
+      "judul": "CIMB Niaga",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-09-29",
+      "ae": "Kimberly",
+      "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
+      "keterangan": "",
+      "so": "SO0124865",
       "row_idx": 62
     }
   ],
@@ -10611,7 +10611,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124713",
       "row_idx": 11
     },
     {
@@ -10623,7 +10623,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124714",
       "row_idx": 12
     },
     {
@@ -10635,7 +10635,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124712",
       "row_idx": 13
     },
     {
@@ -10647,7 +10647,7 @@ const INITIAL_DATA = {
       "ae": "Debby",
       "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124711",
       "row_idx": 14
     },
     {
@@ -10671,7 +10671,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0124866",
       "row_idx": 16
     }
   ],
