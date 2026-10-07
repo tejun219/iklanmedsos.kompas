@@ -10646,7 +10646,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-10-06",
       "ae": "Debby",
       "keterangan_order": "Memo No.608/MO/PRODUK/IX/2026",
-      "keterangan": "",
+      "keterangan": "belum ada data pemasang",
       "so": "",
       "row_idx": 14
     },
