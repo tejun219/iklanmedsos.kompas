@@ -10640,6 +10640,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 12,
+      "judul": "BTN",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-06",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.608/MO/PRODUK/IX/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 14
+    },
+    {
+      "no": 13,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10648,10 +10660,10 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "SO0124863",
-      "row_idx": 14
+      "row_idx": 15
     },
     {
-      "no": 13,
+      "no": 14,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10660,7 +10672,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "SO0124866",
-      "row_idx": 15
+      "row_idx": 16
     }
   ],
   "November 2026": [],
