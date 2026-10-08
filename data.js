@@ -10655,7 +10655,7 @@ const INITIAL_DATA = {
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-10-08",
+      "tgl_terbit": "2026-10-12",
       "ae": "Kimberly",
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
