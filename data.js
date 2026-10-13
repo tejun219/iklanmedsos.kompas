@@ -10725,7 +10725,7 @@ const INITIAL_DATA = {
     {
       "no": 19,
       "judul": "Lamudi",
-      "posisi": "IG Post Carousell Harian Kompas",
+      "posisi": "IG Post Carousell Kompas Urbana",
       "total_ad": 1,
       "tgl_terbit": "2026-10-13",
       "ae": "Kimberly",
