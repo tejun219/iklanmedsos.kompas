@@ -10736,6 +10736,42 @@ const INITIAL_DATA = {
     },
     {
       "no": 20,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-14",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "SO0125061",
+      "row_idx": 22
+    },
+    {
+      "no": 21,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-14",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "SO0125062",
+      "row_idx": 23
+    },
+    {
+      "no": 22,
+      "judul": "Bank Jateng Borobudur Marathon 2026",
+      "posisi": "IG Post Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-14",
+      "ae": "Rifai",
+      "keterangan_order": "Memo Nomor : 694/Event/IX/2026",
+      "keterangan": "",
+      "so": "SO0125063",
+      "row_idx": 24
+    },
+    {
+      "no": 23,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10744,7 +10780,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "SO0124866",
-      "row_idx": 22
+      "row_idx": 25
     }
   ],
   "November 2026": [],
@@ -10981,7 +11017,7 @@ const MEMO_MAP = {
   "047": "Barter 047 -  KAI EXPO update 4 sept'26.pdf",
   "47": "Barter 047 -  KAI EXPO update 4 sept'26.pdf",
   "689": "Memo No.689.pdf",
-  "694": "694 HARIAN KOMPAS_BJBM2026_REV1.pdf",
+  "694": "694 - Event 2026.pdf",
   "581": "581 - Megapro (Djarum).pdf",
   "101": "101 - CIMB Niaga update 7 okt'26.pdf",
   "606": "606 - SDHI.pdf",
