@@ -10803,7 +10803,7 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.658/MO/PRODUK/X/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0125149",
       "row_idx": 27
     },
     {
@@ -10863,11 +10863,23 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.658/MO/PRODUK/X/2026",
       "keterangan": "",
-      "so": "",
+      "so": "SO0125150",
       "row_idx": 32
     },
     {
       "no": 31,
+      "judul": "DoubleTree by Hilton Jakarta, Bintaro Jaya",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-17",
+      "ae": "Debby",
+      "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "SO0125155",
+      "row_idx": 33
+    },
+    {
+      "no": 32,
       "judul": "Lamudi",
       "posisi": "IG Post Carousell Kompas Urbana",
       "total_ad": 1,
@@ -10875,11 +10887,11 @@ const INITIAL_DATA = {
       "ae": "Kimberly",
       "keterangan_order": "Memo No.658/MO/PRODUK/X/2026",
       "keterangan": "",
-      "so": "",
-      "row_idx": 33
+      "so": "SO0125151",
+      "row_idx": 34
     },
     {
-      "no": 32,
+      "no": 33,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10888,7 +10900,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "SO0124866",
-      "row_idx": 34
+      "row_idx": 35
     }
   ],
   "November 2026": [
