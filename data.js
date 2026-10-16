@@ -10868,6 +10868,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 31,
+      "judul": "Lamudi",
+      "posisi": "IG Post Carousell Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-18",
+      "ae": "Kimberly",
+      "keterangan_order": "Memo No.658/MO/PRODUK/X/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 33
+    },
+    {
+      "no": 32,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10876,7 +10888,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "SO0124866",
-      "row_idx": 33
+      "row_idx": 34
     }
   ],
   "November 2026": [
