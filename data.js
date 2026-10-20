@@ -10892,15 +10892,27 @@ const INITIAL_DATA = {
     },
     {
       "no": 33,
+      "judul": "BTN",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-20",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.608/MO/PRODUK/IX/2026",
+      "keterangan": "belum ada data pemasang",
+      "so": "",
+      "row_idx": 35
+    },
+    {
+      "no": 34,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-10-22",
+      "tgl_terbit": "2026-10-28",
       "ae": "Kimberly",
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "SO0124866",
-      "row_idx": 35
+      "row_idx": 36
     }
   ],
   "November 2026": [
