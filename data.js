@@ -10952,6 +10952,18 @@ const INITIAL_DATA = {
     },
     {
       "no": 38,
+      "judul": "DoubleTree by Hilton Jakarta, Bintaro Jaya",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-24",
+      "ae": "Debby",
+      "keterangan_order": "Memo No: 035/MO/BARTER/VII/2026",
+      "keterangan": "",
+      "so": "SO0125245",
+      "row_idx": 40
+    },
+    {
+      "no": 39,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
@@ -10960,7 +10972,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "SO0124866",
-      "row_idx": 40
+      "row_idx": 41
     }
   ],
   "November 2026": [
@@ -11212,7 +11224,7 @@ const MEMO_MAP = {
   "689": "Memo No.689.pdf",
   "694": "694 - Event 2026.pdf",
   "581": "581 - Megapro (Djarum).pdf",
-  "101": "101 - CIMB Niaga update 7 okt'26.pdf",
+  "101": "101 - CIMB Niaga update 22 Okt'26.pdf",
   "606": "606 - SDHI.pdf",
   "760": "760 TANGERANG10K HOT  CREAM INDIVIDUAL.pdf",
   "164": "164 - Conrad Bali update 23 sept'26.pdf",
