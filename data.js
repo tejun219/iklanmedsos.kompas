@@ -10970,7 +10970,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-10-23",
       "ae": "Aldo",
       "keterangan_order": "Memo No.698/MO/PRODUK/X/2026",
-      "keterangan": "",
+      "keterangan": "belum ada data pemasang",
       "so": "",
       "row_idx": 41
     },
@@ -10982,7 +10982,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-10-23",
       "ae": "Aldo",
       "keterangan_order": "Memo No.698/MO/PRODUK/X/2026",
-      "keterangan": "",
+      "keterangan": "belum ada data pemasang",
       "so": "",
       "row_idx": 42
     },
@@ -11051,24 +11051,36 @@ const INITIAL_DATA = {
       "judul": "Kemendag",
       "posisi": "IG Post Carousell Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-10-26",
+      "tgl_terbit": "2026-10-27",
       "ae": "Aldo",
       "keterangan_order": "Memo No.698/MO/PRODUK/X/2026",
-      "keterangan": "",
+      "keterangan": "belum ada data pemasang",
       "so": "",
       "row_idx": 48
     },
     {
       "no": 47,
+      "judul": "Taman Safari Indonesia",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-27",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.653/MO/PRODUK/X/2026",
+      "keterangan": "",
+      "so": "SO0125338",
+      "row_idx": 49
+    },
+    {
+      "no": 48,
       "judul": "CIMB Niaga",
       "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
-      "tgl_terbit": "2026-10-28",
+      "tgl_terbit": "2026-10-29",
       "ae": "Kimberly",
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "SO0124866",
-      "row_idx": 49
+      "row_idx": 50
     }
   ],
   "November 2026": [
