@@ -11345,7 +11345,8 @@ const MEMO_MAP = {
   "626": "626 - KEMENDUKBANGGA-BBKBN update 12 Okt'26.pdf",
   "658": "658 - Lamudi update 16 okt'26.pdf",
   "410": "410 - KOKO Wilmar International update 22 okt'26.pdf",
-  "698": "698 - Kemendag.pdf"
+  "698": "698 - Kemendag.pdf",
+  "653": "653 - TSI update 27 okt'26.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
