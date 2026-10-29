@@ -10970,20 +10970,20 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-10-23",
       "ae": "Aldo",
       "keterangan_order": "Memo No.698/MO/PRODUK/X/2026",
-      "keterangan": "belum ada data pemasang",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0125358",
       "row_idx": 41
     },
     {
       "no": 40,
       "judul": "Kemendag",
-      "posisi": "IG Story Harian Kompas",
+      "posisi": "IG Storylink Harian Kompas",
       "total_ad": 1,
       "tgl_terbit": "2026-10-23",
       "ae": "Aldo",
       "keterangan_order": "Memo No.698/MO/PRODUK/X/2026",
-      "keterangan": "belum ada data pemasang",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0125367",
       "row_idx": 42
     },
     {
@@ -11054,8 +11054,8 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-10-27",
       "ae": "Aldo",
       "keterangan_order": "Memo No.698/MO/PRODUK/X/2026",
-      "keterangan": "belum ada data pemasang",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0125359",
       "row_idx": 48
     },
     {
@@ -11081,6 +11081,54 @@ const INITIAL_DATA = {
       "keterangan": "",
       "so": "SO0124866",
       "row_idx": 50
+    },
+    {
+      "no": 49,
+      "judul": "Experd",
+      "posisi": "IG Story Link Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-31",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "SO0125450",
+      "row_idx": 51
+    },
+    {
+      "no": 50,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Kompas Muda",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-31",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "SO0125449",
+      "row_idx": 52
+    },
+    {
+      "no": 51,
+      "judul": "Experd",
+      "posisi": "IG Post Carousell Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-31",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "SO0125448",
+      "row_idx": 53
+    },
+    {
+      "no": 52,
+      "judul": "Experd",
+      "posisi": "X Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-10-31",
+      "ae": "Debby",
+      "keterangan_order": "Memo No.859/MO/PRODUK/XII/2025",
+      "keterangan": "",
+      "so": "SO0125447",
+      "row_idx": 54
     }
   ],
   "November 2026": [
