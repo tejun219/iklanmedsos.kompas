@@ -11133,7 +11133,19 @@ const INITIAL_DATA = {
   ],
   "November 2026": [
     {
-      "no": "",
+      "no": 1,
+      "judul": "Nissan",
+      "posisi": "IG Post Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-11-02",
+      "ae": "Andika",
+      "keterangan_order": "Memo No.684/MO/PRODUK/X/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 3
+    },
+    {
+      "no": 2,
       "judul": "CIMB Niaga",
       "posisi": "Instastorylink Harian Kompas",
       "total_ad": 1,
@@ -11142,7 +11154,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 3
+      "row_idx": 4
     }
   ],
   "Desember 2026": []
