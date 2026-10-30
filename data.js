@@ -11140,7 +11140,7 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-11-02",
       "ae": "Andika",
       "keterangan_order": "Memo No.684/MO/PRODUK/X/2026",
-      "keterangan": "",
+      "keterangan": "belum ada data pemasang",
       "so": "",
       "row_idx": 3
     },
