@@ -11068,12 +11068,24 @@ const INITIAL_DATA = {
       "tgl_terbit": "2026-11-02",
       "ae": "Andika",
       "keterangan_order": "Memo No.684/MO/PRODUK/X/2026",
-      "keterangan": "belum ada data pemasang",
-      "so": "",
+      "keterangan": "",
+      "so": "SO0125575",
       "row_idx": 3
     },
     {
-      "no": 2,
+      "no": 1,
+      "judul": "herbana",
+      "posisi": "IG Post Carousell Kompas Urbana",
+      "total_ad": 1,
+      "tgl_terbit": "2026-11-04",
+      "ae": "Imel",
+      "keterangan_order": "Memo No.729/MO/PRODUK/XI/2026",
+      "keterangan": "",
+      "so": "SO0125599",
+      "row_idx": 4
+    },
+    {
+      "no": 1,
       "judul": "CIMB Niaga",
       "posisi": "Instastorylink Harian Kompas",
       "total_ad": 1,
@@ -11082,7 +11094,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 4
+      "row_idx": 5
     }
   ],
   "Desember 2026": []
@@ -11335,7 +11347,8 @@ const MEMO_MAP = {
   "410": "410 - KOKO Wilmar International update 22 okt'26.pdf",
   "698": "698 - Kemendag.pdf",
   "653": "653 - TSI update 27 okt'26.pdf",
-  "684": "684 - Nissan update 3 nov'26.pdf"
+  "684": "684 - Nissan update 3 nov'26.pdf",
+  "729": "729 - Herbana.pdf"
 };
 
 // Make available via window object for dynamic script loading compatibility
