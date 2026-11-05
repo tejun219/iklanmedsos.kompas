@@ -11073,7 +11073,31 @@ const INITIAL_DATA = {
       "row_idx": 3
     },
     {
-      "no": 1,
+      "no": 2,
+      "judul": "Standard Chartered",
+      "posisi": "IG Reels Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-11-03",
+      "ae": "Kimmy",
+      "keterangan_order": "Memo No.104/MO/PRODUK/II/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 4
+    },
+    {
+      "no": 3,
+      "judul": "Standard Chartered",
+      "posisi": "IG Storylink Harian Kompas",
+      "total_ad": 1,
+      "tgl_terbit": "2026-11-03",
+      "ae": "Kimmy",
+      "keterangan_order": "Memo No.104/MO/PRODUK/II/2026",
+      "keterangan": "",
+      "so": "",
+      "row_idx": 5
+    },
+    {
+      "no": 4,
       "judul": "herbana",
       "posisi": "IG Post Carousell Kompas Urbana",
       "total_ad": 1,
@@ -11082,10 +11106,22 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.729/MO/PRODUK/XI/2026",
       "keterangan": "",
       "so": "SO0125599",
-      "row_idx": 4
+      "row_idx": 6
     },
     {
-      "no": 1,
+      "no": "",
+      "judul": "Ashoka",
+      "posisi": "",
+      "total_ad": "",
+      "tgl_terbit": "",
+      "ae": "",
+      "keterangan_order": "",
+      "keterangan": "",
+      "so": "SO0125648",
+      "row_idx": 7
+    },
+    {
+      "no": 5,
       "judul": "CIMB Niaga",
       "posisi": "Instastorylink Harian Kompas",
       "total_ad": 1,
@@ -11094,7 +11130,7 @@ const INITIAL_DATA = {
       "keterangan_order": "Memo No.101/MO/PRODUK/II/2026",
       "keterangan": "",
       "so": "",
-      "row_idx": 5
+      "row_idx": 8
     }
   ],
   "Desember 2026": []
